@@ -1,12 +1,8 @@
 # Cybersecurity Portfolio
 
-My hands-on cybersecurity learning journey — following a self-built roadmap through fundamentals to
-advanced security domains. This repo documents what I've actually learned and built, not just what
-I've read.
+A hands-on cybersecurity portfolio showcasing my learning journey from computer fundamentals to advanced security domains, with each write-up, lab, and project reflecting practical work completed through a structured, self-designed roadmap.
 
-**Status:** Early learning phase — actively working through the roadmap below.
-
-Live interactive roadmap: **[View Roadmap](./index.html)** _(enable GitHub Pages for a hosted link — see below)_
+Live interactive roadmap: **https://dravidmurugavel.github.io/cybersecurity-portfolio/**
 
 ## Progress
 `0 / 23 domains complete` _(update as write-ups are added — matches the progress bar in index.html)_
@@ -27,7 +23,7 @@ index.html                    → interactive roadmap tracker (progress saved in
 ## Portfolio Index
 | Topic | Phase | Job-Role Tag | Skill Category | Date |
 |---|---|---|---|---|
-| _(auto-populated per session)_ | | | | |
+|---|---|---|---|---|
 
 ## Phases
 - **Phase 0 — Foundation**: Computer Fundamentals, Linux, Windows Internals, Networking, Python, Cryptography
@@ -36,6 +32,5 @@ index.html                    → interactive roadmap tracker (progress saved in
 - **Phase 3 — Advanced**: Red Team/C2, Threat Hunting, AI/LLM Security, Mobile/Wireless
 - **Phase 4 — Expert**: GRC, OT/ICS (elective), Vulnerability Research (elective)
 
-## Hosting the roadmap live
-Settings → Pages → Deploy from branch → `main` / root. Your roadmap becomes available at
-`https://<username>.github.io/<repo>/`
+## License
+This repository is intended for educational purposes. All projects and write-ups are my own unless otherwise credited.
