@@ -1,0 +1,5 @@
+# OT-ICS & Critical Infrastructure Security (Elective)
+
+_Phase 4 — Writeups_
+
+Subtopic notes/entries for this domain go here.

@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Cybersecurity Mastery Roadmap 2026 — World-Class Learning Path</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --teal:#00D4E4;--teal2:#00B8CC;--coral:#FF6B6B;--coral2:#FF4757;
+  --mint:#00E5CC;--lav:#B06DFF;--sky:#4A9FFF;--peach:#FF9A7B;
+  --sun:#FF8C42;--vio:#C77DFF;--aqua:#00F5D4;--gold:#FFD700;--rose:#FF6FA6;
+  --bg-body:linear-gradient(135deg,#ffecd2 0%,#fcb69f 12%,#c8e6ff 35%,#e8d5ff 58%,#b5ead7 78%,#c7f2fa 100%);
+  --glass-bg:rgba(255,255,255,0.30);--glass-border:rgba(255,255,255,0.55);
+  --glass-bg2:rgba(255,255,255,0.22);--glass-border2:rgba(255,255,255,0.40);
+  --nav-bg:rgba(255,255,255,0.40);--nav-border:rgba(255,255,255,0.60);
+  --sb-bg:rgba(255,255,255,0.22);--sb-border:rgba(255,255,255,0.50);
+  --filter-bg:rgba(255,255,255,0.28);--filter-border:rgba(255,255,255,0.50);
+  --card-bg:rgba(255,255,255,0.32);--card-border:rgba(255,255,255,0.58);
+  --card-hover:rgba(255,255,255,0.52);
+  --text:#1a1a2e;--text2:#4a4a6a;--text3:#7a7a9a;
+  --divider:rgba(0,0,0,0.07);
+  --shadow:0 8px 32px rgba(0,0,0,0.12);--shadow2:0 4px 16px rgba(0,0,0,0.08);
+  --shadow3:0 2px 8px rgba(0,0,0,0.06);
+  --pill-bg:rgba(255,255,255,0.42);--pill-border:rgba(255,255,255,0.72);
+  --input-bg:rgba(255,255,255,0.50);--input-border:rgba(255,255,255,0.72);
+  --prog-track:rgba(0,0,0,0.08);
+  --sb-hover:rgba(255,255,255,0.40);
+  --scr-thumb:rgba(0,0,0,0.14);
+}
+[data-theme="dark"]{
+  --bg-body:linear-gradient(135deg,#060811 0%,#0a1220 30%,#0d1630 60%,#060811 100%);
+  --glass-bg:rgba(12,22,40,0.75);--glass-border:rgba(255,255,255,0.08);
+  --glass-bg2:rgba(10,18,34,0.70);--glass-border2:rgba(255,255,255,0.06);
+  --nav-bg:rgba(6,8,17,0.92);--nav-border:rgba(255,255,255,0.07);
+  --sb-bg:rgba(6,8,17,0.75);--sb-border:rgba(255,255,255,0.07);
+  --filter-bg:rgba(6,8,17,0.85);--filter-border:rgba(255,255,255,0.06);
+  --card-bg:rgba(10,18,34,0.78);--card-border:rgba(255,255,255,0.08);
+  --card-hover:rgba(14,24,44,0.92);
+  --text:#e2f0ff;--text2:#8aacbe;--text3:#4a6475;
+  --divider:rgba(255,255,255,0.06);
+  --shadow:0 8px 32px rgba(0,0,0,0.50);--shadow2:0 4px 16px rgba(0,0,0,0.40);
+  --shadow3:0 2px 8px rgba(0,0,0,0.30);
+  --pill-bg:rgba(255,255,255,0.06);--pill-border:rgba(255,255,255,0.10);
+  --input-bg:rgba(255,255,255,0.06);--input-border:rgba(255,255,255,0.10);
+  --prog-track:rgba(255,255,255,0.08);
+  --sb-hover:rgba(255,255,255,0.05);
+  --scr-thumb:rgba(255,255,255,0.10);
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Poppins',sans-serif;background:var(--bg-body);background-attachment:fixed;
+  min-height:100vh;color:var(--text);overflow-x:hidden;transition:background .4s,color .3s;}
+
+/* ── BLOBS ── */
+.blobs{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);animation:drift 20s ease-in-out infinite;}
+[data-theme="light"] .blob{opacity:.30;}
+[data-theme="dark"]  .blob{opacity:.14;}
+.b1{width:620px;height:620px;background:radial-gradient(#00D4E4,#4A9FFF);top:-200px;left:-180px;animation-delay:0s;}
+.b2{width:520px;height:520px;background:radial-gradient(#FF6B6B,#FF9A7B);top:28%;right:-200px;animation-delay:-7s;}
+.b3{width:700px;height:700px;background:radial-gradient(#B06DFF,#C77DFF);bottom:-260px;left:18%;animation-delay:-14s;}
+.b4{width:420px;height:420px;background:radial-gradient(#00E5CC,#00F5D4);top:55%;left:-120px;animation-delay:-5s;}
+.b5{width:360px;height:360px;background:radial-gradient(#FF8C42,#FFD700);bottom:8%;right:8%;animation-delay:-11s;}
+@keyframes drift{0%,100%{transform:translate(0,0) scale(1);}34%{transform:translate(45px,-65px) scale(1.06);}67%{transform:translate(-35px,45px) scale(.94);}}
+[data-theme="dark"] body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,.07) 3px,rgba(0,0,0,.07) 4px);}
+[data-theme="dark"] body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:linear-gradient(rgba(0,212,228,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,228,.02) 1px,transparent 1px);
+  background-size:48px 48px;}
+
+/* ── GLASS ── */
+.glass{background:var(--glass-bg);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  border:1px solid var(--glass-border);border-radius:20px;box-shadow:var(--shadow);}
+.glass2{background:var(--glass-bg2);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border:1px solid var(--glass-border2);border-radius:14px;box-shadow:var(--shadow2);}
+
+/* ── TOP NAV ── */
+#topnav{position:sticky;top:0;z-index:600;height:60px;
+  background:var(--nav-bg);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);
+  border-bottom:1px solid var(--nav-border);padding:0 20px;
+  display:flex;align-items:center;gap:12px;transition:background .4s,border-color .3s;}
+.nav-logo{display:flex;align-items:center;gap:9px;flex-shrink:0;text-decoration:none;}
+.nav-logo-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;
+  background:linear-gradient(135deg,var(--teal),var(--lav));}
+.nav-logo-text{font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:13px;white-space:nowrap;
+  background:linear-gradient(135deg,var(--teal2),var(--lav));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.nav-search{flex:1;max-width:420px;position:relative;}
+.nav-search input{width:100%;padding:9px 14px 9px 38px;border-radius:50px;font-family:'Poppins',sans-serif;font-size:12px;
+  border:1.5px solid var(--input-border);background:var(--input-bg);color:var(--text);outline:none;transition:all .2s;}
+.nav-search input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(0,212,228,.15);}
+.nav-search input::placeholder{color:var(--text3);}
+.nav-search .si{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:14px;color:var(--text3);}
+.nav-acts{display:flex;align-items:center;gap:8px;flex-shrink:0;}
+.nbtn{padding:8px 16px;border-radius:50px;font-family:'Poppins',sans-serif;font-size:11px;font-weight:600;
+  cursor:pointer;transition:all .2s;border:none;text-decoration:none;display:inline-flex;align-items:center;gap:5px;}
+.nbo{background:var(--pill-bg);border:1.5px solid var(--pill-border);color:var(--text2);}
+.nbo:hover{background:var(--card-hover);}
+.nbp{background:linear-gradient(135deg,var(--teal),var(--sky));color:#fff;}
+.nbp:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,212,228,.4);}
+.nbg{background:linear-gradient(135deg,var(--coral),var(--sun));color:#fff;}
+.nbg:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(255,107,107,.35);}
+#theme-btn{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--pill-border);
+  background:var(--pill-bg);cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;transition:all .25s;}
+#theme-btn:hover{transform:rotate(20deg);}
+.badge-count{background:var(--coral);color:#fff;border-radius:50%;width:17px;height:17px;font-size:9px;
+  display:inline-flex;align-items:center;justify-content:center;font-weight:700;margin-left:2px;}
+
+/* ── SECONDARY BAR ── */
+#secbar{position:sticky;top:60px;z-index:500;
+  background:var(--filter-bg);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--filter-border);padding:8px 20px;
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;transition:background .4s;}
+.pill{padding:5px 13px;border-radius:50px;font-size:10px;font-weight:600;cursor:pointer;white-space:nowrap;
+  border:1.5px solid var(--pill-border);background:var(--pill-bg);color:var(--text2);transition:all .18s;}
+.pill:hover{transform:translateY(-1px);background:var(--card-hover);}
+.pill.on{border:none;color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.2);}
+.pill-sep{width:1px;height:18px;background:var(--divider);flex-shrink:0;}
+.ph-f.on{background:linear-gradient(135deg,#a8e6cf,#3dccc7);}
+.ph-b.on{background:linear-gradient(135deg,var(--teal),var(--sky));}
+.ph-i.on{background:linear-gradient(135deg,var(--lav),var(--vio));}
+.ph-a.on{background:linear-gradient(135deg,var(--coral),var(--sun));}
+.ph-e.on{background:linear-gradient(135deg,var(--rose),var(--lav));}
+.cp-soc.on{background:linear-gradient(135deg,#4A9FFF,#00c8ff);}
+.cp-red.on{background:linear-gradient(135deg,#FF4757,#FF8C42);}
+.cp-cloud.on{background:linear-gradient(135deg,#00D4E4,#B06DFF);}
+.cp-dev.on{background:linear-gradient(135deg,#00E5CC,#4A9FFF);}
+.cp-grc.on{background:linear-gradient(135deg,#FFD700,#FF8C42);}
+.cp-all.on{background:linear-gradient(135deg,var(--teal),var(--lav),var(--coral));}
+
+/* ── LAYOUT ── */
+#wrap{display:flex;position:relative;z-index:1;min-height:calc(100vh - 104px);}
+
+/* ── SIDEBAR ── */
+#sb{width:220px;flex-shrink:0;background:var(--sb-bg);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-right:1px solid var(--sb-border);padding:14px 0;
+  position:sticky;top:104px;height:calc(100vh - 104px);overflow-y:auto;transition:background .4s,border-color .3s;}
+#sb::-webkit-scrollbar{width:3px;}
+#sb::-webkit-scrollbar-thumb{background:var(--scr-thumb);border-radius:2px;}
+.sb-s{margin-bottom:2px;}
+.sb-h{padding:7px 14px;font-size:9px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--text3);}
+.sb-a{display:flex;align-items:center;gap:8px;padding:7px 14px;font-size:11px;
+  color:var(--text2);cursor:pointer;border-left:2px solid transparent;transition:all .15s;font-weight:500;}
+.sb-a:hover{background:var(--sb-hover);color:var(--text);}
+.sb-a.on{color:var(--teal2);background:rgba(0,212,228,.09);border-left-color:var(--teal);font-weight:600;}
+[data-theme="dark"] .sb-a.on{color:var(--teal);}
+.sb-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;}
+.sb-prog{padding:4px 14px 8px;}
+.sp-bar{height:4px;background:var(--prog-track);border-radius:2px;overflow:hidden;margin-top:3px;}
+.sp-fill{height:100%;border-radius:2px;transition:width .5s ease;}
+
+/* ── MAIN ── */
+#main{flex:1;padding:22px 24px 60px;min-width:0;}
+.pane{display:none;}
+.pane.show{display:block;animation:fadeup .22s ease;}
+@keyframes fadeup{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
+
+/* ── DASHBOARD ── */
+.dash-hero{text-align:center;padding:36px 20px 26px;margin-bottom:20px;}
+.dash-hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(20px,4vw,38px);font-weight:900;line-height:1.15;margin-bottom:10px;
+  background:linear-gradient(135deg,var(--coral),var(--lav),var(--teal));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.dash-hero p{font-size:13px;color:var(--text2);max-width:580px;margin:0 auto 14px;line-height:1.7;}
+.hero-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;}
+.hchip{padding:4px 13px;border-radius:50px;font-size:10px;font-weight:600;
+  background:var(--pill-bg);color:var(--text2);border:1px solid var(--pill-border);}
+.stat-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:11px;margin-bottom:20px;}
+.stat-c{padding:18px 12px;text-align:center;transition:transform .2s;cursor:default;}
+.stat-c:hover{transform:translateY(-3px);}
+.stat-ico{font-size:20px;margin-bottom:6px;}
+.stat-v{font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:800;line-height:1;}
+.stat-l{font-size:9px;color:var(--text3);font-weight:500;letter-spacing:.5px;margin-top:3px;}
+.big-prog{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:11px;margin-bottom:20px;}
+.bpc{padding:16px;text-align:center;}
+.ring-wrap{position:relative;width:72px;height:72px;margin:0 auto 8px;}
+.ring-wrap svg{transform:rotate(-90deg);}
+.ring-bg{fill:none;stroke:var(--prog-track);stroke-width:6;}
+.ring-fill{fill:none;stroke-width:6;stroke-linecap:round;transition:stroke-dashoffset .6s ease;}
+.ring-pct{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:800;color:var(--text);}
+.bpc-title{font-size:11px;font-weight:700;color:var(--text2);margin-bottom:2px;}
+.bpc-sub{font-size:9px;color:var(--text3);}
+.ach-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:11px;margin-bottom:20px;}
+.ach-c{padding:14px;text-align:center;opacity:.4;transition:all .3s;}
+.ach-c.earned{opacity:1;}
+.ach-ico{font-size:28px;margin-bottom:6px;}
+.ach-name{font-size:11px;font-weight:700;color:var(--text2);}
+.ach-desc{font-size:9px;color:var(--text3);margin-top:2px;}
+
+/* ── SECTION LABELS ── */
+.s-label{font-size:9px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;
+  color:var(--text3);margin:18px 0 10px;display:flex;align-items:center;gap:8px;}
+.s-label::after{content:'';flex:1;height:1px;background:var(--divider);}
+
+/* ── PHASE HEADER ── */
+.ph-head{margin-bottom:20px;}
+.ph-badge{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border-radius:50px;
+  font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;}
+.ph-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(18px,3vw,28px);font-weight:900;margin-bottom:5px;}
+.ph-meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px;}
+.ph-chip{padding:4px 12px;border-radius:50px;font-size:10px;font-weight:600;
+  background:var(--glass-bg);border:1px solid var(--glass-border);color:var(--text2);}
+.ph-desc{font-size:12px;color:var(--text2);line-height:1.7;max-width:700px;margin-bottom:12px;}
+.ph-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:11px;margin-bottom:18px;}
+.phc{padding:14px;}
+.phc h4{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;}
+.phc ul{list-style:none;display:flex;flex-direction:column;gap:4px;}
+.phc ul li{font-size:10px;color:var(--text2);padding-left:14px;position:relative;line-height:1.5;}
+.phc ul li::before{content:"▸";position:absolute;left:0;font-size:9px;}
+
+/* ── DOMAIN ACCORDION ── */
+.domain-list{display:flex;flex-direction:column;gap:10px;}
+.domain{border-radius:14px;overflow:hidden;background:var(--card-bg);border:1.5px solid var(--card-border);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:all .2s;}
+.domain:hover{border-color:rgba(255,255,255,.25);}
+.domain-hdr{display:flex;align-items:center;gap:12px;padding:14px 16px;cursor:pointer;user-select:none;}
+.domain-hdr:hover{background:rgba(255,255,255,.06);}
+.d-icon{font-size:22px;flex-shrink:0;}
+.d-meta{flex:1;min-width:0;}
+.d-title{font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:700;margin-bottom:2px;}
+.d-sub{font-size:10px;color:var(--text3);}
+.d-badges{display:flex;gap:5px;flex-wrap:wrap;flex-shrink:0;}
+.db{padding:2px 7px;border-radius:50px;font-size:8px;font-weight:700;letter-spacing:.5px;white-space:nowrap;}
+.dl{background:rgba(0,229,204,.14);color:#009980;}[data-theme="dark"] .dl{color:#00c8a8;}
+.dm{background:rgba(255,140,66,.14);color:#c05000;}[data-theme="dark"] .dm{color:#ff9a50;}
+.da{background:rgba(255,71,87,.14);color:var(--coral2);}[data-theme="dark"] .da{color:var(--coral);}
+.dct{background:rgba(0,212,228,.12);color:var(--teal2);}[data-theme="dark"] .dct{color:var(--teal);}
+.dtm{background:rgba(176,109,255,.12);color:#8b4dd8;}[data-theme="dark"] .dtm{color:var(--lav);}
+.d-chev{font-size:12px;color:var(--text3);transition:transform .25s;flex-shrink:0;}
+.domain-body{display:none;padding:0 16px 16px;}
+.domain.open .domain-body{display:block;animation:fadeup .2s ease;}
+.domain.open .d-chev{transform:rotate(180deg);}
+
+/* ── TABS inside domain ── */
+.dtabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;border-bottom:1px solid var(--divider);padding-bottom:8px;}
+.dtab{padding:5px 12px;border-radius:8px;font-size:10px;font-weight:600;cursor:pointer;border:none;
+  background:transparent;color:var(--text3);transition:all .15s;}
+.dtab:hover{background:var(--pill-bg);color:var(--text2);}
+.dtab.on{background:linear-gradient(135deg,var(--teal),var(--sky));color:#fff;box-shadow:0 2px 8px rgba(0,212,228,.3);}
+.dtab-pane{display:none;}
+.dtab-pane.show{display:block;animation:fadeup .18s ease;}
+
+/* ── TOPIC LIST ── */
+.topic-list{display:flex;flex-direction:column;gap:4px;}
+.topic-item{display:flex;align-items:flex-start;gap:8px;padding:6px 8px;border-radius:8px;
+  cursor:pointer;transition:background .15s;border:1px solid transparent;}
+.topic-item:hover{background:var(--pill-bg);}
+.topic-item.checked{background:rgba(0,229,204,.08);border-color:rgba(0,229,204,.2);}
+.ti-check{width:18px;height:18px;border-radius:5px;border:2px solid var(--text3);flex-shrink:0;margin-top:1px;
+  display:flex;align-items:center;justify-content:center;transition:all .15s;cursor:pointer;}
+.topic-item.checked .ti-check{background:var(--mint);border-color:var(--mint);color:#fff;}
+.ti-text{font-size:11px;color:var(--text2);line-height:1.5;flex:1;}
+.topic-item.checked .ti-text{text-decoration:line-through;color:var(--text3);}
+
+/* ── PROJECT CARDS ── */
+.proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:11px;}
+.proj-c{padding:16px;border-radius:14px;background:var(--card-bg);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border:1.5px solid var(--card-border);transition:all .2s;position:relative;overflow:hidden;}
+.proj-c::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;border-radius:14px 14px 0 0;}
+.proj-c:hover{transform:translateY(-2px);box-shadow:var(--shadow);background:var(--card-hover);}
+.proj-top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:8px;}
+.proj-title{font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:700;line-height:1.3;}
+.pdiff{padding:2px 8px;border-radius:50px;font-size:8px;font-weight:700;letter-spacing:.5px;flex-shrink:0;}
+.proj-obj{font-size:10px;color:var(--text2);line-height:1.6;margin-bottom:8px;}
+.proj-tags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px;}
+.ptag{padding:2px 7px;border-radius:50px;font-size:8px;background:var(--pill-bg);color:var(--text3);font-weight:500;border:1px solid var(--pill-border);}
+.proj-meta{display:flex;gap:10px;font-size:9px;color:var(--text3);margin-bottom:10px;}
+.proj-expand{width:100%;padding:7px;border-radius:8px;font-size:10px;font-weight:600;cursor:pointer;border:none;
+  background:transparent;color:var(--text3);transition:all .15s;text-align:left;}
+.proj-expand:hover{background:var(--pill-bg);color:var(--text2);}
+.proj-detail{display:none;margin-top:10px;padding-top:10px;border-top:1px solid var(--divider);}
+.proj-detail.open{display:block;animation:fadeup .18s ease;}
+.proj-detail-item{font-size:10px;color:var(--text2);margin-bottom:6px;}
+.proj-detail-item strong{color:var(--text);display:block;font-size:9px;letter-spacing:.5px;text-transform:uppercase;margin-bottom:2px;}
+
+/* ── TOOL GRID ── */
+.tool-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px;}
+.tool-c{padding:12px 10px;text-align:center;border-radius:12px;background:var(--card-bg);
+  border:1.5px solid var(--card-border);transition:all .18s;cursor:default;}
+.tool-c:hover{transform:translateY(-2px);box-shadow:var(--shadow2);}
+.tool-ico{font-size:22px;margin-bottom:5px;}
+.tool-name{font-size:10px;font-weight:700;color:var(--text);margin-bottom:2px;}
+.tool-cat{font-size:8px;color:var(--text3);}
+
+/* ── CERT CARDS ── */
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;}
+.cert-c{padding:14px;border-radius:12px;background:var(--card-bg);border:1.5px solid var(--card-border);
+  display:flex;align-items:center;gap:12px;transition:all .18s;}
+.cert-c:hover{transform:translateY(-2px);box-shadow:var(--shadow2);}
+.cert-badge{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;
+  font-size:20px;flex-shrink:0;font-weight:900;}
+.cert-info .cert-code{font-size:10px;font-weight:700;letter-spacing:1px;color:var(--text3);}
+.cert-info .cert-name{font-size:12px;font-weight:700;color:var(--text);}
+.cert-info .cert-body{font-size:9px;color:var(--text3);margin-top:2px;}
+
+/* ── LAB CARDS ── */
+.lab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;}
+.lab-c{padding:14px;border-radius:12px;background:var(--card-bg);border:1.5px solid var(--card-border);
+  border-left:3px solid;transition:all .18s;}
+.lab-c:hover{transform:translateY(-2px);box-shadow:var(--shadow2);}
+.lab-title{font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:700;margin-bottom:4px;}
+.lab-desc{font-size:10px;color:var(--text2);line-height:1.5;margin-bottom:6px;}
+.lab-meta{font-size:9px;color:var(--text3);}
+
+/* ── IQ (Interview Questions) ── */
+.iq-list{display:flex;flex-direction:column;gap:6px;}
+.iq-item{padding:10px 14px;border-radius:10px;background:var(--pill-bg);border:1px solid var(--pill-border);
+  font-size:11px;color:var(--text2);cursor:pointer;transition:all .15s;position:relative;padding-right:32px;}
+.iq-item:hover{background:var(--card-hover);color:var(--text);}
+.iq-item::after{content:"▸";position:absolute;right:12px;top:50%;transform:translateY(-50%);font-size:10px;color:var(--text3);}
+
+/* ── RESOURCE LIST ── */
+.res-list{display:flex;flex-direction:column;gap:6px;}
+.res-item{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:10px;
+  background:var(--card-bg);border:1.5px solid var(--card-border);text-decoration:none;
+  color:var(--text2);font-size:11px;transition:all .15s;}
+.res-item:hover{color:var(--text);transform:translateX(3px);border-color:rgba(255,255,255,.25);}
+.ri-ico{font-size:13px;flex-shrink:0;}
+.ri-info{flex:1;min-width:0;}
+.ri-name{font-weight:600;margin-bottom:1px;}
+.ri-type{font-size:9px;color:var(--text3);}
+.ri-free{padding:2px 6px;border-radius:50px;font-size:8px;font-weight:700;
+  background:rgba(0,229,204,.14);color:#009980;flex-shrink:0;}
+[data-theme="dark"] .ri-free{color:#00c8a8;}
+
+/* ── CAREER PATH CARDS ── */
+.career-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;}
+.career-c{padding:18px;border-radius:16px;background:var(--card-bg);border:1.5px solid var(--card-border);
+  transition:all .2s;cursor:pointer;}
+.career-c:hover{transform:translateY(-3px);box-shadow:var(--shadow);}
+.career-ico{font-size:30px;margin-bottom:10px;}
+.career-title{font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:800;margin-bottom:4px;}
+.career-sal{font-size:10px;font-weight:700;margin-bottom:6px;}
+.career-desc{font-size:10px;color:var(--text2);line-height:1.5;margin-bottom:10px;}
+.career-skills{display:flex;flex-wrap:wrap;gap:4px;}
+.csk{padding:2px 7px;border-radius:50px;font-size:8px;background:var(--pill-bg);color:var(--text3);border:1px solid var(--pill-border);}
+
+/* ── HOME LAB ── */
+.lab-stack{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;}
+.ls-c{padding:14px;border-radius:12px;background:var(--card-bg);border:1.5px solid var(--card-border);transition:all .18s;}
+.ls-c:hover{transform:translateY(-2px);}
+.ls-title{font-size:12px;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:6px;}
+.ls-desc{font-size:10px;color:var(--text2);line-height:1.5;}
+
+/* ── CERT ROADMAP ── */
+.cert-roadmap{display:flex;flex-direction:column;gap:16px;}
+.cr-tier{padding:16px;border-radius:14px;background:var(--card-bg);border:1.5px solid var(--card-border);}
+.cr-tier-title{font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:800;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.cr-certs{display:flex;flex-wrap:wrap;gap:8px;}
+.cr-cert{padding:6px 12px;border-radius:8px;font-size:10px;font-weight:700;cursor:pointer;transition:all .18s;
+  display:flex;align-items:center;gap:5px;}
+.cr-cert:hover{transform:translateY(-1px);box-shadow:var(--shadow3);}
+
+/* ── PORTFOLIO ── */
+.port-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:11px;}
+.port-c{padding:16px;border-radius:14px;background:var(--card-bg);border:1.5px solid var(--card-border);
+  border-left:3px solid;transition:all .18s;}
+.port-c:hover{transform:translateY(-2px);box-shadow:var(--shadow2);}
+.port-title{font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:700;margin-bottom:5px;}
+.port-desc{font-size:10px;color:var(--text2);line-height:1.5;margin-bottom:8px;}
+.port-items{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.port-items li{font-size:10px;color:var(--text3);padding-left:12px;position:relative;}
+.port-items li::before{content:"•";position:absolute;left:0;}
+
+/* ── TIMELINE ── */
+.timeline{display:flex;flex-direction:column;gap:0;position:relative;}
+.timeline::before{content:'';position:absolute;left:18px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--teal),var(--lav),var(--coral));}
+.tl-item{display:flex;gap:16px;padding:0 0 20px;}
+.tl-dot{width:36px;height:36px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;
+  font-size:14px;font-weight:800;border:3px solid;position:relative;z-index:1;background:var(--card-bg);}
+.tl-body{flex:1;padding-top:4px;}
+.tl-month{font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--text3);margin-bottom:3px;}
+.tl-title{font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:700;margin-bottom:4px;}
+.tl-desc{font-size:10px;color:var(--text2);line-height:1.5;}
+
+/* ── SEARCH RESULTS ── */
+.sr-wrap{padding-top:4px;}
+.sr-count{font-size:11px;color:var(--text3);margin-bottom:14px;font-weight:500;}
+.no-res{text-align:center;padding:40px;color:var(--text3);font-size:13px;}
+
+/* ── FAVS ── */
+.favs-empty{text-align:center;padding:60px 20px;color:var(--text3);}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar{width:4px;height:4px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--scr-thumb);border-radius:2px;}
+
+/* ── PRINT ── */
+@media print{
+  #topnav,#secbar,#sb,.blobs,#theme-btn{display:none!important;}
+  body{background:#fff!important;color:#000!important;}
+  .domain{page-break-inside:avoid;}
+  #main{padding:0!important;}
+}
+/* ── RESPONSIVE ── */
+@media(max-width:960px){#sb{display:none;}#main{padding:14px;}}
+@media(max-width:640px){.proj-grid,.tool-grid,.cert-grid,.career-grid,.lab-stack,.port-grid{grid-template-columns:1fr;}
+  .ph-cards,.big-prog,.stat-row,.ach-row{grid-template-columns:1fr 1fr;}.nav-logo-text{display:none;}}
+/* ── TRANSITIONS ── */
+body,#topnav,#secbar,#sb,.domain,.proj-c,.cert-c,.tool-c,.lab-c,.career-c,.ls-c,.port-c,
+.topic-item,.res-item,.iq-item,.cr-tier,.phc,.stat-c,.bpc,.ach-c{transition:background .3s,border-color .3s,color .25s;}
+</style>
+</head>
+<body>
+<div class="blobs">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="blob b4"></div><div class="blob b5"></div>
+</div>
+
+<!-- TOP NAV -->
+<nav id="topnav">
+  <a class="nav-logo" onclick="showPane('dash')">
+    <div class="nav-logo-icon">🛡</div>
+    <div class="nav-logo-text">CyberSec Mastery 2026</div>
+  </a>
+  <div class="nav-search">
+    <span class="si">🔍</span>
+    <input type="text" id="q" placeholder="Search topics, tools, projects, certs..." autocomplete="off"/>
+  </div>
+  <div class="nav-acts">
+    <button class="nbtn nbo" onclick="showPane('favs')">⭐ Saved <span class="badge-count" id="fc">0</span></button>
+    <button class="nbtn nbo" onclick="window.print()">🖨 Print</button>
+    <button class="nbtn nbp" onclick="showPane('dash')">🏠</button>
+    <button id="theme-btn" onclick="toggleTheme()" title="Toggle theme">☀️</button>
+  </div>
+</nav>
+
+<!-- SECONDARY BAR -->
+<div id="secbar">
+  <span style="font-size:9px;font-weight:700;color:var(--text3);letter-spacing:1px;white-space:nowrap;">PHASE:</span>
+  <span class="pill ph-f on" data-phase="all" onclick="filterPhase(this,'all')">All</span>
+  <span class="pill ph-f" data-phase="0" onclick="filterPhase(this,'0')">🧱 Foundation</span>
+  <span class="pill ph-b" data-phase="1" onclick="filterPhase(this,'1')">🔵 Core Security</span>
+  <span class="pill ph-i" data-phase="2" onclick="filterPhase(this,'2')">🟣 Intermediate</span>
+  <span class="pill ph-a" data-phase="3" onclick="filterPhase(this,'3')">🔴 Advanced</span>
+  <span class="pill ph-e" data-phase="4" onclick="filterPhase(this,'4')">💎 Expert</span>
+  <div class="pill-sep"></div>
+  <span style="font-size:9px;font-weight:700;color:var(--text3);letter-spacing:1px;white-space:nowrap;">CAREER:</span>
+  <span class="pill cp-all on" data-cp="all" onclick="filterCP(this,'all')">All</span>
+  <span class="pill cp-soc" data-cp="soc" onclick="filterCP(this,'soc')">🛡 Blue/SOC</span>
+  <span class="pill cp-red" data-cp="red" onclick="filterCP(this,'red')">⚔ Red Team</span>
+  <span class="pill cp-cloud" data-cp="cloud" onclick="filterCP(this,'cloud')">☁ Cloud/DevSec</span>
+  <span class="pill cp-dev" data-cp="dev" onclick="filterCP(this,'dev')">🔬 DFIR/Malware</span>
+  <span class="pill cp-grc" data-cp="grc" onclick="filterCP(this,'grc')">📋 GRC</span>
+</div>
+
+<!-- MAIN LAYOUT -->
+<div id="wrap">
+<div id="sb">
+  <div class="sb-s">
+    <div class="sb-h">Overview</div>
+    <div class="sb-a on" onclick="showPane('dash')">🏠 Dashboard</div>
+    <div class="sb-a" onclick="showPane('timeline')">📅 Timeline</div>
+    <div class="sb-a" onclick="showPane('careers')">💼 Career Paths</div>
+    <div class="sb-a" onclick="showPane('homelab')">🖥 Home Lab</div>
+    <div class="sb-a" onclick="showPane('certs')">🏆 Certifications</div>
+    <div class="sb-a" onclick="showPane('portfolio')">📁 Portfolio</div>
+    <div class="sb-a" onclick="showPane('favs')">⭐ Saved</div>
+  </div>
+  <div class="sb-s">
+    <div class="sb-h">Phases</div>
+    <div class="sb-a" onclick="showPane('p0')">🧱 Phase 0 · Foundation</div>
+    <div class="sb-prog" id="prog-p0"><div class="sp-bar"><div class="sp-fill" id="spf-p0" style="width:0%;background:linear-gradient(90deg,#a8e6cf,#3dccc7);"></div></div></div>
+    <div class="sb-a" onclick="showPane('p1')">🔵 Phase 1 · Core Security</div>
+    <div class="sb-prog" id="prog-p1"><div class="sp-bar"><div class="sp-fill" id="spf-p1" style="width:0%;background:linear-gradient(90deg,var(--teal),var(--sky));"></div></div></div>
+    <div class="sb-a" onclick="showPane('p2')">🟣 Phase 2 · Intermediate</div>
+    <div class="sb-prog" id="prog-p2"><div class="sp-bar"><div class="sp-fill" id="spf-p2" style="width:0%;background:linear-gradient(90deg,var(--lav),var(--vio));"></div></div></div>
+    <div class="sb-a" onclick="showPane('p3')">🔴 Phase 3 · Advanced</div>
+    <div class="sb-prog" id="prog-p3"><div class="sp-bar"><div class="sp-fill" id="spf-p3" style="width:0%;background:linear-gradient(90deg,var(--coral),var(--sun));"></div></div></div>
+    <div class="sb-a" onclick="showPane('p4')">💎 Phase 4 · Expert</div>
+    <div class="sb-prog" id="prog-p4"><div class="sp-bar"><div class="sp-fill" id="spf-p4" style="width:0%;background:linear-gradient(90deg,var(--rose),var(--lav));"></div></div></div>
+  </div>
+  <div class="sb-s">
+    <div class="sb-h">Quick Tools</div>
+    <div class="sb-a" onclick="showPane('search-res')">🔍 Search</div>
+    <div class="sb-a" onclick="resetProgress()">♻ Reset Progress</div>
+  </div>
+</div>
+<div id="main">
+  <!-- PANES injected by JS -->
+  <div class="pane show" id="pane-dash"></div>
+  <div class="pane" id="pane-timeline"></div>
+  <div class="pane" id="pane-careers"></div>
+  <div class="pane" id="pane-homelab"></div>
+  <div class="pane" id="pane-certs"></div>
+  <div class="pane" id="pane-portfolio"></div>
+  <div class="pane" id="pane-favs"></div>
+  <div class="pane" id="pane-p0"></div>
+  <div class="pane" id="pane-p1"></div>
+  <div class="pane" id="pane-p2"></div>
+  <div class="pane" id="pane-p3"></div>
+  <div class="pane" id="pane-p4"></div>
+  <div class="pane" id="pane-search-res"></div>
+</div>
+</div>
+
+<script>
+// ═══════════════ ROADMAP DATA ═══════════════
+const PHASES=[
+{id:'p0',phase:0,title:'Phase 0: Universal Foundation',level:'Foundation',color:'#3dccc7',grad:'linear-gradient(135deg,#a8e6cf,#3dccc7)',duration:'3–6 months',timeEst:'10–15 hrs/week',
+desc:'Build the bedrock every cybersecurity professional needs — computing fundamentals, OS, networking, programming, and cryptography.',
+objectives:['Understand how computers and networks work at a fundamental level','Master Linux and Windows operating systems','Write Python, Bash, and PowerShell scripts','Understand cryptographic principles','Build your home lab infrastructure'],
+outcomes:['Confident Linux/Windows CLI user','Security scripts in Python & Bash','Understand networking protocols deeply','Home lab operational'],
+prereqs:['Basic computer literacy','Willingness to use the terminal daily'],
+portfolio:['GitHub with first security scripts','Home lab documentation','Networking diagrams','Custom Bash/Python tools'],
+domains:[
+{id:'computers',title:'Computer Fundamentals',icon:'💻',phase:0,cp:['all'],diff:'Beginner',timeEst:'2 weeks',
+desc:'CPU, memory, storage, binary, hex — the hardware layer every security pro must understand.',
+topics:[{id:'cpu',t:'CPU Architecture & Instruction Sets (x86/x64/ARM)'},{id:'mem',t:'Memory: RAM, cache, virtual memory, paging'},{id:'stor',t:'Storage: HDD/SSD partitioning, file systems (NTFS, ext4, FAT)'},{id:'bin',t:'Binary, hexadecimal, ASCII, Unicode encoding'},{id:'boot',t:'Boot process: BIOS/UEFI, bootloader, kernel loading'},{id:'int',t:'Interrupts, system calls, context switching'},{id:'asm',t:'[ELECTIVE — only required for Malware Analysis / Vuln Research track] x86 assembly basics: registers, stack, key instructions'},{id:'virt',t:'Virtualisation: Type 1/2 hypervisors, VMs, containers'}],
+projects:[
+{title:'System Profiler Script',diff:'Beginner',obj:'Python/Bash script profiling a system: CPU, RAM, storage, OS, running processes, open ports.',skills:['Python','Bash','psutil'],tools:['Python','Bash'],time:'3h',deliverables:['profiler.py','sample_report.txt']},
+{title:'Binary Converter Tool',diff:'Beginner',obj:'CLI tool converting decimal↔hex↔binary↔ASCII with a security-themed UI.',skills:['Python','Binary Math'],tools:['Python'],time:'2h',deliverables:['converter.py']},
+],
+labs:[{title:'CPU/Memory Profiling Lab',desc:'Use top, htop, /proc/cpuinfo, and pmap to profile a Linux system. Identify resource-hungry processes.',tools:'Linux, htop, pmap',time:'2h',color:'#3dccc7'},{title:'Hex Editor Exercises',desc:'Open binary files in a hex editor. Identify file headers (magic bytes). Understand how data is stored at byte level.',tools:'hexed.it, xxd',time:'2h',color:'#3dccc7'}],
+tools:[{name:'Hex Editor',ico:'🔢',cat:'Analysis',desc:'Binary file viewer/editor'},{name:'CPU-Z',ico:'🖥',cat:'Profiling',desc:'Hardware profiling tool'},{name:'htop',ico:'📊',cat:'Monitoring',desc:'Interactive process viewer'}],
+certs:[{code:'CompTIA ITF+',name:'IT Fundamentals',body:'CompTIA',level:'Entry',color:'#e74c3c'},{code:'CompTIA A+',name:'A+ Core',body:'CompTIA',level:'Entry',color:'#e74c3c'}],
+iq:['Explain how a CPU executes an instruction','What is virtual memory and why does it matter for security?','Explain the difference between a process and a thread','What happens between pressing power and the login screen?'],
+resources:[{ico:'🎓',name:'CS50 Harvard — Free',type:'Course',url:'https://cs50.harvard.edu/x/',free:true},{ico:'🌐',name:'Khan Academy CS',type:'Course',url:'https://www.khanacademy.org/computing/computer-science',free:true},{ico:'📗',name:'How Computers Work',type:'Book',url:'https://www.amazon.com/How-Computers-Work-Ron-White/dp/0789749459',free:false}]
+},
+{id:'linux',title:'Linux Administration & Bash Scripting',icon:'🐧',phase:0,cp:['all'],diff:'Beginner',timeEst:'4 weeks',
+desc:'Linux underpins 90% of security tools. Master CLI, file system, permissions, processes, networking commands, and Bash scripting.',
+topics:[{id:'nav',t:'Navigation: ls, cd, find, locate, which, file, stat'},{id:'files',t:'File ops: cp, mv, rm, touch, mkdir, ln, rsync, tar'},{id:'perms',t:'Permissions: chmod, chown, SUID/SGID/sticky bit, ACLs'},{id:'proc',t:'Process management: ps, top, kill, nice, jobs, bg, fg, nohup'},{id:'net',t:'Network commands: ip, ss, netstat, ping, traceroute, curl, wget, dig'},{id:'users',t:'User management: useradd, usermod, passwd, sudo, /etc/shadow'},{id:'svcs',t:'Systemd services, cron, at, journald, syslog'},{id:'pkg',t:'Package management: apt, yum, dnf, pip, snap'},{id:'bash',t:'Bash: variables, conditions, loops, functions, arrays'},{id:'text',t:'Text processing: grep, awk, sed, cut, sort, uniq, wc, tr'},{id:'bash2',t:'Advanced Bash: error handling, logging, argument parsing ($1,$@,$#)'},{id:'bash3',t:'Security Bash scripts: log parsers, port scanners, alerting automation'}],
+projects:[
+{title:'Linux Security Auditor',diff:'Beginner',obj:'Bash script auditing a Linux system: open ports, SUID files, world-writable dirs, failed logins, cron jobs.',skills:['Bash','find','netstat','awk'],tools:['Bash','find','ss'],time:'4h',deliverables:['linux_audit.sh','audit_report.txt']},
+{title:'Log Analysis Pipeline',diff:'Intermediate',obj:'Parse auth.log for failed SSH attempts, count by IP, geolocate top IPs, generate CSV report.',skills:['Bash','awk','grep','sed'],tools:['Bash'],time:'5h',deliverables:['log_analyzer.sh','report.csv']},
+{title:'Automated Backup System',diff:'Beginner',obj:'Bash script compressing, encrypting (openssl), and syncing backups to remote via rsync. Cron-scheduled.',skills:['Bash','tar','openssl','rsync','cron'],tools:['Bash','openssl'],time:'3h',deliverables:['backup.sh','restore.sh']},
+],
+labs:[{title:'OverTheWire: Bandit (Levels 0–34)',desc:'Progressive Linux CLI wargame — each level teaches a real skill by forcing you to use it to find the password.',tools:'SSH, Linux CLI',time:'8h',color:'#3dccc7'},{title:'Bash One-Liner Challenges',desc:'Solve 20 log-parsing and text-processing challenges using only bash one-liners. Use cmdchallenge.com.',tools:'Bash, cmdchallenge.com',time:'3h',color:'#3dccc7'},{title:'Linux Privilege Escalation Lab',desc:'Identify and exploit PrivEsc vectors: SUID abuse, sudo misconfig, writable cron, PATH hijack. Use linpeas.',tools:'Linux VM, linpeas.sh',time:'4h',color:'#FF6B6B'}],
+tools:[{name:'OverTheWire',ico:'⚔',cat:'Wargame',desc:'Linux CLI progressive wargames'},{name:'ExplainShell',ico:'💬',cat:'Learning',desc:'Explains any shell command visually'},{name:'ShellCheck',ico:'✅',cat:'Linting',desc:'Bash script linter'},{name:'tmux',ico:'🖥',cat:'Terminal',desc:'Terminal multiplexer'}],
+certs:[{code:'Linux+',name:'CompTIA Linux+',body:'CompTIA',level:'Intermediate',color:'#FFA500'},{code:'LPIC-1',name:'Linux Administrator',body:'LPI',level:'Intermediate',color:'#FFA500'}],
+iq:['Find all SUID binaries on a system','Explain hard link vs symbolic link','Find files modified in the last 24 hours','How does sudo elevation work?'],
+resources:[{ico:'📗',name:'The Linux Command Line (Free)',type:'Book',url:'https://linuxcommand.org/tlcl.php',free:true},{ico:'⚔',name:'OverTheWire: Bandit',type:'Wargame',url:'https://overthewire.org/wargames/bandit/',free:true},{ico:'🐧',name:'Linux Journey',type:'Course',url:'https://linuxjourney.com',free:true},{ico:'💬',name:'ExplainShell.com',type:'Tool',url:'https://explainshell.com',free:true}]
+},
+{id:'windows',title:'Windows Internals & PowerShell',icon:'🪟',phase:0,cp:['all','soc','red'],diff:'Beginner',timeEst:'3 weeks',
+desc:'Windows powers 90% of enterprise desktops. Understand internals, registry, event logs, Active Directory basics, and PowerShell automation.',
+topics:[{id:'w1',t:'Windows architecture: kernel, HAL, Win32 subsystem, user/kernel space'},{id:'w2',t:'Registry: hives (HKLM/HKCU), run keys, persistence locations'},{id:'w3',t:'Processes, threads, handles, DLLs, PEB/TEB structures'},{id:'w4',t:'Event logging: Security, System, Application — key Event IDs (4624/4625/4688/7045)'},{id:'w5',t:'Windows networking: netsh, ipconfig, Windows Firewall, named pipes, SMB'},{id:'w6',t:'Active Directory basics: domain, forest, OU, trusts, LDAP, Kerberos overview'},{id:'w7',t:'PowerShell basics: cmdlets, pipeline, objects, providers, help system'},{id:'w8',t:'PowerShell security: event log queries, AD enumeration, WMI/CIM'},{id:'w9',t:'PowerShell scripting: functions, modules, error handling, try/catch'},{id:'w10',t:'PSRemoting: WinRM, Invoke-Command, Enter-PSSession, authentication'}],
+projects:[
+{title:'Windows Security Auditor',diff:'Beginner',obj:'PowerShell script auditing: local admins, startup items, scheduled tasks, firewall rules, open ports, run keys.',skills:['PowerShell','Registry','Event Logs','WMI'],tools:['PowerShell'],time:'4h',deliverables:['win_audit.ps1','audit_report.html']},
+{title:'Event Log Hunter',diff:'Intermediate',obj:'Query Windows event logs for: 4624/4625/4688/7045/4720/4728. Group, filter, and alert on anomalies.',skills:['PowerShell','Event Logs','Security Event IDs'],tools:['PowerShell'],time:'4h',deliverables:['event_hunter.ps1']},
+{title:'AD Enumeration Toolkit',diff:'Intermediate',obj:'PowerShell functions enumerating: AD users, groups, SPNs, inactive accounts, password-not-required accounts.',skills:['PowerShell','Active Directory','LDAP'],tools:['PowerShell','AD Module'],time:'5h',deliverables:['ad_enum.ps1','README.md']},
+],
+labs:[{title:'Active Directory Home Lab',desc:'Build AD domain: Windows Server 2022 DC + Windows 10 client in VirtualBox. Configure OUs, GPOs, users.',tools:'VirtualBox, Windows Server 2022 (eval)',time:'6h',color:'#4A9FFF'},{title:'UnderTheWire PowerShell Wargames',desc:'Complete Century and Cyborg wargame series (15 levels each) to master PowerShell security skills.',tools:'PowerShell, SSH',time:'5h',color:'#4A9FFF'},{title:'BloodHound AD Analysis',desc:'Run BloodHound/SharpHound against your lab. Identify attack paths to Domain Admin. Document all paths.',tools:'BloodHound CE, SharpHound',time:'3h',color:'#B06DFF'}],
+tools:[{name:'BloodHound',ico:'🐕',cat:'AD Analysis',desc:'AD attack path visualization'},{name:'Process Explorer',ico:'🔬',cat:'Forensics',desc:'Advanced process inspector'},{name:'Autoruns',ico:'🚀',cat:'Persistence',desc:'Comprehensive startup viewer'},{name:'Sysmon',ico:'👁',cat:'Logging',desc:'Enhanced Windows event logging'}],
+certs:[{code:'SC-900',name:'Security Fundamentals',body:'Microsoft',level:'Entry',color:'#0078d4'},{code:'MD-102',name:'Endpoint Administrator',body:'Microsoft',level:'Associate',color:'#0078d4'}],
+iq:['Explain the Windows boot process','What is LSASS and why is it targeted?','How does UAC work and how can it be bypassed?','NTLM authentication vs Kerberos — differences?'],
+resources:[{ico:'⚔',name:'UnderTheWire Wargames',type:'Wargame',url:'https://underthewire.tech',free:true},{ico:'🌐',name:'Microsoft Learn PowerShell',type:'Course',url:'https://learn.microsoft.com/en-us/powershell/',free:true},{ico:'📋',name:'SANS Windows Event ID Poster',type:'Reference',url:'https://www.sans.org/posters/windows-incident-response/',free:true},{ico:'🐕',name:'BloodHound CE Docs',type:'Documentation',url:'https://bloodhound.readthedocs.io',free:true}]
+},
+{id:'networking',title:'Networking & Protocol Analysis',icon:'🌐',phase:0,cp:['all'],diff:'Beginner',timeEst:'4 weeks',
+desc:'Networking knowledge is non-negotiable. OSI model, TCP/IP, DNS, HTTP, TLS, firewalls, IDS/IPS — understand every byte.',
+topics:[{id:'n1',t:'OSI model: all 7 layers with real-world security implications per layer'},{id:'n2',t:'TCP/IP suite: IP addressing, subnetting (CIDR), routing, ARP, ICMP'},{id:'n3',t:'Protocols deep dive: DNS, DHCP, HTTP/S, FTP, SSH, SMB, LDAP, Kerberos, NTP'},{id:'n4',t:'TLS/SSL: handshake, certificates, PKI, cipher suites, TLS 1.3 vs 1.2'},{id:'n5',t:'Wireless: 802.11 standards, WPA2/3, enterprise auth (RADIUS), evil twin concept'},{id:'n6',t:'VPN protocols: IPSec, OpenVPN, WireGuard — authentication and encryption'},{id:'n7',t:'Firewalls: stateful vs stateless, ACLs, zone-based, pfSense configuration'},{id:'n8',t:'IDS/IPS: Snort vs Suricata, signature vs anomaly detection, rule writing'},{id:'n9',t:'Packet capture: Wireshark display filters, tcpdump BPF syntax, tshark'},{id:'n10',t:'Network attacks: ARP spoofing, MITM, DNS poisoning, SYN flood, DHCP starvation'}],
+projects:[
+{title:'Enterprise Network Build (GNS3)',diff:'Intermediate',obj:'Virtual enterprise network: routers, switches, VLANs, pfSense firewall, DMZ, segmented zones, VPN.',skills:['GNS3','VLANs','pfSense','Routing','Network Design'],tools:['GNS3','pfSense'],time:'10h',deliverables:['Network diagram (draw.io)','Config files','Build guide']},
+{title:'Malware PCAP Analysis (x10)',diff:'Intermediate',obj:'Analyse 10 real malware PCAPs from malware-traffic-analysis.net. Extract IOCs, C2 patterns, malware family for each.',skills:['Wireshark','PCAP Analysis','IOC Extraction','Network Forensics'],tools:['Wireshark','NetworkMiner'],time:'8h',deliverables:['10x analysis reports','IOC CSV']},
+{title:'Custom IDS Rule Library',diff:'Intermediate',obj:'Write 20 custom Suricata rules detecting: port scans, brute force, beaconing, lateral movement, data exfil.',skills:['Suricata','Rule Writing','Network Detection'],tools:['Suricata','Security Onion'],time:'6h',deliverables:['custom.rules (20 rules)','Test evidence screenshots']},
+],
+labs:[{title:'pfSense Firewall Lab',desc:'Deploy pfSense VM: configure WAN/LAN/DMZ, firewall rules, Suricata IPS, traffic shaping, VPN tunnel.',tools:'pfSense, VirtualBox',time:'5h',color:'#FF8C42'},{title:'Malware Traffic Analysis',desc:'Analyse 5 malware PCAPs from malware-traffic-analysis.net. Extract IOCs, document C2 channels and malware families.',tools:'Wireshark, NetworkMiner',time:'4h',color:'#B06DFF'}],
+tools:[{name:'Wireshark',ico:'📡',cat:'Packet Analysis',desc:'GUI packet analyser'},{name:'tcpdump',ico:'🖥',cat:'CLI Capture',desc:'Command-line packet capture'},{name:'Nmap',ico:'🔍',cat:'Scanning',desc:'Network port scanner'},{name:'Suricata',ico:'🐯',cat:'IDS/IPS',desc:'High-performance IDS/IPS'},{name:'pfSense',ico:'🛡',cat:'Firewall',desc:'Open-source firewall/router'},{name:'GNS3',ico:'🌐',cat:'Network Sim',desc:'Network topology simulator'}],
+certs:[{code:'Network+',name:'CompTIA Network+',body:'CompTIA',level:'Entry',color:'#e74c3c'},{code:'CCNA',name:'Cisco CCNA',body:'Cisco',level:'Associate',color:'#049fd9'}],
+iq:['Explain TCP 3-way handshake at packet level','What happens when you type google.com in a browser?','How does DNS cache poisoning work?','TLS 1.3 vs 1.2 handshake differences?'],
+resources:[{ico:'🎓',name:'Professor Messer Network+ (Free)',type:'Video Course',url:'https://www.professormesser.com',free:true},{ico:'🌐',name:'Cloudflare Learning Center',type:'Documentation',url:'https://cloudflare.com/learning/',free:true},{ico:'🦠',name:'Malware Traffic Analysis',type:'Lab',url:'https://malware-traffic-analysis.net',free:true},{ico:'📡',name:'Wireshark Sample Captures',type:'Lab',url:'https://wiki.wireshark.org/SampleCaptures',free:true}]
+},
+{id:'python',title:'Python for Security',icon:'🐍',phase:0,cp:['all'],diff:'Beginner',timeEst:'4 weeks',
+desc:'Python is the scripting language of cybersecurity. Build port scanners, exploit tools, forensics utilities, and automation pipelines.',
+topics:[{id:'py1',t:'Python basics: data types, control flow, functions, OOP, exceptions, modules'},{id:'py2',t:'File I/O, JSON, CSV, XML parsing for log and config processing'},{id:'py3',t:'Regular expressions: IOC extraction, log parsing, pattern matching'},{id:'py4',t:'Sockets: TCP/UDP clients, servers, raw sockets, port scanning with threading'},{id:'py5',t:'requests library: HTTP, sessions, cookies, headers, web scraping (BeautifulSoup)'},{id:'py6',t:'Scapy: packet crafting, sniffing, ARP/ICMP/TCP manipulation'},{id:'py7',t:'cryptography / hashlib: hashing, AES-GCM, RSA, PBKDF2 key derivation'},{id:'py8',t:'Forensics: file metadata, email parsing, PCAP analysis with dpkt/scapy'},{id:'py9',t:'API integration: VirusTotal, Shodan, Censys, MISP, AbuseIPDB'},{id:'py10',t:'pandas + scikit-learn: anomaly detection and ML-based log analysis'}],
+projects:[
+{title:'Multi-threaded Port Scanner',diff:'Beginner',obj:'TCP/UDP port scanner with banner grabbing, service detection, JSON output, and rate limiting.',skills:['Python','Sockets','Threading'],tools:['Python'],time:'5h',deliverables:['scanner.py','README.md']},
+{title:'Web Directory Fuzzer',diff:'Intermediate',obj:'Multithreaded web fuzzer with extension support, custom headers, proxy support, coloured terminal output.',skills:['Python','requests','Threading','Web Security'],tools:['Python','requests'],time:'5h',deliverables:['fuzzer.py','common_wordlist.txt']},
+{title:'IOC Enrichment Tool',diff:'Intermediate',obj:'Enrich IP/domain/hash IOCs via VirusTotal, Shodan, AbuseIPDB APIs. Generate HTML threat report.',skills:['Python','REST APIs','Threat Intel','jinja2'],tools:['Python'],time:'5h',deliverables:['ioc_enricher.py','report_template.html']},
+{title:'Anomaly Detection Pipeline',diff:'Advanced',obj:'Load auth.log with pandas, extract features, train IsolationForest, alert on anomalies. Dashboard output.',skills:['Python','pandas','scikit-learn','ML'],tools:['Python','scikit-learn','pandas'],time:'8h',deliverables:['anomaly_detector.py','model.pkl','dashboard.html']},
+],
+labs:[{title:'Black Hat Python Exercises',desc:'Complete all exercises from Black Hat Python 2e: netcat clone, packet sniffer, web scraper, SSH tunnel, trojan.',tools:'Python, Kali Linux',time:'12h',color:'#FFD700'},{title:'Scapy Network Lab',desc:'Build ARP scanner, SYN scanner, packet sniffer, and DNS monitor using only Scapy.',tools:'Python, Scapy',time:'5h',color:'#FFD700'}],
+tools:[{name:'Scapy',ico:'📡',cat:'Packet Crafting',desc:'Python packet manipulation library'},{name:'requests',ico:'🌐',cat:'HTTP',desc:'Python HTTP library'},{name:'Impacket',ico:'⚔',cat:'AD/Network',desc:'Python network protocol library'},{name:'pwntools',ico:'🔧',cat:'Exploit',desc:'CTF exploit dev toolkit'}],
+certs:[{code:'PCEP',name:'Python Entry-Level',body:'Python Institute',level:'Entry',color:'#3776AB'}],
+iq:['Write a Python port scanner from memory','Parse auth.log for brute force attempts with Python','Explain the GIL and threading vs multiprocessing','How do you make concurrent HTTP requests in Python?'],
+resources:[{ico:'📗',name:'Automate the Boring Stuff (Free)',type:'Book',url:'https://automatetheboringstuff.com',free:true},{ico:'📕',name:'Black Hat Python 2nd Ed.',type:'Book',url:'https://nostarch.com/black-hat-python2E',free:false},{ico:'🐙',name:'Black Hat Python Code (GitHub)',type:'Code',url:'https://github.com/EONRaider/blackhat-python3',free:true},{ico:'🎓',name:'CS50P Harvard (Free)',type:'Course',url:'https://cs50.harvard.edu/python/',free:true}]
+},
+{id:'crypto',title:'Cryptography Fundamentals',icon:'🔐',phase:0,cp:['all'],diff:'Beginner',timeEst:'2 weeks',
+desc:'Encryption, hashing, PKI, TLS — the mathematical backbone of all security. Understand it to break it and defend it.',
+topics:[{id:'c1',t:'Symmetric encryption: AES (CBC/GCM/CTR), ChaCha20, key sizes, IVs'},{id:'c2',t:'Asymmetric: RSA, ECC/ECDH, DSA, ECDSA — key exchange and signatures'},{id:'c3',t:'Hashing: MD5 (broken), SHA-1 (broken), SHA-256/512, SHA-3, BLAKE2/3'},{id:'c4',t:'Password hashing: bcrypt, scrypt, Argon2 — why PBKDF2 over plain SHA'},{id:'c5',t:'PKI: X.509 certificates, CA hierarchy, chain of trust, CRL, OCSP, CT logs'},{id:'c6',t:'[Builds on Networking domain TLS handshake] Cipher suite negotiation & ECDHE forward secrecy — apply PKI concepts to the handshake you already learned'},{id:'c7',t:'Crypto attacks: padding oracle, timing side-channel, length extension, BEAST, CRIME'},{id:'c8',t:'Encoding vs encryption vs hashing: Base64, hex — not encryption!'}],
+projects:[
+{title:'Password Manager CLI',diff:'Intermediate',obj:'Encrypted password vault using AES-256-GCM, Argon2 key derivation, SQLite storage, master password.',skills:['Python','cryptography','AES-GCM','Argon2'],tools:['Python','cryptography lib'],time:'6h',deliverables:['passmanager.py','vault.db']},
+{title:'TLS Certificate Inspector',diff:'Beginner',obj:'Python tool to inspect any HTTPS endpoint: cert chain, expiry, cipher suite, TLS version, vulnerabilities.',skills:['Python','ssl','OpenSSL','TLS'],tools:['Python','ssl module'],time:'3h',deliverables:['tls_inspector.py']},
+],
+labs:[{title:'CryptoHack Challenges',desc:'Complete Introduction and General sections (30+ challenges). Learn by breaking real cryptographic implementations in Python.',tools:'Python, CryptoHack.org',time:'8h',color:'#FFD700'},{title:'Cryptopals Set 1 & 2',desc:'Break: fixed-XOR, CBC padding oracle, ECB byte-at-a-time. Real cryptographic attacks in Python.',tools:'Python',time:'10h',color:'#FFD700'}],
+tools:[{name:'CyberChef',ico:'👨‍🍳',cat:'Encoding',desc:'GCHQ crypto & encoding tool'},{name:'SSLLabs',ico:'🔍',cat:'TLS',desc:'TLS configuration tester'},{name:'Hashcat',ico:'💥',cat:'Cracking',desc:'GPU password hash cracker'},{name:'John the Ripper',ico:'🔨',cat:'Cracking',desc:'Classic password cracker'}],
+certs:[{code:'Security+',name:'CompTIA Security+',body:'CompTIA',level:'Entry',color:'#e74c3c'}],
+iq:['Difference between hashing and encryption','TLS 1.3 handshake step by step','Why is bcrypt better than SHA-256 for passwords?','What is a padding oracle attack?'],
+resources:[{ico:'🧪',name:'CryptoHack.org',type:'Lab',url:'https://cryptohack.org',free:true},{ico:'⚗',name:'Cryptopals Challenges',type:'Lab',url:'https://cryptopals.com',free:true},{ico:'📕',name:'Crypto 101 (Free PDF)',type:'Book',url:'https://crypto101.io',free:true},{ico:'🌐',name:'OpenSSL Cookbook (Free)',type:'Book',url:'https://feistyduck.com/library/openssl-cookbook/',free:true}]
+},
+]},
+
+{id:'p1',phase:1,title:'Phase 1: Core Security',level:'Beginner–Intermediate',color:'#4A9FFF',grad:'linear-gradient(135deg,#4A9FFF,#00c8ff)',duration:'4–6 months',timeEst:'12–15 hrs/week',
+desc:'Web security, SIEM, SOC operations, vulnerability management, identity & access management. Build your specialisation foundation.',
+objectives:['Exploit OWASP Top 10 and API Top 10 vulnerabilities','Deploy and operate a SIEM','Perform vulnerability assessments','Understand IAM and Active Directory','Conduct basic incident response'],
+outcomes:['Ready for SOC Analyst Tier 1','Can perform basic web pentests','SIEM alert triage skills','Vulnerability management competency'],
+prereqs:['Phase 0 complete','Linux CLI fluency','Basic Python scripting'],
+portfolio:['First CTF writeups published','Basic web pentest report','Vulnerability scan reports','SIEM deployment documentation'],
+domains:[
+{id:'web',title:'Web Application Security & OWASP Top 10',icon:'🌐',phase:1,cp:['all','red'],diff:'Intermediate',timeEst:'4 weeks',
+desc:'Web vulnerabilities are the #1 attack vector. Master OWASP Top 10, manual testing methodology, and Burp Suite.',
+topics:[{id:'o1',t:'A01 Broken Access Control — IDOR, path traversal, privilege escalation'},{id:'o2',t:'A02 Cryptographic Failures — cleartext data, weak algorithms, hardcoded keys'},{id:'o3',t:'A03 Injection — SQLi, LDAP injection, command injection, SSTI, XPath'},{id:'o4',t:'A04 Insecure Design — threat modeling, abuse cases, security requirements'},{id:'o5',t:'A05 Security Misconfiguration — default creds, exposed config, permissive CORS'},{id:'o6',t:'A06 Vulnerable & Outdated Components — SCA, CVE tracking, dependency auditing'},{id:'o7',t:'A07 Auth Failures — brute force, session fixation, MFA bypass, credential stuffing'},{id:'o8',t:'A08 Software & Data Integrity — insecure deserialization, CI/CD tampering'},{id:'o9',t:'A09 Logging & Monitoring Failures — log gaps, silent failures, audit blindspots'},{id:'o10',t:'A10 SSRF — internal service access, cloud metadata, blind SSRF chains'},{id:'xss',t:'XSS: reflected, stored, DOM-based, CSP bypass, exfiltration via XSS'},{id:'jwt',t:'JWT attacks: alg:none, weak secret, algorithm confusion, kid path traversal'},{id:'ssti',t:'SSTI: Jinja2, Twig, Freemarker — payload construction and RCE chains'},{id:'xxe',t:'XXE: internal entity, out-of-band, blind XXE, SSRF via XXE entities'},{id:'burp',t:'Burp Suite: Proxy, Repeater, Intruder, Scanner, Collaborator, Match & Replace'}],
+projects:[
+{title:'DVWA Full Exploitation',diff:'Beginner',obj:'Complete all DVWA modules at low/medium/high security. Write PoC for each vulnerability.',skills:['SQLi','XSS','CSRF','Command Injection','File Upload'],tools:['Burp Suite Community','DVWA','Docker'],time:'6h',deliverables:['DVWA_report.pdf','PoC_screenshots/']},
+{title:'OWASP Juice Shop 100%',diff:'Intermediate',obj:'Solve all 100+ Juice Shop challenges. Publish write-up for each category.',skills:['XSS','SQLi','Auth Bypass','IDOR','Broken Access Control','JWT'],tools:['Burp Suite','Juice Shop','Browser DevTools'],time:'12h',deliverables:['juice_shop_writeup.md on GitHub']},
+{title:'Professional Web Pentest Report',diff:'Intermediate',obj:'Full pentest on a practice target. Executive summary, CVSS-scored findings, remediation, appendix.',skills:['Manual Testing','OWASP Methodology','Burp Suite','Report Writing'],tools:['Burp Suite','OWASP Testing Guide'],time:'8h',deliverables:['Web_Pentest_Report.pdf','raw_findings.xlsx']},
+],
+labs:[{title:'PortSwigger Web Security Academy (All Free Labs)',desc:'Complete all 250+ free interactive labs: SQLi, XSS, CSRF, SSRF, XXE, OAuth, JWT, HTTP desync, WebSockets.',tools:'Burp Suite Community, Browser',time:'40h',color:'#4A9FFF'},{title:'bWAPP / bWAPP-ng',desc:'Complete bWAPP challenges — 100+ vulnerabilities across OWASP categories. Deploy with Docker.',tools:'Docker, Burp Suite',time:'5h',color:'#4A9FFF'}],
+tools:[{name:'Burp Suite',ico:'🕷',cat:'Web Testing',desc:'Industry-standard web proxy'},{name:'OWASP ZAP',ico:'🎯',cat:'Scanner',desc:'Free automated web scanner'},{name:'ffuf',ico:'💨',cat:'Fuzzing',desc:'Fast web content fuzzer'},{name:'Gobuster',ico:'🔍',cat:'Enumeration',desc:'Dir/DNS/VHost enumeration'},{name:'SQLMap',ico:'💉',cat:'SQLi',desc:'Automated SQL injection tool'},{name:'Nikto',ico:'🔎',cat:'Scanner',desc:'Web server vulnerability scanner'}],
+certs:[{code:'BSCP',name:'Burp Suite Certified Practitioner',body:'PortSwigger',level:'Intermediate',color:'#FF6B6B'},{code:'eWPT',name:'Web App Penetration Tester',body:'eLearnSecurity',level:'Intermediate',color:'#e67e22'}],
+iq:['Explain SQLi UNION attack step by step','How does stored XSS chain to account takeover?','What is SSRF and how does it escalate in cloud?','Auth vs authorisation — explain the difference'],
+resources:[{ico:'🎓',name:'PortSwigger Web Academy (Free)',type:'Lab',url:'https://portswigger.net/web-security',free:true},{ico:'🧃',name:'OWASP Juice Shop',type:'Lab',url:'https://owasp.org/www-project-juice-shop/',free:true},{ico:'📋',name:'OWASP Testing Guide',type:'Documentation',url:'https://owasp.org/www-project-web-security-testing-guide/',free:true},{ico:'🎯',name:'DVWA Docker',type:'Lab',url:'https://dvwa.co.uk',free:true}]
+},
+{id:'api',title:'API Security & OWASP API Top 10',icon:'🔌',phase:1,cp:['all','red'],diff:'Intermediate',timeEst:'2 weeks',
+desc:'APIs are the modern attack surface. REST, GraphQL, gRPC — authorization flaws, mass assignment, and injection.',
+topics:[{id:'a1',t:'API1: Broken Object Level Authorization (BOLA/IDOR) — object ID manipulation'},{id:'a2',t:'API2: Broken Authentication — JWT flaws, API key leakage, OAuth misuse'},{id:'a3',t:'API3: Broken Object Property Level Authorization — mass assignment, over-posting'},{id:'a4',t:'API4: Unrestricted Resource Consumption — rate limiting bypass, account enumeration'},{id:'a5',t:'API5: Broken Function Level Authorization — admin endpoints, HTTP method abuse'},{id:'a6',t:'API6: Unrestricted Access to Sensitive Business Flows — purchase bypass'},{id:'a7',t:'API7: Server-Side Request Forgery — cloud metadata, internal services'},{id:'a8',t:'API8: Security Misconfiguration — permissive CORS, stack traces, verbose errors'},{id:'a9',t:'API9: Improper Inventory Management — shadow APIs, deprecated endpoints'},{id:'a10',t:'API10: Unsafe API Consumption — trusting third-party APIs'},{id:'gql',t:'GraphQL: introspection enabled, batching attacks, field-level auth bypass'}],
+projects:[{title:'Full API Security Assessment',diff:'Intermediate',obj:'Test crAPI or vAPI for all OWASP API Top 10. Write professional API security report with curl/Python PoCs.',skills:['API Testing','Burp Suite','Postman','OWASP API'],tools:['Burp Suite','Postman','crAPI'],time:'8h',deliverables:['API_Security_Report.pdf','poc_scripts/']}],
+labs:[{title:'crAPI — Completely Ridiculous API',desc:'OWASP crAPI — intentionally vulnerable API covering all OWASP API Top 10 vulnerabilities.',tools:'Docker, Burp Suite, Postman',time:'8h',color:'#4A9FFF'},{title:'vAPI — Vulnerable API Lab',desc:'Go-based vulnerable REST API with 13 challenges. Focus on BOLA, broken auth, and mass assignment.',tools:'Docker, Postman, Burp Suite',time:'5h',color:'#4A9FFF'}],
+tools:[{name:'Postman',ico:'📬',cat:'API Testing',desc:'API development and testing'},{name:'Burp Suite',ico:'🕷',cat:'Proxy',desc:'HTTP intercepting proxy'},{name:'Arjun',ico:'🔍',cat:'Discovery',desc:'HTTP parameter discovery'}],
+certs:[{code:'API Security',name:'API Security Fundamentals',body:'APIsec University',level:'Entry',color:'#e67e22'}],
+iq:['BOLA vs Broken Function Level Authorization','How to test for mass assignment in a REST API?','How does GraphQL introspection enable attacks?'],
+resources:[{ico:'📋',name:'OWASP API Security Top 10',type:'Documentation',url:'https://owasp.org/www-project-api-security/',free:true},{ico:'🧪',name:'crAPI Lab',type:'Lab',url:'https://github.com/OWASP/crAPI',free:true},{ico:'📗',name:'Hacking APIs — Corey Ball',type:'Book',url:'https://nostarch.com/hacking-apis',free:false}]
+},
+{id:'siem',title:'SIEM & SOC Operations',icon:'🔷',phase:1,cp:['soc'],diff:'Intermediate',timeEst:'5 weeks',
+desc:'Deploy and operate a SIEM. Ingest logs, write detection rules, triage alerts, investigate phishing, and automate response. The actual daily workflow of a SOC analyst — including the parts most roadmaps skip. HONESTY NOTE: this domain trains on Wazuh/ELK/Security Onion (free), but real enterprise SOCs mostly run commercial EDR/XDR platforms (CrowdStrike Falcon, Microsoft Defender for Endpoint, SentinelOne). The concepts here — detection logic, alert triage, telemetry analysis — transfer directly, but expect a ramp-up period learning your employer\'s specific console. Microsoft Defender for Endpoint has a genuinely free trial tenant — use it before interviewing if you can.',
+topics:[{id:'s1',t:'SOC tiers 1/2/3 — roles, escalation, SLA, shift handover'},{id:'s2',t:'Log sources: Windows Events, syslog, auth.log, firewall, DNS, proxy, EDR'},{id:'s3',t:'ELK Stack: Elasticsearch, Logstash, Kibana, Beats — deploy & configure'},{id:'s4',t:'Wazuh SIEM/XDR: agent deployment, built-in rules, decoders, custom rules'},{id:'s5',t:'Splunk: SPL queries, sourcetypes, indexes, dashboards, saved searches, alerts'},{id:'s6',t:'KQL (Kusto): Microsoft Sentinel and Defender XDR queries'},{id:'s7',t:'Detection engineering: hypothesis → data → logic → rule → test → deploy → tune'},{id:'s8',t:'Sigma rules: YAML syntax, field mappings, pySigma compilation to SIEM formats'},{id:'s9',t:'MITRE ATT&CK coverage: mapping detections to techniques, gap analysis'},{id:'s10',t:'Alert triage: enrichment, pivot, IOC lookup, escalation decision, ticket'},{id:'s11',t:'[DAILY SOC WORK] Phishing & email security: header analysis (Received chain), SPF/DKIM/DMARC validation, Business Email Compromise (BEC) investigation, URL/attachment triage workflow'},{id:'s12',t:'[GROWING SKILL] SOAR & security automation: playbook design, alert enrichment automation, auto-ticketing, reducing analyst toil at scale'}],
+projects:[
+{title:'ELK SIEM Deployment',diff:'Intermediate',obj:'Full ELK Stack on-prem: ingest Windows Event logs, Suricata alerts, syslog. Build detection dashboards.',skills:['ELK Stack','Logstash','Kibana','Beats','SIEM'],tools:['Elasticsearch','Logstash','Kibana'],time:'10h',deliverables:['Setup guide','Custom dashboards (5x)','Detection rules (10x)']},
+{title:'Wazuh SOC Platform',diff:'Intermediate',obj:'Deploy Wazuh, connect 3 agents (Windows/Linux), create 15 custom detection rules covering ATT&CK T1xxx.',skills:['Wazuh','XML Rules','Log Analysis','ATT&CK'],tools:['Wazuh','Docker'],time:'8h',deliverables:['Wazuh documentation','15 custom rules','ATT&CK mapping']},
+{title:'Sigma Rule Library',diff:'Intermediate',obj:'Write 25 Sigma rules for common ATT&CK techniques. Convert to Splunk/ELK. Test with simulated logs.',skills:['Sigma','YAML','Detection Engineering','ATT&CK'],tools:['Sigma','pySigma','Python'],time:'8h',deliverables:['25 x .yml Sigma rules','Compiled SIEM queries','ATT&CK Navigator layer']},
+{title:'Phishing Investigation Playbook',diff:'Intermediate',obj:'Run GoPhish campaigns against a lab mailbox. Practice full header analysis, SPF/DKIM/DMARC checks, and BEC triage on 10 real-world phishing sample emails.',skills:['Email Header Analysis','SPF/DKIM/DMARC','GoPhish','Phishing Triage'],tools:['GoPhish','MXToolbox','CyberChef'],time:'6h',deliverables:['10x phishing analysis writeups','Phishing_Investigation_Playbook.md']},
+{title:'SOAR Auto-Enrichment Playbook',diff:'Intermediate',obj:'Build a SOAR playbook (Tines or Shuffle free tier) that takes an incoming alert, auto-enriches the source IP via VirusTotal/AbuseIPDB, and opens a ticket automatically.',skills:['SOAR','Automation','API Integration','Playbook Design'],tools:['Tines (free tier)','Shuffle','VirusTotal API'],time:'6h',deliverables:['Working SOAR playbook export','Demo recording/screenshots','Playbook_documentation.md']},
+],
+labs:[{title:'Security Onion Home SOC',desc:'Deploy Security Onion 2.4: integrates ELK + Zeek + Suricata + Strelka. Ingest traffic from lab network.',tools:'Security Onion, VirtualBox',time:'12h',color:'#4A9FFF'},{title:'ATT&CK Coverage Mapping',desc:'Map all Wazuh/ELK detection rules to ATT&CK techniques using ATT&CK Navigator. Identify gaps.',tools:'ATT&CK Navigator, Wazuh',time:'3h',color:'#00D4E4'},{title:'GoPhish Simulation Lab',desc:'Deploy GoPhish, build a realistic phishing template, run a simulated campaign against a test mailbox list, and analyse the results dashboard.',tools:'GoPhish, Docker',time:'4h',color:'#FF6B6B'}],
+tools:[{name:'Wazuh',ico:'🔷',cat:'SIEM/XDR',desc:'Open-source SIEM and XDR'},{name:'Security Onion',ico:'🧅',cat:'NSM/SIEM',desc:'Network security monitoring'},{name:'Elastic SIEM',ico:'🔶',cat:'SIEM',desc:'Elastic Security platform'},{name:'Splunk',ico:'📊',cat:'SIEM',desc:'Enterprise log management'},{name:'Sigma',ico:'⚡',cat:'Detection Rules',desc:'Open detection rule format'},{name:'ATT&CK Navigator',ico:'🗺',cat:'Coverage',desc:'ATT&CK coverage heatmap tool'},{name:'GoPhish',ico:'🎣',cat:'Phishing Sim',desc:'Open-source phishing simulation'},{name:'Tines / Shuffle',ico:'⚙',cat:'SOAR',desc:'Security automation platforms (free tiers)'}],
+certs:[{code:'CySA+',name:'Cybersecurity Analyst+',body:'CompTIA',level:'Intermediate',color:'#e74c3c'},{code:'SC-200',name:'Security Operations Analyst',body:'Microsoft',level:'Associate',color:'#0078d4'}],
+iq:['Write Splunk SPL to detect brute force','How do you tune a noisy SIEM detection rule?','SIEM vs SOAR — key differences?','EventID for Pass-the-Hash detection?','Walk through how you would analyse a suspicious email header','What makes a SOAR playbook well-designed vs. brittle?'],
+resources:[{ico:'🔷',name:'Wazuh Documentation',type:'Documentation',url:'https://documentation.wazuh.com',free:true},{ico:'⚡',name:'Sigma Rules GitHub',type:'Reference',url:'https://github.com/SigmaHQ/sigma',free:true},{ico:'🗡',name:'MITRE ATT&CK',type:'Framework',url:'https://attack.mitre.org',free:true},{ico:'🧅',name:'Security Onion Docs',type:'Documentation',url:'https://docs.securityonion.net',free:true},{ico:'🎣',name:'GoPhish Documentation',type:'Documentation',url:'https://getgophish.com/documentation/',free:true},{ico:'⚙',name:'Tines Free Tier',type:'Tool',url:'https://www.tines.com',free:true}]
+},
+{id:'vuln',title:'Vulnerability Management',icon:'🔍',phase:1,cp:['soc','grc'],diff:'Beginner',timeEst:'2 weeks',
+desc:'Systematically identify, classify, remediate, and verify vulnerabilities across enterprise environments.',
+topics:[{id:'v1',t:'VM lifecycle: discover → assess → prioritise → remediate → verify → report'},{id:'v2',t:'CVSS v3.1: base, temporal, environmental metrics — hands-on scoring practice'},{id:'v3',t:'CVE, CWE, NVD, EPSS scoring — understanding vulnerability databases'},{id:'v4',t:'Nessus: authenticated vs unauthenticated, policies, templates, reporting'},{id:'v5',t:'OpenVAS/Greenbone: Community Edition setup, scan configs, task management'},{id:'v6',t:'Nuclei: YAML templates, running specific tags, custom template development'},{id:'v7',t:'Patch management: WSUS, SLAs (Critical 24h, High 7d, Medium 30d), risk acceptance'}],
+projects:[{title:'Vulnerability Management Lab',diff:'Intermediate',obj:'Deploy Greenbone CE, scan lab network (Metasploitable3 target), build risk-prioritised remediation report.',skills:['OpenVAS','CVSS','Vulnerability Scanning','Report Writing'],tools:['Greenbone CE','Nessus Essentials'],time:'6h',deliverables:['Vuln scan report (PDF)','Remediation_tracker.xlsx']}],
+labs:[{title:'Greenbone CE vs Metasploitable3',desc:'Scan Metasploitable3 with GCE. Classify all 100+ findings by CVSS. Identify top 10 critical remediations.',tools:'Greenbone CE, Metasploitable3, VirtualBox',time:'5h',color:'#00E5CC'}],
+tools:[{name:'OpenVAS/Greenbone',ico:'🔍',cat:'Vuln Scanning',desc:'Open-source vulnerability scanner'},{name:'Nessus',ico:'🎯',cat:'Vuln Scanning',desc:'Professional vuln scanner'},{name:'Nuclei',ico:'⚛',cat:'Template Scanning',desc:'Fast template-based scanner'}],
+certs:[{code:'Security+',name:'CompTIA Security+',body:'CompTIA',level:'Entry',color:'#e74c3c'}],
+iq:['Explain CVSS v3.1 components','How to prioritise 2000 vulnerabilities?','What is EPSS and why is it better than CVSS alone?'],
+resources:[{ico:'📋',name:'NVD — Vulnerability Database',type:'Database',url:'https://nvd.nist.gov',free:true},{ico:'🔍',name:'Greenbone Docs',type:'Documentation',url:'https://greenbone.github.io/docs/',free:true},{ico:'⚛',name:'Nuclei Templates',type:'Reference',url:'https://github.com/projectdiscovery/nuclei-templates',free:true}]
+},
+{id:'iam',title:'Identity & Access Management / Active Directory',icon:'🔑',phase:1,cp:['all','grc'],diff:'Intermediate',timeEst:'3 weeks',
+desc:'IAM is the security control plane. From AD attacks to Zero Trust identity — master authentication and authorization at depth.',
+topics:[{id:'i1',t:'Active Directory: structure, domain, forest, OU, trust types, schema, replication'},{id:'i2',t:'Kerberos: AS-REQ, TGT, TGS, Service Ticket — authentication flow packet-level'},{id:'i3',t:'NTLM: challenge-response mechanism, relay attacks, Pass-the-Hash'},{id:'i4',t:'LDAP: directory queries, anonymous bind risks, LDAP injection vectors'},{id:'i5',t:'Group Policy: deployment order, precedence, security baselines, GPO hardening'},{id:'i6',t:'Privilege management: least privilege, PAM, JIT access, tiered admin model'},{id:'i7',t:'MFA: TOTP, FIDO2/WebAuthn, hardware security keys, MFA bypass techniques'},{id:'i8',t:'OAuth 2.0, OIDC, SAML 2.0 — SSO federation protocols and attack surface'},{id:'i9',t:'Zero Trust identity: conditional access, risk-based authentication, passwordless'}],
+projects:[{title:'AD Hardening Project',diff:'Intermediate',obj:'Harden AD lab: tiered admin, LAPS, Protected Users group, fine-grained password policy, audit policy, Defender for Identity.',skills:['Active Directory','GPO','LAPS','Security Hardening','PowerShell'],tools:['Windows Server','PowerShell','LAPS','Defender for Identity'],time:'8h',deliverables:['AD Hardening Report','GPO exports (.pol)','Remediation documentation']}],
+labs:[{title:'GOAD — Game of Active Directory',desc:'Orange Cyberdefense vulnerable 5-DC AD lab. Practice: Kerberoasting, DCSync, BloodHound, ADCS abuse, constrained delegation.',tools:'Vagrant, VirtualBox, BloodHound, Impacket',time:'10h',color:'#B06DFF'}],
+tools:[{name:'BloodHound CE',ico:'🐕',cat:'AD Analysis',desc:'AD attack path visualisation'},{name:'LAPS',ico:'🔐',cat:'Privilege',desc:'Local Admin Password Solution'},{name:'Impacket',ico:'⚔',cat:'AD Attacks',desc:'Python AD protocol library'},{name:'Kerbrute',ico:'🎫',cat:'Kerberos',desc:'Kerberos brute force tool'}],
+certs:[{code:'SC-300',name:'Identity and Access Admin',body:'Microsoft',level:'Associate',color:'#0078d4'},{code:'CRTP',name:'Certified Red Team Professional',body:'Pentester Academy',level:'Intermediate',color:'#e67e22'}],
+iq:['Explain Kerberoasting and how to detect it','What is a Golden Ticket attack?','How does DCSync work and what privileges are required?','Explain the tiered administration model'],
+resources:[{ico:'🐕',name:'BloodHound Documentation',type:'Documentation',url:'https://bloodhound.readthedocs.io',free:true},{ico:'🏟',name:'GOAD Lab',type:'Lab',url:'https://github.com/Orange-Cyberdefense/GOAD',free:true},{ico:'📚',name:'Microsoft Identity Docs',type:'Documentation',url:'https://learn.microsoft.com/en-us/azure/active-directory/',free:true}]
+},
+]},
+{id:'p2',phase:2,title:'Phase 2: Intermediate Security',level:'Intermediate',color:'#B06DFF',grad:'linear-gradient(135deg,#B06DFF,#C77DFF)',duration:'6–9 months',timeEst:'15–20 hrs/week',
+desc:'Specialise in offensive or defensive tracks: penetration testing, cloud security, DFIR, malware analysis, and DevSecOps.',
+objectives:['Perform professional penetration tests','Operate as Tier 2 SOC analyst','Deploy and secure cloud infrastructure','Analyse malware at static and dynamic levels','Implement DevSecOps pipelines'],
+outcomes:['Junior pentester or Tier 2 SOC role ready','Cloud security fundamentals across AWS/Azure/GCP','Malware analysis and basic reverse engineering'],
+prereqs:['Phase 0 and Phase 1 complete','200+ hours practical lab time','At least one CTF completed'],
+portfolio:['3 professional pentest reports','Cloud security lab documentation','Malware analysis reports (5x)','Custom security tools on GitHub'],
+domains:[
+{id:'pentest',title:'Penetration Testing Methodology',icon:'⚔',phase:2,cp:['red'],diff:'Intermediate',timeEst:'6 weeks',
+desc:'Professional pentesting: legal authorization FIRST, then passive recon, active scanning, exploitation, post-exploitation, pivoting, and professional reporting. Unauthorized testing carries real legal/criminal liability (CFAA in the US, Computer Misuse Act in the UK) — the legal framework below is deliberately taught before any live exploitation content, not assumed as background knowledge.',
+topics:[{id:'pt0a',t:'[LEARN FIRST] Written authorization requirements: what a legally-sufficient scope document must contain before you touch anything'},{id:'pt0b',t:'[LEARN FIRST] Rules of Engagement (ROE): defined scope boundaries, out-of-scope systems, testing windows, emergency contacts, "stop testing" triggers'},{id:'pt0c',t:'[LEARN FIRST] Scope creep handling: what to do the moment you find something interesting OUTSIDE the agreed scope (answer: stop, document, report — never pivot into it)'},{id:'pt0d',t:'[LEARN FIRST] CFAA (US) / Computer Misuse Act (UK) basics: what makes testing authorized vs. a crime, and why "I was just curious" is not a defence'},{id:'pt1',t:'PTES, OWASP Testing Guide, NIST SP 800-115 — pentest methodologies'},{id:'pt2',t:'Passive recon: OSINT, Google dorking, Shodan, Censys, theHarvester, Maltego'},{id:'pt3',t:'Active scanning: Nmap NSE scripts, masscan, service enumeration, banner grabbing'},{id:'pt4',t:'Exploitation: Metasploit framework, searchsploit, manual CVE weaponisation'},{id:'pt5',t:'Post-exploitation: Meterpreter, shell upgrading, local enumeration, PrivEsc'},{id:'pt6',t:'Pivoting: port forwarding (ssh -L/-R/-D), SOCKS proxy, Chisel, Ligolo-ng'},{id:'pt7',t:'AD attacks: Kerberoasting, ASREPRoasting, Pass-the-Hash, Pass-the-Ticket, DCSync'},{id:'pt8',t:'Report writing: executive summary for non-technical stakeholders (business risk, not CVE numbers) vs. technical remediation appendix for engineers — these are TWO DIFFERENT documents inside one report, written for two different readers'}],
+projects:[
+{title:'Scope Document & ROE Drafting Exercise',diff:'Beginner',obj:'Before any live exploitation project below: draft a complete, legally-sufficient scope document and Rules of Engagement for a fictional client engagement. This is the artifact you produce BEFORE every real pentest.',skills:['Legal Documentation','Scoping','ROE Writing'],tools:['Markdown/Word template'],time:'2h',deliverables:['Scope_Document_Template.md','ROE_Template.md']},
+{title:'Internal Network Pentest — Metasploitable3',diff:'Intermediate',obj:'Full pentest: recon → scan → exploit → post-exploit → lateral movement → report. Professional PDF output with a genuinely separate executive summary and technical appendix.',skills:['Metasploit','Nmap','Exploitation','Post-Exploitation','Executive Communication'],tools:['Metasploit','Nmap','Burp Suite','Kali Linux'],time:'10h',deliverables:['Pentest_Report.pdf','PoC_Evidence/','Executive_Summary.pdf (business-risk framed, zero jargon)']},
+{title:'VulnHub Writeups (x10)',diff:'Intermediate',obj:'Solve 10 VulnHub machines of varying difficulty. Publish detailed write-up for each on GitHub Pages/blog.',skills:['Enumeration','Exploitation','PrivEsc','Writeup Writing'],tools:['Kali Linux','VulnHub','VirtualBox'],time:'20h',deliverables:['10x writeups (GitHub/blog)','GitHub repo']},
+{title:'AD Penetration Test',diff:'Intermediate',obj:'Full AD pentest on GOAD lab: Kerberoasting → PrivEsc → DCSync → Domain Admin. Write findings report.',skills:['BloodHound','Impacket','Kerberoasting','DCSync','AD Attacks'],tools:['BloodHound','Impacket','Kali'],time:'12h',deliverables:['AD_Pentest_Report.pdf','BloodHound_screenshots/']},
+],
+labs:[{title:'GOAD Active Directory Lab Pentest',desc:'Full simulated engagement against GOAD 5-DC domain. Use BloodHound paths, Impacket, Responder, and custom Python tools.',tools:'Kali Linux, BloodHound, Impacket, Responder',time:'15h',color:'#FF6B6B'},{title:'VulnHub: PG Practice Machines',desc:'Complete 5 PG Play and 5 PG Practice machines. Vary difficulty. Full enumeration and exploitation methodology.',tools:'Kali Linux, VirtualBox',time:'20h',color:'#FF6B6B'}],
+tools:[{name:'Metasploit',ico:'💥',cat:'Exploitation',desc:'Penetration testing framework'},{name:'Nmap',ico:'📡',cat:'Scanning',desc:'Network port scanner'},{name:'Responder',ico:'📡',cat:'MITM',desc:'LLMNR/NBT-NS poisoner'},{name:'NetExec',ico:'🌐',cat:'AD Lateral',desc:'Network/AD Swiss-army knife (actively-maintained CrackMapExec successor — use this, not the archived original)'},{name:'Mimikatz',ico:'💎',cat:'Credential',desc:'Windows credential extraction'},{name:'Chisel',ico:'🔧',cat:'Pivoting',desc:'HTTP TCP tunnelling tool'},{name:'Ligolo-ng',ico:'🔗',cat:'Pivoting',desc:'TLS-based tunnelling agent'}],
+certs:[{code:'eJPT',name:'eLearnSecurity Jr Pentester',body:'eLearnSecurity',level:'Entry',color:'#e67e22'},{code:'PNPT',name:'Practical Network Pentester',body:'TCM Security',level:'Intermediate',color:'#8B4513'}],
+iq:['Walk through a full network pentest methodology','What is Kerberoasting and how to defend?','Explain Pass-the-Hash vs Pass-the-Ticket','How to PrivEsc on Linux with a SUID binary?'],
+resources:[{ico:'💥',name:'Metasploit Unleashed (Free)',type:'Course',url:'https://offensive-security.com/metasploit-unleashed/',free:true},{ico:'🎯',name:'VulnHub Machines',type:'Lab',url:'https://vulnhub.com',free:true},{ico:'📚',name:'The Hacker Playbook 3',type:'Book',url:'https://www.amazon.com/Hacker-Playbook-Practical-Penetration-Testing/dp/1980901759',free:false},{ico:'🎓',name:'TCM PEH Course',type:'Course',url:'https://academy.tcm-sec.com',free:false}]
+},
+{id:'cloud',title:'Cloud Security (AWS / Azure / GCP) + Zero Trust',icon:'☁',phase:2,cp:['cloud'],diff:'Intermediate',timeEst:'7 weeks',
+desc:'Secure cloud infrastructure, detect misconfigs, exploit cloud-specific vulnerabilities across AWS, Azure, and GCP. Zero Trust principles are taught here as APPLIED cloud/IAM concepts (conditional access, microsegmentation) rather than a separate architecture track — that\'s how they actually show up in real cloud security jobs.',
+topics:[{id:'cl1',t:'Cloud IAM privilege escalation (universal concept — over-permissioned roles → lateral movement/takeover): learn this once, then apply the SAME logic across AWS/Azure/GCP below'},{id:'cl2',t:'AWS: IAM policies/roles/SCPs/permission boundaries, GuardDuty, Security Hub, CloudTrail, WAF'},{id:'cl3',t:'AWS misconfigurations: public S3, IMDSv1 metadata abuse, overly permissive IAM'},{id:'cl4',t:'Azure: Entra ID app registrations/service principals/managed identities/RBAC, Defender XDR, Sentinel'},{id:'cl6',t:'GCP: IAM, Security Command Center, VPC Service Controls, Workload Identity'},{id:'cl7',t:'Cloud forensics: CloudTrail logs, VPC Flow Logs, S3 access logs, audit investigation'},{id:'cl8',t:'CSPM: Prowler, Scout Suite, Checkov — posture management and misconfiguration detection'},{id:'cl9',t:'IaC security: tfsec, Checkov, KICS — scanning Terraform, CloudFormation, Pulumi'},{id:'cl10',t:'Kubernetes security: RBAC design, admission controllers/OPA-Gatekeeper, network policies, secrets management (external-secrets/Vault), service mesh mTLS'},{id:'cl11',t:'Container security: Trivy, Falco, Docker Bench, seccomp, AppArmor'},{id:'z1',t:'[Applied Zero Trust] Conditional access & risk-based authentication in cloud IAM (Entra Conditional Access / AWS IAM Identity Center context policies)'},{id:'z2',t:'[Applied Zero Trust] Microsegmentation at cloud network level: security groups, NSGs, VPC Service Controls as a ZT control, not a separate architecture discipline'}],
+projects:[
+{title:'Secure AWS Infrastructure Lab',diff:'Intermediate',obj:'Build secure AWS env with Terraform: IAM least privilege, VPC segmentation, CloudTrail, GuardDuty, Config rules, WAF.',skills:['AWS','IAM','CloudTrail','VPC','Terraform','GuardDuty'],tools:['AWS CLI','Terraform','Prowler'],time:'10h',deliverables:['Terraform code (IaC)','Security assessment','Architecture diagram (draw.io)']},
+{title:'Cloud Attack Simulation',diff:'Advanced',obj:'Complete flaws.cloud (all levels) and flaws2.cloud (attacker+defender paths). Document both perspectives.',skills:['AWS Exploitation','Cloud Forensics','IAM PrivEsc','CloudTrail'],tools:['AWS CLI','flaws.cloud'],time:'8h',deliverables:['Attack walkthrough report','Defense implementation guide']},
+{title:'CSPM Assessment',diff:'Intermediate',obj:'Run Prowler and Scout Suite against AWS/Azure free tier accounts. Compare findings. Write remediation report.',skills:['Prowler','Scout Suite','Cloud Posture','CSPM'],tools:['Prowler','Scout Suite'],time:'5h',deliverables:['CSPM_Report.pdf','Remediation_plan.xlsx']},
+{title:'Kubernetes Hardening Lab',diff:'Advanced',obj:'Deploy a K8s cluster (kind/minikube), then harden it: write RBAC least-privilege roles, deploy OPA-Gatekeeper admission policies, enforce network policies, integrate Vault for secrets.',skills:['Kubernetes','RBAC','OPA-Gatekeeper','Network Policies','Vault'],tools:['kubectl','kind/minikube','OPA-Gatekeeper','Vault'],time:'8h',deliverables:['Hardened cluster manifests (YAML)','Policy documentation','Before/after security scan (kube-bench)']},
+],
+labs:[{title:'flaws.cloud — AWS Vulnerable Lab',desc:'6 progressive challenges exploiting S3 misconfigs, IAM issues, EC2 metadata, Lambda, and Elastic Beanstalk.',tools:'AWS CLI, Browser',time:'5h',color:'#FF8C42'},{title:'CloudGoat — Rhino Security Labs',desc:'8 vulnerable-by-design AWS scenarios: ECS takeover, IAM escalation, Lambda abuse, S3 chaining.',tools:'Terraform, AWS CLI, CloudGoat',time:'10h',color:'#FF8C42'},{title:'KubernetesGoat Lab',desc:'13 intentionally vulnerable K8s scenarios: RBAC abuse, container escape, secrets theft, network policy bypass.',tools:'kubectl, Docker, Kubernetes',time:'8h',color:'#4A9FFF'}],
+tools:[{name:'Prowler',ico:'🔍',cat:'CSPM',desc:'Multi-cloud security auditing'},{name:'Scout Suite',ico:'🎯',cat:'CSPM',desc:'Multi-cloud security posture'},{name:'Checkov',ico:'✅',cat:'IaC Security',desc:'IaC static analysis'},{name:'Trivy',ico:'🔬',cat:'Container/SBOM',desc:'Vulnerability & SBOM scanner'},{name:'Falco',ico:'🦅',cat:'Runtime Security',desc:'Container runtime security'},{name:'Terraform',ico:'🏗',cat:'IaC',desc:'Infrastructure as code'},{name:'OPA-Gatekeeper',ico:'🚪',cat:'K8s Policy',desc:'Kubernetes admission control policy engine'},{name:'kube-bench',ico:'✅',cat:'K8s Audit',desc:'CIS Kubernetes benchmark scanner'}],
+certs:[{code:'AZ-500',name:'Azure Security Engineer',body:'Microsoft',level:'Associate',color:'#0078d4'},{code:'AWS-Sec',name:'AWS Security Specialty',body:'AWS',level:'Specialty',color:'#FF9900'},{code:'CCSP',name:'Certified Cloud Security Pro',body:'ISC2',level:'Advanced',color:'#1D4E89'},{code:'CKS',name:'Certified Kubernetes Security',body:'CNCF',level:'Advanced',color:'#326CE5'}],
+iq:['IMDSv1 vs IMDSv2 and metadata attacks','Detect IAM privilege escalation in CloudTrail','What is a confused deputy attack in cloud?','Core principles of Zero Trust applied to cloud IAM?','How does Kubernetes RBAC differ from cloud IAM RBAC?'],
+resources:[{ico:'☁',name:'flaws.cloud (Free)',type:'Lab',url:'http://flaws.cloud',free:true},{ico:'🐐',name:'CloudGoat',type:'Lab',url:'https://github.com/RhinoSecurityLabs/cloudgoat',free:true},{ico:'📚',name:'Hacking the Cloud',type:'Reference',url:'https://hackingthe.cloud',free:true}]
+},
+{id:'dfir',title:'Digital Forensics & Incident Response',icon:'🔬',phase:2,cp:['dev','soc'],diff:'Intermediate',timeEst:'4 weeks',
+desc:'Respond to security incidents, conduct forensic investigations, collect digital evidence, and reconstruct timelines.',
+topics:[{id:'d1',t:'IR lifecycle: PICERL — Preparation, Identification, Containment, Eradication, Recovery, Lessons Learned'},{id:'d2',t:'Memory forensics: Volatility3 plugins — pstree, netscan, cmdline, malfind, dlllist, envars'},{id:'d3',t:'Disk forensics: Autopsy, FTK Imager, KAPE — file system, $MFT, LNK, shellbags, prefetch'},{id:'d4',t:'Windows artifacts: NTUSER.dat, UserAssist, RecentDocs, SRUM, BAM/DAM, Amcache'},{id:'d5',t:'Log forensics: Security event correlation, PowerShell logging, Sysmon config and review'},{id:'d6',t:'Network forensics: PCAP timeline reconstruction, C2 beacon identification'},{id:'d7',t:'Timeline analysis: log2timeline/Plaso, KAPE triage, Hayabusa Windows event analysis'},{id:'d8',t:'Dynamic malware indicators: process hollowing, DLL injection, RunPE, process doppelgänging'},{id:'d9',t:'Chain of custody: evidence handling, write blockers, hashing evidence, legal documentation'},{id:'d10',t:'[HABIT — see also Threat Hunting domain] Read one real IR case study per week (CISA advisories, Mandiant M-Trends) — the fastest way to build investigative pattern recognition, free and lab-free'}],
+projects:[
+{title:'Ransomware IR Simulation',diff:'Intermediate',obj:'Simulate ransomware attack in lab. Full IR: triage → contain → collect evidence → eradicate → timeline → report.',skills:['IR','Volatility3','KAPE','Sysmon','Evidence Collection'],tools:['Volatility3','Autopsy','KAPE','Sysmon'],time:'10h',deliverables:['IR_Report.pdf','Evidence_Timeline.xlsx','Lessons_Learned.md']},
+{title:'MemLabs All 6 Challenges',diff:'Intermediate',obj:'Complete all 6 MemLabs memory forensics challenges using Volatility3. Write detailed analysis for each.',skills:['Volatility3','Memory Analysis','Malware Detection in RAM'],tools:['Volatility3','Python'],time:'8h',deliverables:['6x analysis reports (Markdown)']},
+],
+labs:[{title:'MemLabs Memory Forensics CTF',desc:'6 progressive memory forensics challenges. Practice finding malware, credentials, processes, network connections in RAM.',tools:'Volatility3, Python',time:'8h',color:'#B06DFF'},{title:'Sysmon + DFIR Lab',desc:'Deploy Sysmon with SwiftOnSecurity config. Simulate attack. Use KAPE, Hayabusa, and Volatility3 for post-incident forensics.',tools:'Sysmon, KAPE, Hayabusa, Autopsy',time:'8h',color:'#B06DFF'}],
+tools:[{name:'Volatility3',ico:'🧠',cat:'Memory Forensics',desc:'Memory forensics framework'},{name:'Autopsy',ico:'🔬',cat:'Disk Forensics',desc:'Digital forensics platform'},{name:'KAPE',ico:'⚡',cat:'Collection',desc:'Artifact collection and processing'},{name:'Velociraptor',ico:'🦖',cat:'EDR/Forensics',desc:'Endpoint forensics hunting'},{name:'Hayabusa',ico:'🦅',cat:'Log Analysis',desc:'Windows event log threat hunting'}],
+certs:[{code:'GCFA',name:'GIAC Forensic Analyst',body:'GIAC',level:'Advanced',color:'#1B4F72'},{code:'GCIH',name:'Incident Handler',body:'GIAC',level:'Intermediate',color:'#1B4F72'}],
+iq:['Explain process hollowing and how to detect it in memory','Windows artifacts for a ransomware investigation?','How does Sysmon improve forensic capability?'],
+resources:[{ico:'🧠',name:'Volatility3 Docs',type:'Documentation',url:'https://volatility3.readthedocs.io',free:true},{ico:'🧪',name:'MemLabs Challenges',type:'Lab',url:'https://github.com/stuxnet999/MemLabs',free:true},{ico:'📚',name:'Art of Memory Forensics',type:'Book',url:'https://www.amazon.com/Art-Memory-Forensics-Detecting-Malware/dp/1118825098',free:false},{ico:'🦖',name:'Velociraptor Docs',type:'Documentation',url:'https://docs.velociraptor.app',free:true}]
+},
+{id:'devsec',title:'DevSecOps & Secure SDLC',icon:'🔄',phase:2,cp:['cloud','dev'],diff:'Intermediate',timeEst:'4 weeks',
+desc:'Shift security left. Integrate SAST, DAST, SCA, container scanning, and secrets detection into CI/CD pipelines — plus the actual secure coding patterns behind what those scanners look for (knowing WHY a pattern is unsafe, not just running a tool that flags it).',
+topics:[{id:'ds1',t:'Secure SDLC: security in requirements, design, implementation, testing, deployment'},{id:'ds2',t:'SAST: Semgrep, SonarQube, Bandit, CodeQL — static analysis in pipeline'},{id:'ds3',t:'DAST: OWASP ZAP, Nuclei in CI/CD — dynamic testing against live environments'},{id:'ds4',t:'SCA: Dependency-Track, Snyk, OWASP Dependency-Check — open source risk'},{id:'ds5',t:'Secrets management: TruffleHog, gitleaks, Vault, AWS Secrets Manager, SOPS'},{id:'ds6',t:'CI/CD hardening: GitHub Actions security, OIDC, branch protection, artifact signing'},{id:'ds7',t:'IaC security: tfsec, Checkov, KICS — Terraform/CloudFormation/Ansible scanning'},{id:'ds8',t:'SBOM: CycloneDX, SPDX generation with Trivy, Syft — software supply chain'},{id:'ds9',t:'Container hardening: Trivy, Falco, distroless images, rootless containers, seccomp'},{id:'ds10',t:'[SECURE CODING] Parameterized queries done correctly per-language (Python/Node/Java) — why string concatenation is unsafe even when "sanitized"'},{id:'ds11',t:'[SECURE CODING] Memory-safety patterns in C/C++: bounds checking, safe string functions, why Rust/Go are increasingly preferred for new systems code'},{id:'ds12',t:'[SECURE CODING] Dependency confusion attacks: private package namespace squatting, lockfile integrity, why "latest" versions are a supply-chain risk'},{id:'ds13',t:'[SECURE CODING] Safe deserialization patterns: why pickle/Java serialization/PHP unserialize are dangerous by default, safe alternatives'}],
+projects:[{title:'Complete Secure CI/CD Pipeline',diff:'Advanced',obj:'GitHub Actions: SAST (Semgrep), SCA (Dependency-Track), secrets scan (TruffleHog), container scan (Trivy), DAST (ZAP).',skills:['GitHub Actions','SAST','DAST','SCA','Docker','Trivy'],tools:['GitHub Actions','Semgrep','Trivy','OWASP ZAP'],time:'8h',deliverables:['Working pipeline (.github/workflows/)','Security gate configs','Pipeline documentation']},{title:'STRIDE Threat Model',diff:'Intermediate',obj:'Threat model a web application using STRIDE. OWASP Threat Dragon DFDs. Map mitigations.',skills:['STRIDE','Threat Modeling','OWASP Threat Dragon','Risk Assessment'],tools:['OWASP Threat Dragon','draw.io'],time:'5h',deliverables:['Threat_Model.md','DFD diagrams','Mitigation_Register.xlsx']},{title:'Vulnerable Code Refactor Challenge',diff:'Intermediate',obj:'Take 10 deliberately vulnerable code snippets (SQLi via string concat, insecure deserialization, unsafe C buffer handling) across 3 languages. Refactor each to the secure pattern and explain WHY in comments.',skills:['Secure Coding','Code Review','SQLi Prevention','Deserialization Safety'],tools:['OWASP Benchmark/Java','Python','Node.js'],time:'5h',deliverables:['10x before/after code pairs','Explanation_notes.md']}],
+labs:[{title:'DevSecOps Pipeline Lab',desc:'Deploy a deliberately vulnerable Node.js app. Build a full security gate pipeline. Fix all findings iteratively.',tools:'Jenkins/GitHub Actions, Semgrep, Trivy, ZAP',time:'10h',color:'#00E5CC'}],
+tools:[{name:'Semgrep',ico:'🔍',cat:'SAST',desc:'Open-source static analysis'},{name:'Trivy',ico:'🔬',cat:'Container/SBOM',desc:'Vulnerability and SBOM scanner'},{name:'TruffleHog',ico:'🐷',cat:'Secrets',desc:'Git secret detection'},{name:'Cosign',ico:'✍',cat:'Signing',desc:'Container image signing'},{name:'Falco',ico:'🦅',cat:'Runtime',desc:'Container runtime security'},{name:'Dependency-Track',ico:'📦',cat:'SCA',desc:'Open-source vulnerability management'}],
+certs:[{code:'CKS',name:'Certified Kubernetes Security',body:'CNCF',level:'Advanced',color:'#326CE5'}],
+iq:['SAST vs DAST — key differences?','How to prevent secrets being committed to Git?','What is a software supply chain attack?'],
+resources:[{ico:'🔍',name:'Semgrep Docs',type:'Documentation',url:'https://semgrep.dev/docs/',free:true},{ico:'📚',name:'OWASP DevSecOps Guide',type:'Documentation',url:'https://owasp.org/www-project-devsecops-guideline/',free:true}]
+},
+{id:'malware',title:'Malware Analysis',icon:'🦠',phase:2,cp:['dev'],diff:'Intermediate',timeEst:'4 weeks',
+desc:'Analyse real malware: static analysis with Ghidra, dynamic analysis in sandboxes, IOC extraction, and YARA rule development.',
+topics:[{id:'m1',t:'Static analysis: PE structure, strings, imports, exports, entropy, hash lookup'},{id:'m2',t:'Dynamic analysis: ANY.RUN, Cuckoo — behavioral analysis (files, registry, network)'},{id:'m3',t:'Ghidra basics: disassembly, decompilation, function rename, cross-references, XREF'},{id:'m4',t:'YARA rules: string conditions, byte patterns, PE module, writing detection signatures'},{id:'m5',t:'Malware families: RATs, infostealers, ransomware, rootkits, loaders, droppers, backdoors'},{id:'m6',t:'Packed malware: UPX, custom packers, high entropy detection, manual unpacking basics'},{id:'m7',t:'Network IOCs: C2 domains, DGA patterns, fast-flux DNS, beaconing intervals'},{id:'m8',t:'Sandbox evasion: time delays, VM detection, user interaction checks, anti-debug'}],
+projects:[
+{title:'Malware Analysis Lab (x5 Samples)',diff:'Advanced',obj:'Analyse 5 samples from MalwareBazaar: static + dynamic. Extract IOCs, identify family. Write YARA rules for each.',skills:['Ghidra','ANY.RUN','YARA','PE Analysis','Static/Dynamic Analysis'],tools:['Ghidra','ANY.RUN','CFF Explorer','YARA','REMnux'],time:'15h',deliverables:['5x analysis reports','5x YARA rules','IOC_spreadsheet.xlsx']},
+{title:'YARA Rule Collection (x20)',diff:'Intermediate',obj:'Build YARA library detecting: ransomware families, RATs, stealers, packers, downloaders.',skills:['YARA','Pattern Matching','Malware Strings','PE Modules'],tools:['YARA','Python yarGen'],time:'6h',deliverables:['20x YARA rules','Test evidence','README.md']},
+],
+labs:[{title:'REMnux Malware Sandbox',desc:'Build REMnux sandbox. Analyse 5 samples: extract IOCs, C2 indicators, YARA signatures. Document methodology.',tools:'REMnux, Ghidra, YARA, Wireshark, FakeNet-NG',time:'10h',color:'#B06DFF'},{title:'MalwareBazaar Sample Hunt',desc:'Download 10 samples from MalwareBazaar. Perform triage analysis on all 10. Full analysis on 3.',tools:'ANY.RUN, VirusTotal, CFF Explorer, pe-tree',time:'8h',color:'#B06DFF'}],
+tools:[{name:'Ghidra',ico:'👻',cat:'RE (Primary)',desc:'NSA suite — learn this one deeply, it covers 95% of RE needs'},{name:'YARA',ico:'⚡',cat:'Detection',desc:'Malware classification rules'},{name:'ANY.RUN',ico:'🏃',cat:'Sandbox',desc:'Interactive malware sandbox'},{name:'Radare2/Cutter/IDA Free',ico:'🔴',cat:'RE (Alternatives)',desc:'Only explore these once Ghidra-fluent and you have a specific reason (e.g. IDA decompiler quality on obscure architectures)'}],
+certs:[{code:'GREM',name:'GIAC Reverse Eng Malware',body:'GIAC',level:'Advanced',color:'#1B4F72'},{code:'GCFE',name:'GIAC Forensic Examiner',body:'GIAC',level:'Advanced',color:'#1B4F72'}],
+iq:['Walk through analysis of a suspicious executable','How to detect process injection in a memory dump?','Dropper vs loader — what is the difference?'],
+resources:[{ico:'🦠',name:'MalwareBazaar Samples',type:'Database',url:'https://bazaar.abuse.ch',free:true},{ico:'👻',name:'Ghidra Documentation',type:'Documentation',url:'https://ghidra-sre.org',free:true},{ico:'📚',name:'Practical Malware Analysis',type:'Book',url:'https://nostarch.com/malware',free:false},{ico:'🏃',name:'ANY.RUN Sandbox',type:'Tool',url:'https://app.any.run',free:true}]
+},
+]},
+{id:'p3',phase:3,title:'Phase 3: Advanced Security',level:'Advanced',color:'#FF6B6B',grad:'linear-gradient(135deg,#FF6B6B,#FF8C42)',duration:'6–12 months',timeEst:'20+ hrs/week',
+desc:'Advanced red team, threat hunting, AI/LLM security, wireless & IoT, threat intelligence, and zero trust implementation.',
+objectives:['Lead advanced red team operations','Threat hunt at enterprise scale','Perform AI/LLM security assessments','Architect zero trust systems','Build threat intelligence programs'],
+outcomes:['Senior pentester/red team operator ready','Complex incident response leadership','Threat intelligence analyst capability','Security architect foundations'],
+prereqs:['Phase 2 complete','At least one professional cert','Real-world lab experience (500+ hours)'],
+portfolio:['Advanced pentest reports (internal/AD/cloud)','Custom C2 or offensive tool','Published bug bounty finding or CVE','Conference talk submission'],
+domains:[
+{id:'red',title:'Advanced Red Team & C2',icon:'🎯',phase:3,cp:['red'],diff:'Advanced',timeEst:'8 weeks',
+desc:'Full red team engagements: APT emulation, C2 infrastructure, EDR evasion, advanced AD attacks, and physical security.',
+topics:[{id:'r1',t:'APT emulation: ATT&CK-aligned campaigns, threat actor profile selection, TIBER-EU'},{id:'r2',t:'C2 frameworks: Sliver, Havoc — infrastructure, redirectors, malleable profiles (Cobalt Strike is commercial/paid — reference only, not required)'},{id:'r3',t:'AV/EDR evasion: AMSI bypass, ETW patching, process injection (classic, ghosting, hollowing)'},{id:'r4',t:'[Builds on IAM domain Kerberos/NTLM basics] Advanced AD: ACL abuse (WriteDACL, GenericAll), delegation (unconstrained/constrained/RBCD)'},{id:'r5',t:'Lateral movement: WMI, DCOM, SMBExec, WinRM, named pipes, token impersonation'},{id:'r6',t:'Persistence: registry run, scheduled tasks, WMI subscriptions, DLL side-loading, BITS jobs'},{id:'r7',t:'Data exfiltration: DNS tunneling, HTTP staging, cloud storage, steganography, OOB channels'},{id:'r8',t:'Red team OPSEC: infrastructure OPSEC, C2 traffic blending, IOC minimisation, attribution avoidance'}],
+projects:[
+{title:'Full Red Team Engagement (GOAD)',diff:'Advanced',obj:'ATT&CK-aligned engagement against GOAD lab: recon → initial access → C2 → lateral → DCSync → exfil → report.',skills:['Red Team','C2','AD Attacks','OPSEC','ATT&CK Mapping'],tools:['Sliver','BloodHound','Impacket','Kali'],time:'20h',deliverables:['Engagement_Plan.docx','ATT&CK Navigator layer','Full_Red_Team_Report.pdf']},
+{title:'Sliver C2 Tradecraft Mastery',diff:'Advanced',obj:'Deep operational proficiency with Sliver: custom malleable-style HTTP profiles, staged/stageless payload generation, multiplayer teamserver setup, EDR evasion testing against a Defender-enabled endpoint.',skills:['Sliver','C2 Operations','Payload Generation','EDR Evasion','OPSEC'],tools:['Sliver','Windows Defender lab VM'],time:'15h',deliverables:['Sliver_operator_notes.md','Custom_profile_configs/','Evasion_test_results.md']},
+],
+labs:[{title:'CRTO Exam Preparation Lab',desc:'Build C2-ready red team lab: Sliver + multi-DC domain. Practice all CRTO techniques systematically.',tools:'Sliver, BloodHound, Kali, Windows Server',time:'40h',color:'#FF4757'}],
+tools:[{name:'Sliver',ico:'🐍',cat:'C2 (Primary)',desc:'Open-source C2 framework — free, use this'},{name:'Havoc',ico:'👿',cat:'C2 (Alternative)',desc:'Modern open-source C2'},{name:'Mimikatz',ico:'💎',cat:'Credentials',desc:'Windows credential extraction'},{name:'Rubeus',ico:'🎫',cat:'Kerberos',desc:'Kerberos attack toolkit'},{name:'SharpHound',ico:'🐕',cat:'AD Recon',desc:'BloodHound data collector'}],
+certs:[{code:'CRTO',name:'Certified Red Team Operator',body:'Zero-Point Security',level:'Advanced',color:'#8B0000'},{code:'OSCP',name:'Offensive Security Certified',body:'OffSec',level:'Advanced',color:'#D4380D'}],
+iq:['How to establish persistence that survives reboot?','Explain unconstrained Kerberos delegation attack','How do EDR tools detect process injection?'],
+resources:[{ico:'🗡',name:'MITRE ATT&CK',type:'Framework',url:'https://attack.mitre.org',free:true},{ico:'📋',name:'C2 Matrix',type:'Reference',url:'https://www.thec2matrix.com',free:true},{ico:'🐍',name:'Sliver C2 Docs',type:'Documentation',url:'https://github.com/BishopFox/sliver',free:true}]
+},
+{id:'hunting',title:'Threat Hunting & Threat Intelligence',icon:'🏹',phase:3,cp:['soc','dev'],diff:'Advanced',timeEst:'5 weeks',
+desc:'Proactively hunt for threats that evaded detection using hypothesis-driven methodology and behavioral analytics. Also covers Threat Intelligence as its own distinct skillset — the intelligence cycle, structured analytic techniques, and attribution — not just "a tool you point at IOCs."',
+topics:[{id:'h1',t:'Threat hunting methodology: hypothesis → data collection → analysis → investigation → documentation'},{id:'h2',t:'Data sources: Sysmon, EDR telemetry, DNS logs, proxy logs, email headers, NetFlow'},{id:'h3',t:'Behavioral analytics: baselining normal, peer group analysis, rare process parent-child'},{id:'h4',t:'Query languages: EQL (Elastic), KQL (Microsoft), SPL (Splunk), VQL (Velociraptor)'},{id:'h5',t:'Hunt scenarios: LOLBins abuse, beaconing detection, credential dumping, lateral movement'},{id:'h6',t:'Atomic Red Team: testing detection gaps, threat hunting after controlled simulations'},{id:'h7',t:'Threat hunting reports: hypothesis, data sources, queries, findings, detection recommendations'},{id:'h8',t:'[THREAT INTEL SKILLSET] The intelligence cycle: direction, collection, processing, analysis, dissemination, feedback'},{id:'h9',t:'[THREAT INTEL SKILLSET] Diamond Model of Intrusion Analysis, structured analytic techniques (ACH), confidence levels'},{id:'h10',t:'[THREAT INTEL SKILLSET] TLP (Traffic Light Protocol) handling, attribution methodology, avoiding analyst bias'},{id:'h11',t:'[HIGHEST VALUE-PER-HOUR HABIT] Real breach case study analysis: read incident reports (SolarWinds, MOVEit/Cl0p, Change Healthcare, MGM/Caesars) and reverse-map them to MITRE ATT&CK yourself — free, no lab required, builds pattern recognition faster than almost anything else'}],
+projects:[
+{title:'Threat Hunting Program',diff:'Advanced',obj:'Build formal threat hunting program: 10 hypothesis-driven hunts mapped to ATT&CK. Sigma rules for each gap found.',skills:['Threat Hunting','EQL/KQL','Sigma','ATT&CK','Velociraptor'],tools:['Elastic/Splunk','Velociraptor','Atomic Red Team'],time:'15h',deliverables:['10 Hunt Playbooks','Gap Sigma rules','ATT&CK coverage heatmap']},
+{title:'Breach Case Study Portfolio',diff:'Intermediate',obj:'Pick 5 real, publicly-documented breaches. For each: read the official/vendor incident report, build your own ATT&CK Navigator layer mapping the attack chain, and write a 1-page "what detection would have caught this earlier" analysis.',skills:['ATT&CK Mapping','Incident Analysis','Pattern Recognition','Report Writing'],tools:['ATT&CK Navigator','Public incident reports'],time:'8h',deliverables:['5x breach analysis writeups','5x ATT&CK Navigator layers (.json)']},
+{title:'Purple Team Exercise',diff:'Advanced',obj:'Pick one technique from the Advanced Red Team domain (e.g. Kerberoasting). Execute it live in your lab, then in the SAME sitting build and test the matching Sigma detection rule from the SIEM domain. Document the full attack→detect cycle.',skills:['Purple Teaming','ATT&CK','Sigma','Red/Blue Collaboration'],tools:['Sliver/Rubeus','Wazuh/ELK','Sigma'],time:'5h',deliverables:['Attack execution log','Matching Sigma rule','Attack-to-detection timeline writeup']},
+],
+labs:[{title:'Atomic Red Team Detection Lab',desc:'Execute 50 Atomic Red Team tests. Verify detection fires (or not). Tune/create rules. Build coverage heatmap.',tools:'Atomic Red Team, Wazuh/ELK, ATT&CK Navigator',time:'15h',color:'#FF8C42'}],
+tools:[{name:'Atomic Red Team',ico:'⚛',cat:'Simulation',desc:'ATT&CK-aligned atomic tests'},{name:'Velociraptor',ico:'🦖',cat:'Hunting',desc:'Endpoint forensics and hunting'},{name:'CALDERA',ico:'🤖',cat:'Emulation',desc:'Automated adversary emulation'},{name:'OpenCTI',ico:'🕸',cat:'Threat Intel',desc:'Open-source threat intel platform'},{name:'MISP',ico:'📡',cat:'Threat Intel',desc:'Malware/threat sharing platform'}],
+certs:[{code:'GCIA',name:'Intrusion Analyst',body:'GIAC',level:'Advanced',color:'#1B4F72'},{code:'CTIA',name:'Certified Threat Intel Analyst',body:'EC-Council',level:'Advanced',color:'#e67e22'}],
+iq:['Threat hunting hypothesis for Cobalt Strike beaconing?','Distinguish malicious vs benign PowerShell?','Walk through the intelligence cycle','What is the Diamond Model and how do you apply it to an intrusion?','Pick a real breach and map its attack chain to ATT&CK from memory'],
+resources:[{ico:'⚛',name:'Atomic Red Team',type:'Lab',url:'https://github.com/redcanaryco/atomic-red-team',free:true},{ico:'🏹',name:'ThreatHunter Playbook',type:'Reference',url:'https://github.com/OTRF/ThreatHunter-Playbook',free:true},{ico:'📰',name:'Mandiant M-Trends Reports (Free)',type:'Reports',url:'https://www.mandiant.com/m-trends',free:true},{ico:'📋',name:'CISA Advisories & Incident Reports',type:'Reports',url:'https://www.cisa.gov/news-events/cybersecurity-advisories',free:true}]
+},
+{id:'ai',title:'AI & LLM Security',icon:'🤖',phase:3,cp:['all','red'],diff:'Advanced',timeEst:'4 weeks',
+desc:'⚠ HONESTY NOTE: this domain differentiates an ALREADY-SKILLED practitioner — dedicated "AI Security Engineer" job postings almost always require 5+ years of traditional security experience first. Very few 2026 postings hire for AI security as a first security role. If you have not yet completed Phases 0-2 fundamentals, prioritise those before this domain, regardless of how interesting this content is. That said: prompt injection, adversarial ML, model poisoning, LLM red teaming, and AI system defense are genuinely the fastest-growing attack surface, and worth learning once your fundamentals are solid.',
+topics:[{id:'ai1',t:'LLM architecture: transformers, attention mechanisms, tokenisation, RLHF, RAG systems'},{id:'ai2',t:'Prompt injection: direct injection, indirect injection, jailbreaking, system prompt exfiltration'},{id:'ai3',t:'OWASP LLM Top 10: injection, insecure output handling, training data poisoning, plugin attacks'},{id:'ai4',t:'Adversarial ML: evasion attacks (dodging classifiers), model extraction, membership inference'},{id:'ai5',t:'MITRE ATLAS: adversarial ML attack taxonomy, documented threat actor campaigns'},{id:'ai6',t:'AI red teaming: systematic probing, PyRIT framework, Garak automated scanning'},{id:'ai7',t:'LLM defense: input guardrails, output filtering, PII redaction, prompt injection detection'},{id:'ai8',t:'AI supply chain: poisoned training datasets, malicious model weights, HuggingFace risks'}],
+projects:[
+{title:'LLM Application Security Assessment',diff:'Advanced',obj:'Systematic assessment of an LLM app: test all OWASP LLM Top 10. Use Garak and manual techniques. Write report.',skills:['Prompt Injection','LLM Security','Garak','OWASP LLM'],tools:['Garak','PyRIT','API access'],time:'8h',deliverables:['LLM_Security_Report.pdf','poc_prompts.txt','Remediation_guide.md']},
+{title:'[BONUS / PORTFOLIO DIFFERENTIATOR — not core, do this only after SIEM/Sigma fluency] AI-Powered SOC Assistant',diff:'Advanced',obj:'Build LLM-powered alert classifier: classify severity, map to ATT&CK, generate analyst summaries via Claude API. This is a nice-to-have differentiator, not a substitute for core SIEM/Sigma skill from Phase 1 — don\'t let it compete for time against Threat Hunting or Red Team work in this same phase.',skills:['Python','LLM APIs','scikit-learn','Security Automation'],tools:['Python','Anthropic API'],time:'10h',deliverables:['alert_classifier.py','demo_notebook.ipynb','README.md']},
+],
+labs:[{title:'Gandalf Prompt Injection (All Levels)',desc:'Complete all Gandalf.lakera.ai levels. Document every technique that bypassed each defence layer.',tools:'Browser, Gandalf',time:'3h',color:'#00F5D4'},{title:'Garak LLM Scanner',desc:'Run Garak against a locally-hosted open-source LLM (Ollama). Document all probe results and severity.',tools:'Garak, Ollama, Python',time:'4h',color:'#00F5D4'}],
+tools:[{name:'Garak',ico:'🔍',cat:'LLM Testing',desc:'LLM vulnerability scanner'},{name:'PyRIT',ico:'🛡',cat:'AI Red Team',desc:'Microsoft AI red teaming framework'},{name:'Guardrails AI',ico:'🔒',cat:'LLM Defense',desc:'LLM output validation library'},{name:'NeMo Guardrails',ico:'🤖',cat:'LLM Defense',desc:'NVIDIA LLM safety framework'},{name:'Presidio',ico:'🔏',cat:'Privacy',desc:'Microsoft PII detection/anonymization'}],
+certs:[{code:'AI Security',name:'AI Security Fundamentals',body:'CSA/SANS',level:'Intermediate',color:'#00F5D4'}],
+iq:['Indirect vs direct prompt injection — difference?','Defend an LLM app against prompt injection?','What is model extraction and why is it a business risk?'],
+resources:[{ico:'📋',name:'OWASP LLM Top 10',type:'Documentation',url:'https://owasp.org/www-project-top-10-for-large-language-model-applications/',free:true},{ico:'🎯',name:'MITRE ATLAS',type:'Framework',url:'https://atlas.mitre.org',free:true},{ico:'🧙',name:'Gandalf Lakera',type:'Lab',url:'https://gandalf.lakera.ai',free:true}]
+},
+{id:'wireless',title:'Mobile Application Security (+ Optional Wireless/IoT)',icon:'📱',phase:3,cp:['red'],diff:'Advanced',timeEst:'2 weeks core + 1 week optional',
+desc:'Core focus: Android/iOS app security — a genuine, hireable AppSec specialty. Wi-Fi/Bluetooth/IoT/RF topics are marked OPTIONAL — low job-market demand outside a handful of specialist roles; only pursue if your target role specifically requires it.',
+topics:[{id:'w3',t:'[CORE] Android security: APK analysis with JADX, Frida hooking, SSL pinning bypass'},{id:'w4',t:'[CORE] iOS security: IPA analysis, Objection framework, certificate pinning bypass'},{id:'w1',t:'[OPTIONAL — niche] Wi-Fi attacks: WPA2 handshake capture, PMKID, evil twin, deauth'},{id:'w2',t:'[OPTIONAL — niche] Bluetooth: BLE sniffing, bluebugging, BT pairing vulnerabilities'},{id:'w5',t:'[OPTIONAL — niche] IoT attack surface: default credentials, Shodan discovery, firmware extraction'},{id:'w6',t:'[OPTIONAL — niche] Firmware analysis: Binwalk extraction, strings, emulation with QEMU'}],
+projects:[{title:'Android APK Security Analysis',diff:'Advanced',obj:'Reverse engineer a vulnerable Android APK (DIVA, InsecureBankv2). Bypass SSL pinning, extract creds, document vulns.',skills:['JADX','Frida','Objection','Android Security'],tools:['JADX','Frida','ADB','Objection'],time:'6h',deliverables:['APK_Analysis_Report.pdf','poc_scripts/']},{title:'[OPTIONAL] Wi-Fi Security Audit',diff:'Advanced',obj:'Only if pursuing a wireless-focused role: audit test lab Wi-Fi with WPA2 crack + evil twin. Write audit report.',skills:['Aircrack-ng','Wi-Fi Security'],tools:['Kali','Aircrack-ng','hcxtools'],time:'6h',deliverables:['WiFi_Audit_Report.pdf']}],
+labs:[],
+tools:[{name:'JADX',ico:'📱',cat:'Android RE',desc:'Android APK decompiler'},{name:'Frida',ico:'🔧',cat:'Dynamic Instrumentation',desc:'Dynamic analysis toolkit'},{name:'Objection',ico:'🎭',cat:'Mobile',desc:'Runtime mobile exploration'},{name:'Aircrack-ng',ico:'📡',cat:'Optional/Wireless',desc:'Wi-Fi security audit suite — only needed for wireless-focused roles'}],
+certs:[{code:'GWAPT',name:'Web App Penetration Tester',body:'GIAC',level:'Advanced',color:'#1B4F72'}],
+iq:['How to bypass SSL pinning on Android?','What is a typical mobile app insecure storage vulnerability?'],
+resources:[{ico:'🌐',name:'OWASP Mobile Top 10',type:'Documentation',url:'https://owasp.org/www-project-mobile-top-10/',free:true},{ico:'📡',name:'Aircrack-ng Docs (optional track)',type:'Documentation',url:'https://aircrack-ng.org/documentation.html',free:true}]
+},
+]},
+{id:'p4',phase:4,title:'Phase 4: Expert Mastery',level:'Expert',color:'#FF6FA6',grad:'linear-gradient(135deg,#FF6FA6,#B06DFF)',duration:'12–24+ months',timeEst:'20+ hrs/week',
+desc:'Expert specialisation: GRC, zero trust architecture, OT/ICS security, advanced research, and vulnerability research/CVE reporting.',
+objectives:['Design enterprise security architectures','Lead GRC programs (ISO 27001, NIST, PCI-DSS)','Contribute original vulnerability research','Mentor and lead security teams','Influence industry standards and practices'],
+outcomes:['CISO-ready security leader','Published security researcher','Zero trust architect','Expert certification holder'],
+prereqs:['Phase 3 complete','Professional security experience (1–3 years)','Multiple certifications'],
+portfolio:['Structured vulnerability research effort on 1-2 open-source projects (CVE not guaranteed — the process is the deliverable)','Conference talk submission to BSides (attainable) — DEF CON/Black Hat CFPs are single-digit acceptance rates, aim there only once established','Open-source tool with real documentation, tests, and a genuine use case (star count is a vanity metric, not a skill signal)','Enterprise security architecture designs'],
+domains:[
+{id:'grc',title:'GRC — Governance, Risk & Compliance',icon:'📋',phase:4,cp:['grc'],diff:'Advanced',timeEst:'6 weeks',
+desc:'Core frameworks: NIST CSF 2.0 + ISO 27001:2022 — learn these two deeply first. Everything else (GDPR, PCI-DSS, SOC 2) is industry-specific: only study the ones relevant to your target sector (e.g. fintech → PCI-DSS+SOC2, healthcare-adjacent → GDPR/privacy-focused). No GRC job requires deep expertise in all frameworks simultaneously.',
+topics:[{id:'g1',t:'[CORE] ISO/IEC 27001:2022: ISMS scope, Annex A controls, risk assessment, certification process'},{id:'g2',t:'[CORE] NIST CSF 2.0: Identify, Protect, Detect, Respond, Recover, Govern functions'},{id:'g7',t:'[CORE] Risk management: risk appetite, risk register, risk treatment (accept/transfer/mitigate/avoid)'},{id:'g9',t:'[CORE] Threat modeling: STRIDE (the widely-used one — learn this first; PASTA/LINDDUN/OCTAVE are optional extras for specialised privacy-engineering roles)'},{id:'g10',t:'[CORE] Data classification & DLP: public/internal/confidential/restricted labeling schemes, how DLP tooling enforces classification (relevant to GRC, SOC alert triage, and cloud bucket/S3 classification alike)'},{id:'g11',t:'[SPECIALISATION NOTE] Insider threat programs: how they differ from external-threat SOC monitoring, typical program structure (not a deep-dive — a specialisation note for awareness)'},{id:'g3',t:'[INDUSTRY-SPECIFIC — pick if relevant] CIS Controls v8: IG1/2/3 implementation groups'},{id:'g4',t:'[INDUSTRY-SPECIFIC — pick if relevant] GDPR: lawful basis, DPIAs, breach notification (72h)'},{id:'g5',t:'[INDUSTRY-SPECIFIC — pick if relevant] PCI DSS v4.0: cardholder data environment, 12 requirements'},{id:'g6',t:'[INDUSTRY-SPECIFIC — pick if relevant] SOC 2 Type 1/2: trust services criteria, audit readiness'},{id:'g8',t:'[INDUSTRY-SPECIFIC — pick if relevant] Third-party risk: vendor assessments, CAIQ, SIG questionnaires'}],
+projects:[
+{title:'ISO 27001 ISMS Design',diff:'Advanced',obj:'Design full ISMS for a fictional 500-person organisation: scope, risk assessment, Statement of Applicability, policy library.',skills:['ISO 27001','Risk Management','Policy Writing','ISMS Design'],tools:['Markdown','Excel'],time:'15h',deliverables:['ISMS_Documentation_Pack/','Risk_Register.xlsx','SoA.xlsx','Policy_Library/']},
+{title:'NIST CSF 2.0 Assessment',diff:'Intermediate',obj:'Perform CSF 2.0 assessment for a fictional org. Current state → target state. Build improvement roadmap.',skills:['NIST CSF','Gap Analysis','Maturity Assessment'],tools:['NIST CSF Tool','Excel'],time:'8h',deliverables:['CSF_Assessment_Report.pdf','Improvement_Roadmap.xlsx']},
+{title:'Data Classification Policy & DLP Design',diff:'Intermediate',obj:'Design a 4-tier data classification scheme for a fictional org, then map it to concrete DLP enforcement rules (email, cloud storage, endpoint).',skills:['Data Classification','DLP','Policy Writing'],tools:['Markdown/Excel'],time:'4h',deliverables:['Data_Classification_Policy.md','DLP_Rule_Mapping.xlsx']},
+],
+labs:[],
+tools:[{name:'NIST CSF Tool',ico:'🏛',cat:'Compliance',desc:'NIST CSF online assessment tool'},{name:'CIS-CAT Lite',ico:'📋',cat:'Hardening',desc:'Free CIS benchmark assessment'}],
+certs:[{code:'CISSP',name:'Certified Info Systems Security',body:'ISC2',level:'Expert',color:'#1D4E89'},{code:'CISM',name:'Certified Info Security Manager',body:'ISACA',level:'Expert',color:'#003366'},{code:'CISA',name:'Certified Info Systems Auditor',body:'ISACA',level:'Expert',color:'#003366'}],
+iq:['Explain FAIR model for cyber risk quantification','Walk through ISO 27001 risk treatment process','What triggers GDPR breach notification?','PCI DSS Requirement 8 — what does it cover?'],
+resources:[{ico:'🏛',name:'NIST CSF Official',type:'Documentation',url:'https://nist.gov/cyberframework',free:true},{ico:'📋',name:'CIS Controls v8',type:'Documentation',url:'https://cisecurity.org/controls/',free:true},{ico:'📚',name:'ISO 27001:2022 Standard',type:'Standard',url:'https://iso.org/isoiec-27001-information-security.html',free:false}]
+},
+
+{id:'ics',title:'[FULLY ELECTIVE] OT/ICS & Critical Infrastructure Security',icon:'🏭',phase:4,cp:['red','grc'],diff:'Expert',timeEst:'4 weeks',
+desc:'⚠ ELECTIVE — SKIP UNLESS TARGETING THIS SPECIALTY. Job postings requiring ICS/OT security are a tiny fraction of the market (utilities, manufacturing, defence contractors only), and the protocol knowledge here (Modbus, DNP3) doesn\'t transfer to any other domain in this roadmap. Only study this if you are specifically pursuing critical infrastructure security. Secure industrial control systems, SCADA, and critical infrastructure — availability takes priority over confidentiality.',
+topics:[{id:'i1',t:'ICS architecture: Purdue model levels (0–4), ISA/IEC 62443 zones and conduits'},{id:'i2',t:'Industrial protocols: Modbus, DNP3, OPC-UA, PROFINET, EtherNet/IP — packet analysis'},{id:'i3',t:'SCADA: historian, HMI, EWS, field devices, RTUs, PLCs — architecture and risks'},{id:'i4',t:'ICS threat landscape: Triton/TRISIS, Industroyer/Crashoverride, Stuxnet — case studies'},{id:'i5',t:'ATT&CK for ICS: 11 tactics, techniques, detection guidance for OT environments'},{id:'i6',t:'ICS-specific defences: passive monitoring, asset inventory, patch challenges, air-gap'},{id:'i7',t:'Standards: IEC 62443, NERC CIP, NIST SP 800-82, CISA ICS-CERT advisories'}],
+projects:[{title:'ICS Security Assessment Lab',diff:'Expert',obj:'Deploy OpenPLC + ScadaBR. Simulate production environment. Perform assessment mapped to IEC 62443.',skills:['ICS Security','OT Protocols','Passive Monitoring','IEC 62443'],tools:['OpenPLC','ScadaBR','Wireshark'],time:'10h',deliverables:['ICS_Assessment_Report.pdf','ATT&CK_for_ICS_mapping']}],
+labs:[{title:'OpenPLC Lab',desc:'Deploy OpenPLC runtime and ScadaBR HMI. Simulate Modbus traffic. Capture and analyse with Wireshark.',tools:'OpenPLC, ScadaBR, Wireshark',time:'6h',color:'#FF8C42'}],
+tools:[{name:'OpenPLC',ico:'⚙',cat:'ICS Lab',desc:'Open-source PLC runtime'},{name:'Claroty',ico:'🏭',cat:'OT Visibility',desc:'OT asset visibility platform'},{name:'Dragos',ico:'🐉',cat:'OT Security',desc:'ICS threat detection platform'}],
+certs:[{code:'GICSP',name:'Global ICS Professional',body:'GIAC',level:'Expert',color:'#1B4F72'}],
+iq:['How is ICS security fundamentally different from IT security?','How does Triton/TRISIS work and what was its target?','Explain Purdue Model levels 0–4'],
+resources:[{ico:'🏛',name:'ICS-CERT / CISA ICS',type:'Documentation',url:'https://cisa.gov/ics',free:true},{ico:'🗡',name:'ATT&CK for ICS',type:'Framework',url:'https://attack.mitre.org/matrices/ics/',free:true}]
+},
+{id:'research',title:'[ELECTIVE] Vulnerability Research & Exploit Development',icon:'🔬',phase:4,cp:['dev','red'],diff:'Expert',timeEst:'Ongoing',
+desc:'⚠ ELECTIVE — PURSUE ONLY IF TARGETING VULN RESEARCH / EXPLOIT DEV SPECIFICALLY. True 0-day/exploit-dev work employs a genuinely tiny share of the industry. Most "expert" tier practitioners by 3+ years are in GRC, architecture, management, or senior IR/red-team roles — not writing kernel exploits. If your goal is general red team or malware analysis competency, the Ghidra + RE skills already covered in Phase 2 Malware Analysis are sufficient — you do not need this domain. Advanced reverse engineering, exploit development, CVE reporting, fuzzing, and contributing original research to the community.',
+topics:[{id:'r1',t:'Advanced RE: anti-debugging tricks, obfuscation, VM-protected code, dynamic code gen'},{id:'r2',t:'Exploit development: buffer overflows, format strings, ROP chains, heap grooming'},{id:'r3',t:'Kernel exploitation: system call interface, driver vulns, privilege escalation to SYSTEM/root'},{id:'r4',t:'Fuzzing: AFL++, libFuzzer, grammar-based (Nautilus), corpus management, crash triage'},{id:'r5',t:'Vulnerability research methodology: code auditing, patch diffing, root cause analysis'},{id:'r6',t:'CVE process: discovery, PoC development, responsible disclosure timeline, CVE application'},{id:'r7',t:'Bug bounty: platform selection (HackerOne/Bugcrowd), methodology, impact demonstration'}],
+projects:[
+{title:'Structured Vulnerability Research',diff:'Expert',obj:'Audit 1-2 open-source applications for unpatched vulnerabilities using a documented methodology (patch diffing, fuzzing, code review). A CVE is a possible bonus outcome, not the goal — the deliverable is the research process and report itself.',skills:['Code Auditing','PoC Development','Responsible Disclosure','Fuzzing'],tools:['Ghidra','AFL++','GDB','pwntools'],time:'40h+',deliverables:['Methodology_documentation.md','Findings_report (vuln or negative-result writeup)','PoC code (if applicable)','Blog post on the research process']},
+{title:'Open-Source Security Tool',diff:'Expert',obj:'Develop and publish an open-source security tool that solves a real problem. Judge success by documentation quality, test coverage, and whether anyone besides you finds it useful — not by star count.',skills:['Python/Go/Rust','Security Engineering','Open Source','CI/CD'],tools:['GitHub','GitHub Actions'],time:'40h+',deliverables:['GitHub repository with full README + usage examples','Test suite + CI/CD pipeline','Documentation site','Blog announcement post']},
+],
+labs:[{title:'pwn.college — Advanced Exploitation',desc:'Complete all pwn.college dojos: shellcode injection, ROP chains, heap exploitation, format strings, kernel pwn.',tools:'Linux, GDB, pwntools',time:'80h+',color:'#FF4757'}],
+tools:[{name:'Ghidra',ico:'👻',cat:'RE',desc:'NSA reverse engineering suite'},{name:'AFL++',ico:'🎲',cat:'Fuzzing',desc:'Coverage-guided fuzzer'},{name:'pwntools',ico:'🔧',cat:'Exploit Dev',desc:'CTF exploit development'},{name:'GDB/pwndbg',ico:'🐛',cat:'Debugging',desc:'GNU debugger with pwndbg'},{name:'ROPgadget',ico:'⛓',cat:'ROP',desc:'ROP gadget finder tool'}],
+certs:[{code:'GXPN',name:'Expert Penetration Tester',body:'GIAC',level:'Expert',color:'#1B4F72'},{code:'OSWE',name:'Advanced Web Attacks & Exploitation',body:'OffSec',level:'Expert',color:'#D4380D'},{code:'OSEP',name:'Experienced Penetration Tester',body:'OffSec',level:'Expert',color:'#D4380D'}],
+iq:['Explain a ret2libc attack without ASLR','How does coverage-guided fuzzing work?','Walk through responsible vulnerability disclosure process'],
+resources:[{ico:'🎓',name:'pwn.college (Free)',type:'Lab',url:'https://pwn.college',free:true},{ico:'📚',name:'Hacking: Art of Exploitation',type:'Book',url:'https://nostarch.com/hacking2.htm',free:false},{ico:'⚗',name:'Exploit Education VMs',type:'Lab',url:'https://exploit.education',free:true}]
+},
+]},
+];
+
+const CAREER_PATHS=[
+{icon:'🛡',title:'SOC Analyst',sal:'$55k–$85k',color:'#4A9FFF',desc:'Monitor SIEM alerts, triage incidents, analyze logs, respond to threats in a security operations center.',skills:['SIEM','Log Analysis','Incident Response','ATT&CK','Threat Intel'],phases:[0,1],certs:['Security+','CySA+','SC-200']},
+{icon:'🔵',title:'Blue Team Engineer',sal:'$80k–$120k',color:'#00D4E4',desc:'Build and maintain detection capabilities, tune SIEM rules, develop playbooks, improve security posture.',skills:['Detection Engineering','Sigma Rules','SIEM','Threat Hunting','Python'],phases:[0,1,2],certs:['CySA+','GCIH','SC-200']},
+{icon:'🏹',title:'Threat Hunter',sal:'$90k–$130k',color:'#B06DFF',desc:'Proactively search enterprise environments for threats that evaded detection using behavioral analytics.',skills:['EQL/KQL/SPL','ATT&CK','Behavioral Analytics','Python','Velociraptor'],phases:[0,1,2,3],certs:['GCIH','GCIA','CySA+']},
+{icon:'🔬',title:'Incident Responder',sal:'$85k–$125k',color:'#FF8C42',desc:'Respond to security breaches, conduct forensic investigations, contain and eradicate threats.',skills:['Memory Forensics','Disk Forensics','Volatility','KAPE','Timeline Analysis'],phases:[0,1,2,3],certs:['GCFA','GCIH','GCFE']},
+{icon:'⚔',title:'Penetration Tester',sal:'$80k–$130k',color:'#FF6B6B',desc:'Simulate attacks to identify vulnerabilities in networks, web applications, and Active Directory.',skills:['Metasploit','Burp Suite','Active Directory','Python','Reporting'],phases:[0,1,2,3],certs:['eJPT','PNPT','OSCP']},
+{icon:'🎯',title:'Red Team Operator',sal:'$100k–$160k',color:'#FF4757',desc:'Conduct full adversary emulation campaigns against mature security programs to test detection and response.',skills:['C2 Frameworks','AD Attacks','Evasion','Social Engineering','OPSEC'],phases:[0,1,2,3,4],certs:['CRTO','OSCP','CRTE']},
+{icon:'☁',title:'Cloud Security Engineer',sal:'$110k–$170k',color:'#00E5CC',desc:'Secure cloud infrastructure, implement cloud security controls, respond to cloud-native threats.',skills:['AWS/Azure/GCP','IAM','CSPM','Terraform','Container Security'],phases:[0,1,2,3],certs:['AZ-500','AWS Security','CCSP']},
+{icon:'🔄',title:'DevSecOps Engineer',sal:'$105k–$165k',color:'#3dccc7',desc:'Integrate security into CI/CD pipelines, implement SAST/DAST/SCA, secure container and cloud deployments.',skills:['CI/CD','SAST/DAST','Docker','Kubernetes','Terraform'],phases:[0,1,2],certs:['CKS','AWS Security','SC-100']},
+{icon:'🔍',title:'Application Security Engineer',sal:'$100k–$160k',color:'#FF9A7B',desc:'Secure software development lifecycle, code review, SAST, threat modeling, developer security training.',skills:['Secure SDLC','Code Review','SAST','Threat Modeling','Web Security'],phases:[0,1,2],certs:['GWEB','CSSLP','OSWE']},
+{icon:'🦠',title:'Malware Analyst',sal:'$85k–$130k',color:'#C77DFF',desc:'Analyse malicious software to understand capabilities, attribution, IOCs, and develop defensive signatures.',skills:['Ghidra','YARA','Dynamic Analysis','Assembly','Reverse Engineering'],phases:[0,1,2,3],certs:['GREM','GCFE']},
+{icon:'📋',title:'GRC Analyst / Manager',sal:'$80k–$140k',color:'#FFD700',desc:'Implement governance frameworks, manage compliance programs (ISO 27001, NIST, PCI-DSS, GDPR).',skills:['ISO 27001','NIST CSF','Risk Management','Audit','Policy Writing'],phases:[0,1,4],certs:['CISM','CISSP','CISA']},
+{icon:'🏛',title:'Security Architect',sal:'$130k–$200k+',color:'#FF6FA6',desc:'Design enterprise security architectures, Zero Trust implementations, security reference architectures.',skills:['Security Architecture','Zero Trust','TOGAF','Risk Management','Cloud'],phases:[0,1,2,3,4],certs:['CISSP','SABSA','TOGAF','CCSP']},
+];
+const TIMELINE_ITEMS=[
+{m:'Month 1–2',title:'Foundation Setup',desc:'Computer fundamentals, Linux CLI, networking basics. Build home lab. First Python scripts.',color:'#3dccc7'},
+{m:'Month 2–3',title:'Linux & Python',desc:'OverTheWire Bandit complete. Python port scanner. Bash automation scripts. 50+ Wireshark exercises.',color:'#3dccc7'},
+{m:'Month 3–4',title:'Windows & Cryptography',desc:'Active Directory lab built. PowerShell scripting. CryptoHack challenges. Security+ study starts.',color:'#3dccc7'},
+{m:'Month 4–5',title:'Web Security Begins',desc:'PortSwigger labs (100+). DVWA complete. OWASP Juice Shop 50%. Burp Suite proficiency.',color:'#4A9FFF'},
+{m:'Month 5–6',title:'CompTIA Security+',desc:'Sit Security+ exam. SIEM lab deployed (Wazuh). First CTF entered. First GitHub portfolio repo.',color:'#4A9FFF'},
+{m:'Month 6–8',title:'SOC Skills & DFIR',desc:'Log analysis, alert triage, Sigma rules. Memory forensics with Volatility3. MemLabs complete.',color:'#4A9FFF'},
+{m:'Month 8–10',title:'Penetration Testing',desc:'Metasploit, Nmap scripting, VulnHub machines (10+). eJPT or PNPT certification preparation.',color:'#B06DFF'},
+{m:'Month 10–12',title:'First Professional Cert',desc:'eJPT or PNPT exam. Cloud security basics. DevSecOps pipeline built. First bug bounty submissions.',color:'#B06DFF'},
+{m:'Month 12–15',title:'Cloud & DevSecOps',desc:'AWS/Azure security labs. CSPM tools. CI/CD security pipeline. Malware analysis lab setup.',color:'#B06DFF'},
+{m:'Month 15–18',title:'Advanced Track Entry',desc:'Choose: Red Team or Blue Team specialization. OSCP prep or GCFA prep. Conference talks research.',color:'#FF6B6B'},
+{m:'Month 18–24',title:'Expert Certification',desc:'OSCP (Red) or GCFA/GCIH (Blue). Publish research or CVE. Open-source tool launched.',color:'#FF6B6B'},
+{m:'Month 24+',title:'Expert & Leadership',desc:'Expert certs (CISSP, CISM, expert GIAC). Security architecture. Team leadership. Research contributions.',color:'#FF6FA6'},
+];
+const HOME_LAB=[
+{title:'Hypervisor',ico:'🖥',desc:'VirtualBox (free) or VMware Workstation Pro (free personal use). Proxmox VE for advanced bare-metal setups.'},
+{title:'Attacker Machine',ico:'⚔',desc:'Kali Linux — full pentest distro. ParrotOS as a lighter alternative. Install all tools fresh and update regularly.'},
+{title:'Target — Linux',ico:'🐧',desc:'Ubuntu Server 22.04 LTS — web server, DVWA, OWASP Juice Shop, Metasploitable3 for exploitation practice.'},
+{title:'Target — Windows',ico:'🪟',desc:'Windows Server 2022 (180-day eval) — Domain Controller, Active Directory, IIS, SQL Server for AD attack lab.'},
+{title:'Firewall/Router',ico:'🛡',desc:'pfSense CE — open-source enterprise firewall. Configure WAN/LAN/DMZ zones, VLAN tagging, IDS/IPS (Suricata).'},
+{title:'SIEM Platform',ico:'🔷',desc:'Security Onion 2.4 (all-in-one ELK+Zeek+Suricata) OR Wazuh standalone for lighter resource usage.'},
+{title:'Vulnerable AD',ico:'🏰',desc:'GOAD (Game of Active Directory) — 5-VM vulnerable AD lab with multiple domains, GPOs, misconfigurations.'},
+{title:'Malware Sandbox',ico:'🦠',desc:'REMnux — Linux malware analysis distro with 100+ tools pre-installed. Isolate fully from host network.'},
+{title:'Packet Capture',ico:'📡',desc:'TAP/span port mirroring. Zeek for metadata extraction. Arkime (Moloch) for full PCAP indexing/search.'},
+{title:'Cloud Lab',ico:'☁',desc:'AWS Free Tier + Azure Free Account + GCP Free Tier — all three providers offer generous free tiers.'},
+{title:'Automation',ico:'🔧',desc:'Ansible for lab provisioning. Vagrant for reproducible VM environments. Terraform for cloud infrastructure.'},
+{title:'Documentation',ico:'📝',desc:'Obsidian (local markdown) or Notion for lab notes. Git repo for all scripts, configs, and write-ups.'},
+];
+const CERTIFICATIONS=[
+{tier:'Entry Level (0–6 months)',color:'#3dccc7',
+ note:'Security+ is the one that actually matters for hiring filters at this stage. ITF+ and A+ are aimed at complete non-technical beginners — skip them if you\'re already doing the Phase 0 Linux/networking/Python hands-on work.',
+ certs:[
+{name:'CompTIA Security+',body:'CompTIA',color:'#e74c3c',ico:'🛡',primary:true},
+{name:'CompTIA Network+',body:'CompTIA',color:'#e74c3c',ico:'🌐',primary:true},
+{name:'CompTIA ITF+',body:'CompTIA',color:'#e74c3c',ico:'📚',primary:false},
+{name:'CompTIA A+',body:'CompTIA',color:'#e74c3c',ico:'🖥',primary:false},
+{name:'Google Cybersecurity',body:'Coursera/Google',color:'#4285F4',ico:'🎓',primary:false},
+{name:'SC-900',body:'Microsoft',color:'#0078d4',ico:'☁',primary:false},
+]},
+{tier:'Intermediate (6–18 months)',color:'#4A9FFF',
+ note:'Pick certs matching YOUR chosen career path — you don\'t need all nine. Blue/SOC → CySA+. Red Team → eJPT/PNPT. Cloud → AZ-500 or AWS Security. Networking-heavy roles → CCNA.',
+ certs:[
+{name:'CompTIA CySA+',body:'CompTIA · Blue Team',color:'#e74c3c',ico:'🔷',primary:true},
+{name:'eJPT',body:'eLearnSecurity · Red Team',color:'#e67e22',ico:'🏆',primary:true},
+{name:'PNPT',body:'TCM Security · Red Team',color:'#8B4513',ico:'🏹',primary:true},
+{name:'AZ-500',body:'Microsoft · Cloud',color:'#0078d4',ico:'☁',primary:true},
+{name:'AWS Security Spec.',body:'Amazon · Cloud',color:'#FF9900',ico:'☁',primary:false},
+{name:'CompTIA PenTest+',body:'CompTIA',color:'#e74c3c',ico:'⚔',primary:false},
+{name:'CompTIA Linux+',body:'CompTIA',color:'#e74c3c',ico:'🐧',primary:false},
+{name:'SC-200',body:'Microsoft',color:'#0078d4',ico:'🛡',primary:false},
+{name:'CCNA',body:'Cisco · Networking-heavy roles',color:'#049fd9',ico:'🌐',primary:false},
+]},
+{tier:'Advanced (18–36 months)',color:'#FF6B6B',
+ note:'Do NOT pursue all nine of these — nobody does. Pick 2-3 that match your specialisation: Red Team → OSCP + CRTO. Blue/DFIR → GCFA + GCIH. Cloud → CCSP. ⚠ GIAC CLUSTER WARNING: GCIA, GCFA, and GCIH are three separate $paid GIAC exams covering adjacent blue-team/DFIR skill from the same vendor — GCIH (Incident Handler) is USUALLY SUFFICIENT ALONE for most IR roles. Only add GCFA if forensics becomes your specific specialty, and GCIA only if you move into a dedicated intrusion-analysis role. Chasing all three back-to-back is expensive and has diminishing hiring-signal return.',
+ certs:[
+{name:'OSCP',body:'OffSec · Red Team primary',color:'#D4380D',ico:'💀',primary:true},
+{name:'CRTO',body:'Zero-Point Security · Red Team primary',color:'#8B0000',ico:'🎯',primary:true},
+{name:'GCIH',body:'GIAC · Blue Team primary — usually sufficient alone',color:'#1B4F72',ico:'🚨',primary:true},
+{name:'CCSP',body:'ISC2 · Cloud primary',color:'#1D4E89',ico:'☁',primary:true},
+{name:'GCFA',body:'GIAC · DFIR specialty only — not needed alongside GCIH unless forensics is your focus',color:'#1B4F72',ico:'🔬',primary:false},
+{name:'CRTP',body:'Pentester Academy',color:'#e67e22',ico:'🔑',primary:false},
+{name:'GCIA',body:'GIAC · Intrusion-analysis specialty only',color:'#1B4F72',ico:'📡',primary:false},
+{name:'GREM',body:'GIAC',color:'#1B4F72',ico:'🦠',primary:false},
+{name:'CCNP Security',body:'Cisco',color:'#049fd9',ico:'🌐',primary:false},
+]},
+{tier:'Expert (3+ years)',color:'#FF6FA6',
+ note:'CISSP is the broadest, most-recognised expert cert — good default if unsure. Others are specialisation-specific: pick based on your track, not all of them.',
+ certs:[
+{name:'CISSP',body:'ISC2 · Broad default',color:'#1D4E89',ico:'🏛',primary:true},
+{name:'OSEP',body:'OffSec · Red Team',color:'#D4380D',ico:'⚔',primary:true},
+{name:'CISM',body:'ISACA · GRC/Management',color:'#003366',ico:'📊',primary:false},
+{name:'OSWE',body:'OffSec · AppSec',color:'#D4380D',ico:'🌐',primary:false},
+{name:'GXPN',body:'GIAC · Exploit Dev',color:'#1B4F72',ico:'💎',primary:false},
+{name:'CASP+',body:'CompTIA',color:'#e74c3c',ico:'🎓',primary:false},
+{name:'CISA',body:'ISACA · Audit',color:'#003366',ico:'✅',primary:false},
+]},
+];
+const PORTFOLIO_ITEMS=[
+{title:'GitHub Portfolio',color:'#3dccc7',desc:'Your primary technical showcase.',items:['Python security tools (scanner, fuzzer, IOC enricher)','Bash automation scripts','PowerShell security toolkit','Custom Sigma rules and YARA rules','CTF write-ups and walkthroughs','Pentest report templates']},
+{title:'Communication & Reporting',color:'#00E5CC',desc:'Consistently cited as the #1 gap separating technically-skilled people who get promoted from those who plateau at analyst level. Every report you write should demonstrate this.',items:['Executive summary written in business-risk language, zero jargon, one page max','Same finding explained TWICE — once for a CISO, once for the engineer fixing it','Practice translating a CVSS score into "what this means for the business"','A one-paragraph incident explanation a non-technical manager could repeat correctly','Feedback from a non-technical friend/family member on report clarity']},
+{title:'Technical Blog',color:'#4A9FFF',desc:'Demonstrates knowledge and communication skills.',items:['HTB/VulnHub/CTF write-ups','Tool development tutorials','Malware analysis reports','Research findings','How-to guides for lab setups','Conference presentation slides']},
+{title:'Security Tools',color:'#B06DFF',desc:'Builds credibility and community presence.',items:['Open-source security tool on GitHub','Nuclei/Nmap templates','Custom Burp Suite extensions','SIEM dashboard configurations','Threat intelligence automation','Detection-as-code library']},
+{title:'Research & CVEs',color:'#FF6B6B',desc:'Expert-level credential for senior roles. Note: a CVE, conference acceptance, or bug bounty payout are possible bonus outcomes of good research — not guaranteed, controllable milestones. Track the effort, not just the trophy.',items:['Structured vulnerability research write-up (finding or documented negative result)','Bug bounty submissions (Hall of Fame entry is a bonus, not the goal)','BSides talk submission (attainable) — DEF CON/Black Hat only once established, acceptance rates are in the low single digits','White paper or research article','Contribution to open-source security project','Peer-reviewed security paper (optional, academic-track only)']},
+{title:'Lab Documentation',color:'#FF8C42',desc:'Shows practical, hands-on experience.',items:['Home lab architecture diagram','Build guides for each lab environment','SIEM deployment walkthrough','Red team exercise reports','Cloud security lab documentation','AI security lab writeups']},
+{title:'Certifications',color:'#FFD700',desc:'Industry-recognized credentials.',items:['Digital certificates on LinkedIn','Credly badges linked to GitHub','Certification verification links','Exam preparation notes published','Community contributions related to cert']},
+];
+</script>
+
+<script>
+// ═══════════════════════════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════════════════════════
+let DONE = JSON.parse(localStorage.getItem('csm_done')||'{}');
+let BM = JSON.parse(localStorage.getItem('csm_bm')||'[]');
+let CP = 'dash';
+let PHASE_FILTER = 'all';
+let CAREER_FILTER = 'all';
+let openDomains = {};
+let openProjects = {};
+let openTabs = {};
+
+function saveDone(){localStorage.setItem('csm_done',JSON.stringify(DONE));}
+function saveBM(){localStorage.setItem('csm_bm',JSON.stringify(BM));}
+function isDone(id){return !!DONE[id];}
+function isBM(name){return BM.includes(name);}
+function updateFC(){document.getElementById('fc').textContent=BM.length;}
+
+function allTopics(){
+  let arr=[];
+  PHASES.forEach(p=>p.domains.forEach(d=>d.topics.forEach(t=>arr.push({id:t.id+'__'+d.id,phase:p.phase}))));
+  return arr;
+}
+function allDomains(){return PHASES.flatMap(p=>p.domains.map(d=>({...d,_phase:p})));}
+function allProjects(){return PHASES.flatMap(p=>p.domains.flatMap(d=>d.projects.map(pr=>({...pr,_domain:d,_phase:p}))));}
+function allTools(){
+  const seen=new Set(); let arr=[];
+  PHASES.forEach(p=>p.domains.forEach(d=>d.tools.forEach(t=>{if(!seen.has(t.name)){seen.add(t.name);arr.push(t);}})));
+  return arr;
+}
+function allCerts(){
+  const seen=new Set(); let arr=[];
+  PHASES.forEach(p=>p.domains.forEach(d=>(d.certs||[]).forEach(c=>{if(!seen.has(c.code)){seen.add(c.code);arr.push(c);}})));
+  return arr;
+}
+
+function phaseProgress(phaseObj){
+  const total = phaseObj.domains.reduce((s,d)=>s+d.topics.length,0);
+  if(total===0) return 0;
+  const done = phaseObj.domains.reduce((s,d)=>s+d.topics.filter(t=>isDone(t.id+'__'+d.id)).length,0);
+  return Math.round((done/total)*100);
+}
+function overallProgress(){
+  const total = allTopics().length;
+  const done = Object.keys(DONE).filter(k=>DONE[k]).length;
+  return total? Math.round((done/total)*100):0;
+}
+
+function diffClass(d){return d==='Beginner'?'dl':d==='Intermediate'?'dm':'da';}
+function pdiffStyle(d){
+  if(d==='Beginner') return 'background:rgba(0,229,204,.15);color:#009980;';
+  if(d==='Intermediate') return 'background:rgba(255,140,66,.15);color:#c05000;';
+  return 'background:rgba(255,71,87,.15);color:#e63946;';
+}
+
+// ═══════════════════════════════════════════════════════════════
+// THEME
+// ═══════════════════════════════════════════════════════════════
+function toggleTheme(){
+  const html=document.documentElement;
+  const cur=html.getAttribute('data-theme');
+  const next=cur==='dark'?'light':'dark';
+  html.setAttribute('data-theme',next);
+  localStorage.setItem('csm_theme',next);
+  document.getElementById('theme-btn').textContent = next==='dark'?'🌙':'☀️';
+}
+function initTheme(){
+  const saved = localStorage.getItem('csm_theme')||'light';
+  document.documentElement.setAttribute('data-theme',saved);
+  document.getElementById('theme-btn').textContent = saved==='dark'?'🌙':'☀️';
+}
+
+// ═══════════════════════════════════════════════════════════════
+// PANE SWITCHING
+// ═══════════════════════════════════════════════════════════════
+function showPane(id){
+  CP=id;
+  document.querySelectorAll('.pane').forEach(p=>p.classList.remove('show'));
+  const pane=document.getElementById('pane-'+id);
+  if(pane){pane.classList.add('show');renderPane(id);}
+  document.querySelectorAll('.sb-a').forEach(a=>a.classList.remove('on'));
+  document.querySelectorAll('.sb-a').forEach(a=>{
+    if(a.getAttribute('onclick') && a.getAttribute('onclick').includes("'"+id+"'")) a.classList.add('on');
+  });
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function renderPane(id){
+  if(id==='dash') renderDash();
+  else if(id==='timeline') renderTimeline();
+  else if(id==='careers') renderCareers();
+  else if(id==='homelab') renderHomeLab();
+  else if(id==='certs') renderCertsPane();
+  else if(id==='portfolio') renderPortfolio();
+  else if(id==='favs') renderFavs();
+  else if(['p0','p1','p2','p3','p4'].includes(id)) renderPhase(id);
+}
+
+// ═══════════════════════════════════════════════════════════════
+// DASHBOARD
+// ═══════════════════════════════════════════════════════════════
+function ringSVG(pct,color,size=72){
+  const r=(size-10)/2, c=2*Math.PI*r, off=c-(pct/100)*c;
+  return `<div class="ring-wrap" style="width:${size}px;height:${size}px;">
+    <svg width="${size}" height="${size}">
+      <circle class="ring-bg" cx="${size/2}" cy="${size/2}" r="${r}"/>
+      <circle class="ring-fill" cx="${size/2}" cy="${size/2}" r="${r}" stroke="${color}"
+        stroke-dasharray="${c}" stroke-dashoffset="${off}"/>
+    </svg>
+    <div class="ring-pct">${pct}%</div>
+  </div>`;
+}
+
+function renderDash(){
+  const totalTopics=allTopics().length;
+  const totalDomains=allDomains().length;
+  const totalProjects=allProjects().length;
+  const totalTools=allTools().length;
+  const totalCerts=allCerts().length;
+  const totalLabs=PHASES.reduce((s,p)=>s+p.domains.reduce((s2,d)=>s2+(d.labs?d.labs.length:0),0),0);
+  const overall=overallProgress();
+
+  const stats=[
+    {v:totalTopics,l:'Total Topics',i:'📚',g:'linear-gradient(135deg,#00D4E4,#4A9FFF)'},
+    {v:totalDomains,l:'Skill Domains',i:'🗂',g:'linear-gradient(135deg,#B06DFF,#C77DFF)'},
+    {v:totalProjects,l:'Hands-On Projects',i:'🛠',g:'linear-gradient(135deg,#FF6B6B,#FF8C42)'},
+    {v:totalLabs,l:'Practice Labs',i:'🧪',g:'linear-gradient(135deg,#00E5CC,#00D4E4)'},
+    {v:totalTools,l:'Industry Tools',i:'🔧',g:'linear-gradient(135deg,#FF9A7B,#FF6B6B)'},
+    {v:totalCerts,l:'Certifications',i:'🏆',g:'linear-gradient(135deg,#FFD700,#FF8C42)'},
+    {v:CAREER_PATHS.length,l:'Career Paths',i:'💼',g:'linear-gradient(135deg,#4A9FFF,#B06DFF)'},
+    {v:overall+'%',l:'Your Progress',i:'📈',g:'linear-gradient(135deg,#00F5D4,#00E5CC)'},
+  ];
+
+  const achievements=[
+    {ico:'🌱',name:'First Steps',desc:'Complete 1 topic',earned:Object.keys(DONE).filter(k=>DONE[k]).length>=1},
+    {ico:'🔥',name:'On Fire',desc:'Complete 25 topics',earned:Object.keys(DONE).filter(k=>DONE[k]).length>=25},
+    {ico:'🧱',name:'Foundation Built',desc:'Phase 0 complete',earned:phaseProgress(PHASES[0])>=100},
+    {ico:'🔵',title:'Core Secured',name:'Core Secured',desc:'Phase 1 complete',earned:phaseProgress(PHASES[1])>=100},
+    {ico:'⭐',name:'Bookmark Collector',desc:'Save 5 resources',earned:BM.length>=5},
+    {ico:'💎',name:'Halfway Hero',desc:'50% overall progress',earned:overall>=50},
+    {ico:'🏆',name:'Security Expert',desc:'100% overall progress',earned:overall>=100},
+    {ico:'🎯',name:'Domain Master',desc:'Complete 5 domains',earned:allDomains().filter(d=>{
+      const t=d.topics.length, dn=d.topics.filter(x=>isDone(x.id+'__'+d.id)).length; return t>0 && dn===t;
+    }).length>=5},
+  ];
+
+  document.getElementById('pane-dash').innerHTML=`
+    <div class="dash-hero glass">
+      <h1>Cybersecurity Mastery<br>Roadmap 2026</h1>
+      <p>A complete, industry-standard learning path from absolute beginner to expert practitioner. Hands-on labs, real enterprise projects, portfolio milestones, and certification mapping across every major cybersecurity domain.</p>
+      <div class="hero-chips">
+        <span class="hchip">🎯 5 Phases</span><span class="hchip">🗂 ${totalDomains} Domains</span>
+        <span class="hchip">🛠 ${totalProjects} Projects</span><span class="hchip">📚 ${totalTopics} Topics</span>
+        <span class="hchip">🏆 ${totalCerts} Certifications</span><span class="hchip">💼 ${CAREER_PATHS.length} Career Paths</span>
+      </div>
+    </div>
+    <div class="stat-row">${stats.map(s=>`
+      <div class="stat-c glass2"><div class="stat-ico">${s.i}</div>
+        <div class="stat-v" style="background:${s.g};-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">${s.v}</div>
+        <div class="stat-l">${s.l}</div></div>`).join('')}
+    </div>
+    <div class="s-label">Phase Progress</div>
+    <div class="big-prog">
+      ${PHASES.map(p=>{
+        const pct=phaseProgress(p);
+        return `<div class="bpc glass2" onclick="showPane('${p.id}')" style="cursor:pointer;">
+          ${ringSVG(pct,p.color)}
+          <div class="bpc-title">${p.title.replace('Phase '+p.phase+': ','')}</div>
+          <div class="bpc-sub">${p.domains.length} domains</div>
+        </div>`;
+      }).join('')}
+    </div>
+    <div class="s-label">Achievements</div>
+    <div class="ach-row">${achievements.map(a=>`
+      <div class="ach-c glass2${a.earned?' earned':''}">
+        <div class="ach-ico">${a.ico}</div><div class="ach-name">${a.name}</div><div class="ach-desc">${a.desc}</div>
+      </div>`).join('')}
+    </div>
+    <div class="s-label">Explore Phases</div>
+    <div class="ph-cards">${PHASES.map(p=>`
+      <div class="phc glass2" onclick="showPane('${p.id}')" style="cursor:pointer;border-left:3px solid ${p.color};">
+        <h4 style="color:${p.color};">${p.title}</h4>
+        <p style="font-size:10px;color:var(--text2);line-height:1.6;margin-bottom:8px;">${p.desc}</p>
+        <div style="font-size:9px;color:var(--text3);">⏱ ${p.duration} · ${p.timeEst}</div>
+      </div>`).join('')}
+    </div>
+  `;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// PHASE PANE
+// ═══════════════════════════════════════════════════════════════
+function renderPhase(pid){
+  const p = PHASES.find(x=>x.id===pid);
+  if(!p) return;
+  const pct = phaseProgress(p);
+  let domainsToShow = p.domains;
+  if(CAREER_FILTER!=='all') domainsToShow = domainsToShow.filter(d=>d.cp.includes(CAREER_FILTER));
+
+  const html = `
+    <div class="ph-head">
+      <div class="ph-badge" style="background:${p.color}20;color:${p.color};">PHASE ${p.phase} · ${p.level}</div>
+      <div class="ph-title" style="background:${p.grad};-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">${p.title}</div>
+      <div class="ph-meta">
+        <span class="ph-chip">⏱ ${p.duration}</span>
+        <span class="ph-chip">📅 ${p.timeEst}</span>
+        <span class="ph-chip">🗂 ${p.domains.length} domains</span>
+        <span class="ph-chip" style="color:${p.color};">📈 ${pct}% complete</span>
+      </div>
+      <p class="ph-desc">${p.desc}</p>
+    </div>
+    <div class="ph-cards">
+      <div class="phc glass2"><h4 style="color:${p.color};">🎯 Learning Objectives</h4><ul>${p.objectives.map(o=>`<li>${o}</li>`).join('')}</ul></div>
+      <div class="phc glass2"><h4 style="color:${p.color};">✅ Expected Outcomes</h4><ul>${p.outcomes.map(o=>`<li>${o}</li>`).join('')}</ul></div>
+      <div class="phc glass2"><h4 style="color:${p.color};">📋 Prerequisites</h4><ul>${p.prereqs.map(o=>`<li>${o}</li>`).join('')}</ul></div>
+      <div class="phc glass2"><h4 style="color:${p.color};">📁 Portfolio Milestones</h4><ul>${p.portfolio.map(o=>`<li>${o}</li>`).join('')}</ul></div>
+    </div>
+    <div class="s-label">Skill Domains (${domainsToShow.length})</div>
+    <div class="domain-list" id="domains-${pid}">
+      ${domainsToShow.map(d=>buildDomainHTML(d,p)).join('')}
+    </div>
+  `;
+  document.getElementById('pane-'+pid).innerHTML = html;
+}
+
+function buildDomainHTML(d,phaseObj){
+  const did = d.id+'__'+phaseObj.id;
+  const isOpen = !!openDomains[did];
+  const totalT = d.topics.length;
+  const doneT = d.topics.filter(t=>isDone(t.id+'__'+d.id)).length;
+  const pct = totalT? Math.round((doneT/totalT)*100):0;
+  const activeTab = openTabs[did] || 'topics';
+
+  return `
+  <div class="domain${isOpen?' open':''}" id="domain-${did}">
+    <div class="domain-hdr" onclick="toggleDomain('${did}')">
+      <div class="d-icon">${d.icon}</div>
+      <div class="d-meta">
+        <div class="d-title">${d.title}</div>
+        <div class="d-sub">${d.timeEst} · ${doneT}/${totalT} topics done (${pct}%)</div>
+      </div>
+      <div class="d-badges">
+        <span class="db ${diffClass(d.diff)}">${d.diff}</span>
+        <span class="db dct">${d.topics.length}📚</span>
+        <span class="db dtm">${d.projects.length}🛠</span>
+      </div>
+      <div class="d-chev">▼</div>
+    </div>
+    <div class="domain-body">
+      <p style="font-size:11px;color:var(--text2);line-height:1.6;margin-bottom:14px;">${d.desc}</p>
+      <div class="dtabs">
+        <button class="dtab${activeTab==='topics'?' on':''}" onclick="switchTab(event,'${did}','topics')">📚 Topics</button>
+        <button class="dtab${activeTab==='projects'?' on':''}" onclick="switchTab(event,'${did}','projects')">🛠 Projects</button>
+        <button class="dtab${activeTab==='labs'?' on':''}" onclick="switchTab(event,'${did}','labs')">🧪 Labs</button>
+        <button class="dtab${activeTab==='tools'?' on':''}" onclick="switchTab(event,'${did}','tools')">🔧 Tools</button>
+        <button class="dtab${activeTab==='certs'?' on':''}" onclick="switchTab(event,'${did}','certs')">🏆 Certs</button>
+        <button class="dtab${activeTab==='iq'?' on':''}" onclick="switchTab(event,'${did}','iq')">💬 Interview Q&A</button>
+        <button class="dtab${activeTab==='resources'?' on':''}" onclick="switchTab(event,'${did}','resources')">🔗 Resources</button>
+      </div>
+      <div class="dtab-pane${activeTab==='topics'?' show':''}" id="dtab-${did}-topics">
+        <div class="topic-list">
+          ${d.topics.map(t=>{
+            const tid = t.id+'__'+d.id;
+            const checked = isDone(tid);
+            return `<div class="topic-item${checked?' checked':''}" onclick="toggleTopic('${tid}','${did}')">
+              <div class="ti-check">${checked?'✓':''}</div>
+              <div class="ti-text">${t.t}</div>
+            </div>`;
+          }).join('')}
+        </div>
+      </div>
+      <div class="dtab-pane${activeTab==='projects'?' show':''}" id="dtab-${did}-projects">
+        <div class="proj-grid">${d.projects.map((pr,i)=>buildProjectCard(pr,did,i)).join('')}</div>
+      </div>
+      <div class="dtab-pane${activeTab==='labs'?' show':''}" id="dtab-${did}-labs">
+        <div class="lab-grid">${(d.labs||[]).map(l=>`
+          <div class="lab-c" style="border-left-color:${l.color};">
+            <div class="lab-title">${l.title}</div>
+            <div class="lab-desc">${l.desc}</div>
+            <div class="lab-meta">🔧 ${l.tools} · ⏱ ${l.time}</div>
+          </div>`).join('') || '<p style="font-size:11px;color:var(--text3);">No dedicated labs — see Projects tab for hands-on work.</p>'}
+        </div>
+      </div>
+      <div class="dtab-pane${activeTab==='tools'?' show':''}" id="dtab-${did}-tools">
+        <div class="tool-grid">${d.tools.map(t=>`
+          <div class="tool-c">
+            <div class="tool-ico">${t.ico}</div>
+            <div class="tool-name">${t.name}</div>
+            <div class="tool-cat">${t.cat}</div>
+          </div>`).join('')}
+        </div>
+      </div>
+      <div class="dtab-pane${activeTab==='certs'?' show':''}" id="dtab-${did}-certs">
+        <div class="cert-grid">${(d.certs||[]).map(c=>`
+          <div class="cert-c">
+            <div class="cert-badge" style="background:${c.color}22;color:${c.color};">${c.ico||'🏅'}</div>
+            <div class="cert-info">
+              <div class="cert-code">${c.code}</div>
+              <div class="cert-name">${c.name}</div>
+              <div class="cert-body">${c.body} · ${c.level}</div>
+            </div>
+          </div>`).join('') || '<p style="font-size:11px;color:var(--text3);">No specific certification mapped to this domain.</p>'}
+        </div>
+      </div>
+      <div class="dtab-pane${activeTab==='iq'?' show':''}" id="dtab-${did}-iq">
+        <div class="iq-list">${d.iq.map(q=>`<div class="iq-item">${q}</div>`).join('')}</div>
+      </div>
+      <div class="dtab-pane${activeTab==='resources'?' show':''}" id="dtab-${did}-resources">
+        <div class="res-list">${d.resources.map(r=>`
+          <a class="res-item" href="${r.url}" target="_blank" rel="noopener">
+            <span class="ri-ico">${r.ico}</span>
+            <div class="ri-info"><div class="ri-name">${r.name}</div><div class="ri-type">${r.type}</div></div>
+            ${r.free?'<span class="ri-free">FREE</span>':''}
+          </a>`).join('')}
+        </div>
+      </div>
+    </div>
+  </div>`;
+}
+
+function buildProjectCard(pr,did,idx){
+  const pkey = did+'__'+idx;
+  const isOpen = !!openProjects[pkey];
+  const tagsHTML = pr.skills.map(s=>`<span class="ptag">${s}</span>`).join('');
+  return `
+  <div class="proj-c">
+    <div class="proj-top">
+      <div class="proj-title">${pr.title}</div>
+      <span class="pdiff" style="${pdiffStyle(pr.diff)}">${pr.diff}</span>
+    </div>
+    <div class="proj-obj">${pr.obj}</div>
+    <div class="proj-tags">${tagsHTML}</div>
+    <div class="proj-meta"><span>⏱ ${pr.time}</span><span>🔧 ${pr.tools.join(', ')}</span></div>
+    <button class="proj-expand" onclick="toggleProject('${pkey}',this)">${isOpen?'▾ Hide deliverables':'▸ Show deliverables'}</button>
+    <div class="proj-detail${isOpen?' open':''}" id="projdet-${pkey}">
+      <div class="proj-detail-item"><strong>Deliverables</strong>${pr.deliverables.join(', ')}</div>
+    </div>
+  </div>`;
+}
+
+function toggleProject(pkey,btn){
+  openProjects[pkey] = !openProjects[pkey];
+  const det = document.getElementById('projdet-'+pkey);
+  det.classList.toggle('open');
+  btn.textContent = openProjects[pkey] ? '▾ Hide deliverables' : '▸ Show deliverables';
+}
+
+function toggleDomain(did){
+  openDomains[did] = !openDomains[did];
+  const el = document.getElementById('domain-'+did);
+  if(el) el.classList.toggle('open');
+}
+
+function switchTab(e,did,tab){
+  e.stopPropagation();
+  openTabs[did]=tab;
+  const domEl = document.getElementById('domain-'+did);
+  domEl.querySelectorAll('.dtab').forEach(b=>b.classList.remove('on'));
+  e.target.classList.add('on');
+  domEl.querySelectorAll('.dtab-pane').forEach(p=>p.classList.remove('show'));
+  document.getElementById('dtab-'+did+'-'+tab).classList.add('show');
+}
+
+function toggleTopic(tid,did){
+  DONE[tid] = !DONE[tid];
+  saveDone();
+  // re-render just this domain card to update checkbox + progress without losing scroll position much
+  const phaseId = did.split('__')[1];
+  renderPhase(phaseId);
+  // restore open state
+  const el = document.getElementById('domain-'+did);
+  if(el) el.classList.add('open');
+  updateSidebarProgress();
+}
+</script>
+
+<script>
+// ═══════════════════════════════════════════════════════════════
+// TIMELINE PANE
+// ═══════════════════════════════════════════════════════════════
+function renderTimeline(){
+  document.getElementById('pane-timeline').innerHTML = `
+    <div class="ph-head">
+      <div class="ph-badge" style="background:rgba(176,109,255,.15);color:var(--lav);">CAREER ROADMAP</div>
+      <div class="ph-title">Suggested Timeline</div>
+      <p class="ph-desc">A realistic month-by-month path from absolute beginner to expert practitioner, assuming 12–20 hours per week of consistent study and lab work. Adjust pace to your circumstances — what matters is the order, not the exact dates.</p>
+    </div>
+    <div class="timeline">
+      ${TIMELINE_ITEMS.map((t,i)=>`
+        <div class="tl-item">
+          <div class="tl-dot" style="border-color:${t.color};color:${t.color};">${i+1}</div>
+          <div class="tl-body glass2" style="padding:14px 16px;">
+            <div class="tl-month" style="color:${t.color};">${t.m}</div>
+            <div class="tl-title">${t.title}</div>
+            <div class="tl-desc">${t.desc}</div>
+          </div>
+        </div>`).join('')}
+    </div>
+  `;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// CAREERS PANE
+// ═══════════════════════════════════════════════════════════════
+function renderCareers(){
+  document.getElementById('pane-careers').innerHTML = `
+    <div class="ph-head">
+      <div class="ph-badge" style="background:rgba(74,159,255,.15);color:var(--sky);">CAREER PATHS</div>
+      <div class="ph-title">Choose Your Specialisation</div>
+      <p class="ph-desc">12 dedicated cybersecurity career paths with salary ranges, required skills, and the exact roadmap phases that prepare you for each role. Click any card to filter the roadmap by that career track using the filter bar above.</p>
+    </div>
+    <div class="career-grid">
+      ${CAREER_PATHS.map(c=>`
+        <div class="career-c" onclick="filterAndGo('${cpKeyFromTitle(c.title)}')" style="border-top:3px solid ${c.color};">
+          <div class="career-ico">${c.icon}</div>
+          <div class="career-title">${c.title}</div>
+          <div class="career-sal" style="color:${c.color};">${c.sal}</div>
+          <div class="career-desc">${c.desc}</div>
+          <div class="career-skills">${c.skills.map(s=>`<span class="csk">${s}</span>`).join('')}</div>
+          <div style="margin-top:10px;display:flex;gap:5px;flex-wrap:wrap;">
+            ${c.certs.map(cert=>`<span class="csk" style="border-color:${c.color}40;color:${c.color};">${cert}</span>`).join('')}
+          </div>
+        </div>`).join('')}
+    </div>
+  `;
+}
+function cpKeyFromTitle(title){
+  const map={'SOC Analyst':'soc','Blue Team Engineer':'soc','Threat Hunter':'soc','Incident Responder':'soc',
+    'Penetration Tester':'red','Red Team Operator':'red','Cloud Security Engineer':'cloud','DevSecOps Engineer':'cloud',
+    'Application Security Engineer':'dev','Malware Analyst':'dev','GRC Analyst / Manager':'grc','Security Architect':'grc'};
+  return map[title]||'all';
+}
+function filterAndGo(cpKey){
+  CAREER_FILTER = cpKey;
+  document.querySelectorAll('.pill[data-cp]').forEach(p=>p.classList.remove('on'));
+  const el = document.querySelector(`.pill[data-cp="${cpKey}"]`);
+  if(el) el.classList.add('on');
+  showPane('p1');
+}
+
+// ═══════════════════════════════════════════════════════════════
+// HOME LAB PANE
+// ═══════════════════════════════════════════════════════════════
+function renderHomeLab(){
+  document.getElementById('pane-homelab').innerHTML = `
+    <div class="ph-head">
+      <div class="ph-badge" style="background:rgba(0,229,204,.15);color:var(--mint);">HOME LAB</div>
+      <div class="ph-title">Build Your Practice Environment</div>
+      <p class="ph-desc">Every hands-on skill in this roadmap requires a lab. Here's the complete stack — from hypervisor to vulnerable AD domain to malware sandbox — that mirrors what real security teams use.</p>
+    </div>
+    <div class="lab-stack">
+      ${HOME_LAB.map(l=>`
+        <div class="ls-c glass2">
+          <div class="ls-title"><span>${l.ico}</span> ${l.title}</div>
+          <div class="ls-desc">${l.desc}</div>
+        </div>`).join('')}
+    </div>
+    <div class="s-label">Recommended Practice Platforms</div>
+    <div class="lab-stack">
+      <div class="ls-c glass2"><div class="ls-title">⚔ OverTheWire</div><div class="ls-desc">Free progressive wargames for Linux, web, and PowerShell skills.</div></div>
+      <div class="ls-c glass2"><div class="ls-title">🎯 VulnHub</div><div class="ls-desc">Free downloadable vulnerable VMs for offline pentest practice.</div></div>
+      <div class="ls-c glass2"><div class="ls-title">🧃 OWASP Juice Shop</div><div class="ls-desc">Free intentionally vulnerable web app — 100+ challenges.</div></div>
+      <div class="ls-c glass2"><div class="ls-title">🎯 DVWA</div><div class="ls-desc">Damn Vulnerable Web App — classic adjustable-difficulty target.</div></div>
+      <div class="ls-c glass2"><div class="ls-title">🏰 GOAD</div><div class="ls-desc">Game of Active Directory — full vulnerable multi-DC domain.</div></div>
+      <div class="ls-c glass2"><div class="ls-title">☁ flaws.cloud</div><div class="ls-desc">Free guided AWS misconfiguration exploitation challenges.</div></div>
+    </div>
+  `;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// CERTS PANE
+// ═══════════════════════════════════════════════════════════════
+function renderCertsPane(){
+  document.getElementById('pane-certs').innerHTML = `
+    <div class="ph-head">
+      <div class="ph-badge" style="background:rgba(255,215,0,.15);color:var(--gold);">CERTIFICATIONS</div>
+      <div class="ph-title">Certification Roadmap</div>
+      <p class="ph-desc">Industry certifications mapped by career stage. Certifications validate your skills to employers — but should follow hands-on competency, not replace it. <strong>★ marked certs are primary recommendations — pick 2-3 per tier matching your career path, not all of them.</strong></p>
+    </div>
+    <div class="cert-roadmap">
+      ${CERTIFICATIONS.map(tier=>`
+        <div class="cr-tier glass2">
+          <div class="cr-tier-title" style="color:${tier.color};"><span style="width:8px;height:8px;border-radius:50%;background:${tier.color};display:inline-block;"></span>${tier.tier}</div>
+          ${tier.note?`<div style="font-size:10px;color:var(--text3);line-height:1.6;margin-bottom:10px;padding:8px 10px;background:${tier.color}0d;border-left:2px solid ${tier.color}50;border-radius:4px;">💡 ${tier.note}</div>`:''}
+          <div class="cr-certs">
+            ${tier.certs.map(c=>`
+              <div class="cr-cert" style="background:${c.color}${c.primary?'22':'0d'};color:${c.color};border:1px solid ${c.color}${c.primary?'55':'25'};${c.primary?'font-weight:800;':'opacity:.75;'}">
+                ${c.primary?'<span>★</span>':''}<span>${c.ico}</span><span>${c.name}</span><span style="opacity:.6;font-weight:500;">· ${c.body}</span>
+              </div>`).join('')}
+          </div>
+        </div>`).join('')}
+    </div>
+  `;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// PORTFOLIO PANE
+// ═══════════════════════════════════════════════════════════════
+function renderPortfolio(){
+  document.getElementById('pane-portfolio').innerHTML = `
+    <div class="ph-head">
+      <div class="ph-badge" style="background:rgba(255,107,107,.15);color:var(--coral);">PORTFOLIO</div>
+      <div class="ph-title">Build Your Portfolio</div>
+      <p class="ph-desc">A strong portfolio is what gets you hired — more than certifications alone. Track these six categories throughout your journey.</p>
+    </div>
+    <div class="port-grid">
+      ${PORTFOLIO_ITEMS.map(p=>`
+        <div class="port-c" style="border-left-color:${p.color};">
+          <div class="port-title" style="color:${p.color};">${p.title}</div>
+          <div class="port-desc">${p.desc}</div>
+          <ul class="port-items">${p.items.map(i=>`<li>${i}</li>`).join('')}</ul>
+        </div>`).join('')}
+    </div>
+  `;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// FAVOURITES PANE
+// ═══════════════════════════════════════════════════════════════
+function renderFavs(){
+  const allRes = PHASES.flatMap(p=>p.domains.flatMap(d=>d.resources.map(r=>({...r,domain:d.title}))));
+  const saved = allRes.filter(r=>isBM(r.name));
+  document.getElementById('pane-favs').innerHTML = `
+    <div class="ph-head">
+      <div class="ph-badge" style="background:rgba(255,140,66,.15);color:var(--sun);">⭐ SAVED</div>
+      <div class="ph-title">Bookmarked Resources</div>
+    </div>
+    ${saved.length? `<div class="res-list">${saved.map(r=>`
+      <a class="res-item" href="${r.url}" target="_blank" rel="noopener">
+        <span class="ri-ico">${r.ico}</span>
+        <div class="ri-info"><div class="ri-name">${r.name}</div><div class="ri-type">${r.type} · ${r.domain}</div></div>
+        ${r.free?'<span class="ri-free">FREE</span>':''}
+      </a>`).join('')}</div>`
+      : `<div class="favs-empty"><div style="font-size:48px;margin-bottom:10px;">⭐</div>No saved resources yet.<br><span style="font-size:11px;">Use the search bar to find resources, then bookmark your favourites.</span></div>`}
+  `;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// FILTERS
+// ═══════════════════════════════════════════════════════════════
+function filterPhase(el,val){
+  PHASE_FILTER=val;
+  document.querySelectorAll('.pill[data-phase]').forEach(p=>p.classList.remove('on'));
+  el.classList.add('on');
+  if(val!=='all'){ showPane('p'+val); }
+}
+function filterCP(el,val){
+  CAREER_FILTER=val;
+  document.querySelectorAll('.pill[data-cp]').forEach(p=>p.classList.remove('on'));
+  el.classList.add('on');
+  if(['p0','p1','p2','p3','p4'].includes(CP)) renderPhase(CP);
+}
+
+// ═══════════════════════════════════════════════════════════════
+// SEARCH
+// ═══════════════════════════════════════════════════════════════
+function doSearch(q){
+  q=q.trim().toLowerCase();
+  if(!q){ if(CP==='search-res') showPane('dash'); return; }
+  CP='search-res';
+  document.querySelectorAll('.pane').forEach(p=>p.classList.remove('show'));
+  document.getElementById('pane-search-res').classList.add('show');
+
+  let results=[];
+  PHASES.forEach(p=>p.domains.forEach(d=>{
+    if(d.title.toLowerCase().includes(q) || d.desc.toLowerCase().includes(q)){
+      results.push({type:'domain',label:'Domain',title:d.title,sub:p.title,action:`showPane('${p.id}')`,color:p.color,ico:d.icon});
+    }
+    d.topics.forEach(t=>{ if(t.t.toLowerCase().includes(q)){
+      results.push({type:'topic',label:'Topic',title:t.t,sub:d.title+' · '+p.title,action:`showPane('${p.id}')`,color:p.color,ico:'📚'});
+    }});
+    d.projects.forEach(pr=>{ if(pr.title.toLowerCase().includes(q)||pr.obj.toLowerCase().includes(q)){
+      results.push({type:'project',label:'Project',title:pr.title,sub:d.title,action:`showPane('${p.id}')`,color:p.color,ico:'🛠'});
+    }});
+    d.tools.forEach(t=>{ if(t.name.toLowerCase().includes(q)){
+      results.push({type:'tool',label:'Tool',title:t.name,sub:t.cat+' · '+d.title,action:`showPane('${p.id}')`,color:p.color,ico:t.ico});
+    }});
+    (d.certs||[]).forEach(c=>{ if(c.name.toLowerCase().includes(q)||c.code.toLowerCase().includes(q)){
+      results.push({type:'cert',label:'Certification',title:c.name,sub:c.body,action:`showPane('certs')`,color:c.color,ico:c.ico||'🏅'});
+    }});
+    d.resources.forEach(r=>{ if(r.name.toLowerCase().includes(q)){
+      results.push({type:'resource',label:'Resource',title:r.name,sub:r.type+' · '+d.title,action:null,url:r.url,color:p.color,ico:r.ico});
+    }});
+  }));
+  CAREER_PATHS.forEach(c=>{ if(c.title.toLowerCase().includes(q)){
+    results.push({type:'career',label:'Career Path',title:c.title,sub:c.sal,action:`showPane('careers')`,color:c.color,ico:c.icon});
+  }});
+
+  results = results.slice(0,60);
+  document.getElementById('sr-inner') ? null : null;
+  document.getElementById('pane-search-res').innerHTML = `
+    <div class="sr-wrap">
+      <div class="sr-count">Found <strong>${results.length}</strong> results for "<strong>${q}</strong>"</div>
+      ${results.length? `<div class="res-list">${results.map(r=>{
+        if(r.url){
+          return `<a class="res-item" href="${r.url}" target="_blank" rel="noopener">
+            <span class="ri-ico">${r.ico}</span>
+            <div class="ri-info"><div class="ri-name">${r.title}</div><div class="ri-type">${r.label} · ${r.sub}</div></div>
+          </a>`;
+        }
+        return `<div class="res-item" onclick="${r.action}" style="cursor:pointer;">
+          <span class="ri-ico">${r.ico}</span>
+          <div class="ri-info"><div class="ri-name">${r.title}</div><div class="ri-type">${r.label} · ${r.sub}</div></div>
+        </div>`;
+      }).join('')}</div>` : `<div class="no-res">🔍 No results. Try different keywords.</div>`}
+    </div>
+  `;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// SIDEBAR PROGRESS UPDATE
+// ═══════════════════════════════════════════════════════════════
+function updateSidebarProgress(){
+  PHASES.forEach(p=>{
+    const pct = phaseProgress(p);
+    const el = document.getElementById('spf-'+p.id);
+    if(el) el.style.width = pct+'%';
+  });
+}
+
+function resetProgress(){
+  if(!confirm('Reset all progress, bookmarks, and checklist completion? This cannot be undone.')) return;
+  DONE={}; BM=[];
+  saveDone(); saveBM(); updateFC(); updateSidebarProgress();
+  renderPane(CP);
+}
+
+// ═══════════════════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════════════════
+window.addEventListener('DOMContentLoaded',()=>{
+  initTheme();
+  updateFC();
+  updateSidebarProgress();
+  renderDash();
+  const si=document.getElementById('q');
+  let st;
+  si.addEventListener('input',()=>{clearTimeout(st);st=setTimeout(()=>doSearch(si.value),280);});
+  si.addEventListener('keydown',e=>{if(e.key==='Escape'){si.value='';if(CP==='search-res')showPane('dash');}});
+});
+</script>
+</body>
+</html>

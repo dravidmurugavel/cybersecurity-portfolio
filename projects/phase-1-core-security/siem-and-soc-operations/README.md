@@ -1,0 +1,5 @@
+# SIEM & SOC Operations
+
+_Phase 1 — Projects_
+
+Subtopic notes/entries for this domain go here.

@@ -1,0 +1,23 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+
+# Compiled binaries from lab exercises (keep source, not binaries)
+*.o
+*.out
+a.out
+*.exe
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Logs / temp
+*.log
+*.tmp
