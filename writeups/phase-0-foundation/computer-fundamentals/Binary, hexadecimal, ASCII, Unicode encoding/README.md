@@ -18,9 +18,9 @@ Develop the mindset and practical skills of a cybersecurity professional by focu
 
 # Learning Roadmap
 
-| Phase                 | Module                                         |   Status   |
-| --------------------- | ---------------------------------------------- | :--------: |
-| Computer Fundamentals | Number Systems & Data Representation           | ✅ Complete |
+| Phase                 | Module                                         |    Status   |
+| --------------------- | ---------------------------------------------- | :---------: |
+| Computer Fundamentals | Binary, hexadecimal, ASCII, Unicode encoding   | ✅ Complete |
 | Computer Fundamentals | CPU Architecture & Instruction Sets            |  ⏳ Planned |
 | Computer Fundamentals | Memory (RAM, Cache, Virtual Memory, Paging)    |  ⏳ Planned |
 | Computer Fundamentals | Storage (HDD/SSD, Partitions, File Systems)    |  ⏳ Planned |
