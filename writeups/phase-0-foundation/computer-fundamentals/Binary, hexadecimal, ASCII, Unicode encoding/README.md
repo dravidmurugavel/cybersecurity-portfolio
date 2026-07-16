@@ -30,7 +30,7 @@ Develop the mindset and practical skills of a cybersecurity professional by focu
 
 ---
 
-# Module 1 — Number Systems & Data Representation
+# Module 1 — Binary, hexadecimal, ASCII, Unicode encoding
 
 **Status:** ✅ Complete
 
@@ -128,7 +128,7 @@ cybersecurity-learning-portfolio/
 │
 ├── writeups/
 │   └── fundamentals/
-│       └── data-representation/
+│       └── Binary, hexadecimal, ASCII, Unicode encoding/
 │           ├── 2026-07-09-binary-fundamentals.md
 │           ├── 2026-07-09-hexadecimal-fundamentals.md
 │           ├── 2026-07-09-ascii-unicode.md
