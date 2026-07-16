@@ -204,4 +204,4 @@ Networking
 Cybersecurity Specializations
 ```
 
-> **Progress:** Phase 0 – Computer Fundamentals ✅
+> **Progress:** Module – CPU Architecture & Instruction Sets (x86/x64/ARM) ✅
