@@ -1,0 +1,84 @@
+# Portfolio License
+
+Copyright © 2026 dravidmurugavel. All Rights Reserved.
+
+This repository contains multiple types of content. Different terms apply to different sections.
+
+## 1. Roadmaps
+
+All roadmaps, learning paths, study plans, diagrams, and visual learning materials are the original work of the author.
+
+You may:
+
+* View and use them for personal learning.
+* Share unmodified copies with proper attribution and a link to this repository.
+
+You may not:
+
+* Sell, republish, or commercially distribute them without written permission.
+* Remove the author's name or copyright notice.
+* Claim the work as your own.
+
+---
+
+## 2. Write-ups
+
+This includes:
+
+* CTF write-ups
+* Lab walkthroughs
+* Vulnerability analyses
+* Security research notes
+* Technical articles
+* Tutorials
+
+You may:
+
+* Read and reference the material.
+* Quote short excerpts with attribution.
+
+You may not:
+
+* Copy entire write-ups.
+* Republish the content on websites, blogs, books, or courses without permission.
+* Use the content for commercial training or paid educational material without written permission.
+
+---
+
+## 3. Projects and Source Code
+
+Unless otherwise stated, all source code in this repository is licensed under the Apache License 2.0.
+
+You may:
+
+* Use, modify, and distribute the code in accordance with the Apache License 2.0.
+
+See the `LICENSE` file for the complete Apache License 2.0 text.
+
+---
+
+## 4. Images and Diagrams
+
+Screenshots, graphics, illustrations, logos, and diagrams created by the author may not be reused for commercial purposes without written permission.
+
+Attribution is required for any permitted reuse.
+
+---
+
+## 5. Third-Party Content
+
+Any third-party tools, logos, trademarks, screenshots, documentation, or references remain the property of their respective owners and are subject to their own licenses.
+
+---
+
+## 6. Disclaimer
+
+This repository is intended solely for educational, research, and defensive cybersecurity purposes.
+
+Nothing in this repository should be interpreted as authorization to perform unauthorized testing or attacks against systems you do not own or have explicit permission to assess.
+
+---
+
+## Contact
+
+For commercial licensing, reuse requests, or permissions beyond the terms described above, please contact the repository owner through GitHub.
