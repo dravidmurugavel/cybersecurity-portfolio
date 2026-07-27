@@ -67,7 +67,7 @@ This tool can assist with:
 ## 📂 Project Structure
 
 ```text
-System-Profiler/
+System_profiler/
 ├── system_profiler.sh
 ├── README.md
 ├── LICENSE
@@ -111,7 +111,7 @@ Recommended commands:
 ```bash
 git clone https://github.com/dravidmurugavel/cybersecurity-portfolio.git
 
-cd projects/phase-0-foundation/computer-fundamentals/System-Profiler/
+cd projects/phase-0-foundation/computer-fundamentals/System_profiler/
 
 chmod +x system_profiler.sh
 
