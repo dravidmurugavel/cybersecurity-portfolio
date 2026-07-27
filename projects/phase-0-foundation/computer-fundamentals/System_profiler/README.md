@@ -109,9 +109,9 @@ Recommended commands:
 ## 🚀 Installation
 
 ```bash
-git clone https://github.com/dravidmurugavel/cybersecurity-portfolio/projects/phase-0-foundation/computer-fundamentals/System-Profiler.git
+git clone https://github.com/dravidmurugavel/cybersecurity-portfolio.git
 
-cd System-Profiler
+cd projects/phase-0-foundation/computer-fundamentals/System-Profiler/
 
 chmod +x system_profiler.sh
 
