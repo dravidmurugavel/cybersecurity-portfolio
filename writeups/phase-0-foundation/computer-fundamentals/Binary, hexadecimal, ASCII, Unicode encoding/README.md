@@ -21,16 +21,16 @@ Develop the mindset and practical skills of a cybersecurity professional by focu
 | Phase                 | Module                                         |    Status   |
 | --------------------- | ---------------------------------------------- | :---------: |
 | Computer Fundamentals | Binary, hexadecimal, ASCII, Unicode encoding   | ✅ Complete |
-| Computer Fundamentals | CPU Architecture & Instruction Sets            |  ⏳ Planned |
-| Computer Fundamentals | Memory (RAM, Cache, Virtual Memory, Paging)    |  ⏳ Planned |
-| Computer Fundamentals | Storage (HDD/SSD, Partitions, File Systems)    |  ⏳ Planned |
-| Computer Fundamentals | Boot Process (BIOS/UEFI, Bootloader, Kernel)   |  ⏳ Planned |
-| Computer Fundamentals | Interrupts, System Calls & Context Switching   |  ⏳ Planned |
-| Computer Fundamentals | Virtualization (Hypervisors, VMs & Containers) |  ⏳ Planned |
+| Computer Fundamentals | CPU Architecture & Instruction Sets            | ✅ Complete |
+| Computer Fundamentals | Memory (RAM, Cache, Virtual Memory, Paging)    | ✅ Complete |
+| Computer Fundamentals | Storage (HDD/SSD, Partitions, File Systems)    | ✅ Complete |
+| Computer Fundamentals | Boot Process (BIOS/UEFI, Bootloader, Kernel)   | ✅ Complete |
+| Computer Fundamentals | Interrupts, System Calls & Context Switching   | ✅ Complete |
+| Computer Fundamentals | Virtualization (Hypervisors, VMs & Containers) | ✅ Complete |
 
 ---
 
-# Module 1 — Binary, hexadecimal, ASCII, Unicode encoding
+# Module 1 — Number systems & Data representation
 
 **Status:** ✅ Complete
 
@@ -128,7 +128,7 @@ cybersecurity-learning-portfolio/
 │
 ├── writeups/
 │   └── fundamentals/
-│       └── Binary, hexadecimal, ASCII, Unicode encoding/
+│       └── Number systems & Data representation/
 │           ├── 2026-07-09-binary-fundamentals.md
 │           ├── 2026-07-09-hexadecimal-fundamentals.md
 │           ├── 2026-07-09-ascii-unicode.md
