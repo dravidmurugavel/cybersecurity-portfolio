@@ -6,7 +6,7 @@
 
 **Subtopic:** CPU Registers
 
-**Estimated Study Time:** 90–120 Minutes
+**Estimated Study Time:** 20–30 Minutes
 
 **Skill Category:**
 
