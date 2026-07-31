@@ -20,7 +20,7 @@ Develop the mindset and practical skills of a cybersecurity professional by focu
 
 | Phase                 | Module                                         |    Status   |
 | --------------------- | ---------------------------------------------- | :---------: |
-| Computer Fundamentals | Binary, hexadecimal, ASCII, Unicode encoding   | ✅ Complete |
+| Computer Fundamentals | Number Systems & Data Representation           | ✅ Complete |
 | Computer Fundamentals | CPU Architecture & Instruction Sets            | ✅ Complete |
 | Computer Fundamentals | Memory (RAM, Cache, Virtual Memory, Paging)    | ✅ Complete |
 | Computer Fundamentals | Storage (HDD/SSD, Partitions, File Systems)    | ✅ Complete |
