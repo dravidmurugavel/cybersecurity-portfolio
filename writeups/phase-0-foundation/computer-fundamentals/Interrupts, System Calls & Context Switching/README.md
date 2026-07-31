@@ -89,7 +89,7 @@ Context switching enables multiple processes to share CPU time by saving and res
 
 ---
 
-## 05 – Consolidated
+## 05 – Putting It All Together
 
 **Topics Covered**
 
