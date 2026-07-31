@@ -1,5 +1,5 @@
 
-# Consolidated — Analyzing an Unknown File
+# Exercise — Analyzing an Unknown File
 
 **Job-Role Tag:** SOC Analyst / DFIR Analyst / Malware Analyst
 
