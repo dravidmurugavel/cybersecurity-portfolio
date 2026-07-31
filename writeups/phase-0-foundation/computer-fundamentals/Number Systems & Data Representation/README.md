@@ -135,6 +135,7 @@ cybersecurity-learning-portfolio/
 │           ├── 4_bytes-words-endianness.md
 │           ├── 5_reading-hex-dumps-file-signatures.md
 │           └── 6_exercise.md
+|           └── README.md
 │
 └── assets/
     └── images/
