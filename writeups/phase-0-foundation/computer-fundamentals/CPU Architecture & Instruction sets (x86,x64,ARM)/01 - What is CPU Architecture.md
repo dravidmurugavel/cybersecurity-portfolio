@@ -25,11 +25,6 @@
 * Incident Responder
 * Security Researcher
 
-**Prerequisites:**
-
-* Binary & Number Representation
-* Memory Fundamentals (RAM, Cache, Virtual Memory, Paging)
-
 ---
 
 # Overview
