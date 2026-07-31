@@ -204,6 +204,6 @@ Going forward, I will treat ARM architecture as an essential skill rather than a
 
 ## Next Step
 
-**05.1 – What is a Register?**
+**05 – CPU Registers**
 
 Now that I understand the major processor architectures, the next step is to explore **registers**—the CPU's fastest storage locations and one of the most valuable sources of information during debugging, reverse engineering, and malware analysis.
