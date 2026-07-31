@@ -54,7 +54,7 @@ Develop the mindset and practical skills of a cybersecurity professional by focu
 |  03 | [ASCII & Unicode](writeups/fundamentals/data-representation/2026-07-09-ascii-unicode.md)                                         | Malware Analyst / DFIR Analyst / SOC Analyst      | Computer Fundamentals |    ✅   |
 |  04 | [Bytes, Words & Endianness](writeups/fundamentals/data-representation/2026-07-09-bytes-words-endianness.md)                      | Malware Analyst / Reverse Engineer / DFIR Analyst | Computer Fundamentals |    ✅   |
 |  05 | [Reading Hex Dumps & File Signatures](writeups/fundamentals/data-representation/2026-07-09-reading-hex-dumps-file-signatures.md) | DFIR Analyst / Malware Analyst / SOC Analyst      | Computer Fundamentals |    ✅   |
-|  06 | [Putting It Together — Analyzing an Unknown File](writeups/fundamentals/data-representation/2026-07-09-putting-it-together.md)   | SOC Analyst / DFIR Analyst / Malware Analyst      | Computer Fundamentals |    ✅   |
+|  06 | [Exercise — Analyzing an Unknown File](writeups/fundamentals/data-representation/2026-07-09-putting-it-together.md)   | SOC Analyst / DFIR Analyst / Malware Analyst      | Computer Fundamentals |    ✅   |
 
 ---
 
