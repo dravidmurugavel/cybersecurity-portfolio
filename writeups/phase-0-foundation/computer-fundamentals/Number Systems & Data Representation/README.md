@@ -129,12 +129,12 @@ cybersecurity-learning-portfolio/
 ├── writeups/
 │   └── fundamentals/
 │       └── Number systems & Data representation/
-│           ├── 2026-07-09-binary-fundamentals.md
-│           ├── 2026-07-09-hexadecimal-fundamentals.md
-│           ├── 2026-07-09-ascii-unicode.md
-│           ├── 2026-07-09-bytes-words-endianness.md
-│           ├── 2026-07-09-reading-hex-dumps-file-signatures.md
-│           └── 2026-07-09-putting-it-together.md
+│           ├── 1_binary-fundamentals.md
+│           ├── 2_hexadecimal-fundamentals.md
+│           ├── 3_ascii-unicode.md
+│           ├── 4_bytes-words-endianness.md
+│           ├── 5_reading-hex-dumps-file-signatures.md
+│           └── 6_exercise.md
 │
 └── assets/
     └── images/
