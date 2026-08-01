@@ -4,7 +4,7 @@
 
 **Module:** Storage – HDD/SSD, Partitioning & File Systems
 
-**Estimated Completion Time:** 4–5 Hours
+**Estimated Completion Time:** 1–2 Hours
 
 **Skill Category:**
 
