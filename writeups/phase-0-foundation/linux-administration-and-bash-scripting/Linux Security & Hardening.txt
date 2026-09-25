@@ -1,0 +1,772 @@
+# Module 10 — Linux Security & Hardening
+
+## Overview
+
+Module 10 focused on the fundamentals of **Linux security hardening and security assessment**.
+
+The goal was not simply to memorize security commands. I learned how to look at a Linux system from an analyst's perspective and ask:
+
+> **Who can access this system, what privileges do they have, what can they execute, what services are exposed, and what is configured to run automatically?**
+
+This module brought together concepts from previous Linux modules, including:
+
+* Users and groups
+* Linux permissions
+* SUID and SGID
+* Sudo
+* Processes
+* Services
+* Systemd
+* Cron
+* Networking
+* Firewalls
+* SSH
+* Authentication logs
+* Persistence
+* Timeline analysis
+
+The main security lesson was:
+
+> **Linux hardening is not about making every system component restrictive. It is about ensuring that access, privileges, services, and automatic execution mechanisms are intentional, necessary, and appropriately controlled.**
+
+---
+
+# 1. Privileged Accounts
+
+I started the security assessment by identifying accounts with UID `0`:
+
+```bash
+awk -F: '$3 == 0 {print $1 ":" $3 ":" $7}' /etc/passwd
+```
+
+UID `0` represents the Linux superuser identity.
+
+A UID `0` account effectively has root-level privileges.
+
+### Security investigation
+
+Finding a UID `0` account does not automatically mean the account is malicious.
+
+The investigator should determine:
+
+```text
+UID 0 account
+     ↓
+Is it expected?
+     ↓
+Is it authorized?
+     ↓
+How is it authenticated?
+     ↓
+What activity is associated with it?
+```
+
+An unexpected UID `0` account is therefore an important security investigation point.
+
+---
+
+# 2. Login-Capable Accounts
+
+I investigated accounts that have interactive login shells:
+
+```bash
+awk -F: '$7 !~ /(nologin|false)$/ {print $1 ":" $3 ":" $7}' /etc/passwd
+```
+
+This helped identify accounts that may be capable of interactive access.
+
+I learned that the username alone is not enough to assess an account.
+
+An investigator should consider:
+
+* Username
+* UID
+* Group membership
+* Login shell
+* Authentication configuration
+* Whether the account is expected
+* Whether interactive login is actually required
+* Associated activity
+
+An unusual shell path is not automatically malicious. It is a signal that requires verification.
+
+---
+
+# 3. Sudo Privileges
+
+I investigated sudo permissions using:
+
+```bash
+sudo -l
+```
+
+The important question is:
+
+> **What can this user execute with elevated privileges?**
+
+Unrestricted sudo access can provide a direct path to root-level control.
+
+However, unrestricted sudo is not automatically a vulnerability. Administrative users may legitimately require it.
+
+The security question is therefore:
+
+```text
+Sudo access
+    ↓
+What commands?
+    ↓
+As which user?
+    ↓
+Can the user become root?
+    ↓
+Is the access authorized and necessary?
+```
+
+This introduced the principle of **least privilege**.
+
+Users should have only the privileges necessary for their legitimate responsibilities.
+
+---
+
+# 4. World-Writable Files
+
+I searched for world-writable files:
+
+```bash
+find / -xdev -type f -perm -0002 -ls 2>/dev/null
+```
+
+A world-writable file can be modified by any local user who has the necessary access to the file.
+
+This becomes particularly important when the file:
+
+* Is executed by another user.
+* Is used by a privileged service.
+* Is owned by root.
+* Is part of a script or configuration.
+* Is referenced by a persistence mechanism.
+
+### Security reasoning
+
+```text
+World-writable file
+       ↓
+Who can modify it?
+       ↓
+Who uses it?
+       ↓
+With what privileges?
+       ↓
+Could modification influence privileged execution?
+```
+
+A world-writable file is not automatically malicious.
+
+Its security significance depends on **ownership, execution context, usage, and privileges**.
+
+---
+
+# 5. SUID
+
+I investigated SUID files with:
+
+```bash
+find / -xdev -type f -perm -4000 -ls 2>/dev/null
+```
+
+SUID causes an executable to run with the file owner's effective UID.
+
+For example, if a root-owned executable has SUID enabled:
+
+```text
+User executes program
+        ↓
+Effective UID becomes root
+        ↓
+Program executes with root privileges
+```
+
+This makes SUID security-sensitive.
+
+### What makes a SUID file suspicious?
+
+I would investigate:
+
+* Unexpected location
+* Unexpected owner
+* Unusual permissions
+* Whether an unprivileged user can modify it
+* Whether it is a legitimate system executable
+* File timestamps
+* File contents or binary properties
+* Associated process activity
+
+A particularly dangerous situation would be a privileged SUID executable that an unprivileged user can modify.
+
+---
+
+# 6. SGID
+
+I investigated SGID files using:
+
+```bash
+find / -xdev -type f -perm -2000 -ls 2>/dev/null
+```
+
+For executable files, SGID causes the process to use the file's group as its effective group.
+
+An important distinction I learned is:
+
+> **SGID does not automatically mean every member of the group can modify the file.**
+
+Write permissions are separate from SGID.
+
+Therefore, an investigator should examine:
+
+```text
+SGID executable
+      ↓
+Owner
+      ↓
+Group
+      ↓
+Who can write?
+      ↓
+Where is it located?
+      ↓
+Is it expected?
+      ↓
+Could an unprivileged user influence execution?
+```
+
+---
+
+# 7. Listening Services and Ports
+
+I investigated listening network services with:
+
+```bash
+ss -tulnp
+```
+
+A listening port represents part of the system's **attack surface**.
+
+A legitimate service can still require investigation because the important question is not simply:
+
+> "Is this service legitimate?"
+
+Instead:
+
+```text
+Listening port
+     ↓
+Which process?
+     ↓
+Which protocol?
+     ↓
+Which bind address?
+     ↓
+Local-only or externally reachable?
+     ↓
+Is the service necessary?
+     ↓
+Is it properly secured?
+```
+
+For example:
+
+```text
+127.0.0.1:9050
+```
+
+is fundamentally different from:
+
+```text
+0.0.0.0:9050
+```
+
+because the second configuration can expose the service through the system's network interfaces.
+
+---
+
+# 8. Firewall
+
+I checked the firewall using:
+
+```bash
+sudo ufw status verbose
+```
+
+I learned an important distinction:
+
+> **An active firewall is not automatically a secure firewall.**
+
+The actual rules and policies matter.
+
+An investigation should determine:
+
+* Whether the firewall is active.
+* Which firewall framework is being used.
+* INPUT policy.
+* OUTPUT policy.
+* FORWARD policy.
+* Allowed ports.
+* Allowed sources.
+* Whether rules match the intended services.
+
+The reasoning becomes:
+
+```text
+Firewall
+   ↓
+Is it active?
+   ↓
+Which framework?
+   ↓
+What are the policies?
+   ↓
+What traffic is allowed?
+   ↓
+Does this match the intended exposure?
+```
+
+If UFW is inactive, that does not automatically mean there is no firewall. Another framework such as nftables may be managing filtering.
+
+---
+
+# 9. SSH Security
+
+I checked for SSH listeners using:
+
+```bash
+ss -tlnp | grep ':22'
+```
+
+An SSH listener can be legitimate and necessary, but it increases the importance of authentication and exposure controls.
+
+I learned to investigate:
+
+* Listening address
+* Listening port
+* Network exposure
+* Authentication configuration
+* Successful logins
+* Failed login attempts
+* Source addresses
+* Login timestamps
+* Activity following successful authentication
+
+A useful investigation pattern is:
+
+```text
+Failed authentication attempts
+        ↓
+Successful authentication
+        ↓
+Account/source
+        ↓
+Timeline
+        ↓
+Activity after login
+```
+
+A single failed login does not establish compromise. Correlation across authentication events and subsequent activity provides stronger evidence.
+
+---
+
+# 10. Cron
+
+I investigated user cron jobs with:
+
+```bash
+crontab -l
+```
+
+and system-wide cron configuration with:
+
+```bash
+cat /etc/crontab
+```
+
+These provide different perspectives.
+
+A cron entry should be investigated in terms of:
+
+```text
+Schedule
+   ↓
+Executing user
+   ↓
+Command/script
+   ↓
+File ownership
+   ↓
+File permissions
+   ↓
+Privileges
+   ↓
+Network activity
+   ↓
+Other persistence
+```
+
+A root cron job deserves particular attention because its command executes with root privileges.
+
+However, legitimate operating-system and application maintenance tasks also use cron, so a cron entry is not automatically malicious.
+
+---
+
+# 11. Systemd Persistence
+
+I investigated enabled services with:
+
+```bash
+systemctl list-unit-files --type=service --state=enabled
+```
+
+An enabled service is configured to start automatically during the system's startup/service initialization process.
+
+This makes systemd an important persistence mechanism to understand.
+
+For an unfamiliar service, I investigated:
+
+```bash
+systemctl show <service-name> -p User -p Group -p ExecStart -p FragmentPath
+```
+
+These fields provide important evidence.
+
+### `User`
+
+The user identity under which the service process runs.
+
+### `Group`
+
+The group identity used by the service process.
+
+### `ExecStart`
+
+The command executed when the service starts.
+
+### `FragmentPath`
+
+The location of the systemd unit configuration.
+
+The investigation chain becomes:
+
+```text
+Enabled service
+      ↓
+Unit configuration
+      ↓
+User / Group
+      ↓
+ExecStart
+      ↓
+Executable/script
+      ↓
+Ownership + permissions
+      ↓
+Network activity
+      ↓
+Logs and timestamps
+```
+
+---
+
+# 12. Authentication Logs
+
+I investigated SSH authentication activity using:
+
+```bash
+sudo journalctl _COMM=sshd --since "24 hours ago" 2>/dev/null | tail -30
+```
+
+The important evidence included:
+
+* Failed authentication attempts
+* Successful authentication
+* User accounts
+* Source information
+* Timestamps
+* Repeated authentication patterns
+
+The important part is **timeline correlation**.
+
+For example:
+
+```text
+Many failed attempts
+        ↓
+Successful login
+        ↓
+Same account
+        ↓
+Unusual activity
+```
+
+This pattern deserves investigation, although it does not automatically prove compromise.
+
+Logs should be correlated with other evidence rather than interpreted in isolation.
+
+---
+
+# 13. Persistence Correlation
+
+The final part of the module combined systemd and cron.
+
+Consider:
+
+```text
+systemd
+   ↓
+/opt/.cache/update.sh
+```
+
+and:
+
+```text
+cron
+   ↓
+/opt/.cache/update.sh
+```
+
+If the same script is referenced by both mechanisms, the investigator should ask:
+
+> **Why has the same executable been configured to run automatically through two independent mechanisms?**
+
+This does not automatically prove malicious activity.
+
+However, it creates a stronger reason to investigate the script's:
+
+* Ownership
+* Permissions
+* Timestamps
+* Contents
+* Hash
+* Execution history
+* Network activity
+* Origin
+* Relationship to other system activity
+
+---
+
+# 14. Module 10 Capstone
+
+The final capstone combined the concepts from the entire module.
+
+### Scenario
+
+A Linux system contains:
+
+```text
+/opt/.cache/update.sh
+```
+
+The script is:
+
+* Root-owned
+* World-writable
+* Referenced by an enabled systemd service
+* Referenced by a root cron job
+
+The system also contains an unrestricted sudo user.
+
+### Finding
+
+The primary finding is:
+
+> A world-writable script is referenced by multiple automatic execution mechanisms that execute with root privileges.
+
+### Evidence
+
+```text
+Enabled systemd service
+        +
+Root cron job
+        +
+World-writable script
+        +
+Root execution context
+        +
+Unrestricted sudo access
+```
+
+### Risk
+
+The critical security concern is that an unauthorized user who can modify the script could potentially influence commands executed automatically with root privileges.
+
+The unrestricted sudo access is an additional risk factor, but it does not by itself prove that the sudo user modified the script.
+
+### Next Investigation
+
+I would collect:
+
+```text
+File ownership and permissions
+        ↓
+File timestamps
+        ↓
+File hash
+        ↓
+Script contents
+        ↓
+Process execution evidence
+        ↓
+Authentication evidence
+        ↓
+Network activity
+        ↓
+Timeline correlation
+```
+
+The key lesson was to avoid jumping directly from **suspicious configuration → compromise**.
+
+Instead:
+
+> **Configuration is evidence. Activity and correlation help establish what actually happened.**
+
+---
+
+# 15. Security Investigation Mental Model
+
+The overall security assessment process I developed during this module is:
+
+```text
+                    LINUX SECURITY
+                          │
+        ┌─────────────────┼─────────────────┐
+        ↓                 ↓                 ↓
+     ACCOUNTS          PRIVILEGES        EXPOSURE
+        │                 │                 │
+     UID 0              sudo          Listening ports
+     Login              SUID             Firewall
+     Shell              SGID                SSH
+        │                 │                 │
+        └─────────────────┼─────────────────┘
+                          ↓
+                    PERSISTENCE
+                          │
+                    ┌─────┴─────┐
+                    ↓           ↓
+                  CRON        SYSTEMD
+                    │           │
+                    └─────┬─────┘
+                          ↓
+                     EXECUTION
+                          │
+                    ┌─────┴─────┐
+                    ↓           ↓
+                  PROCESS     NETWORK
+                    │           │
+                    └─────┬─────┘
+                          ↓
+                       LOGS
+                          │
+                          ↓
+                     TIMELINE
+                          │
+                          ↓
+                   RISK ASSESSMENT
+```
+
+---
+
+# 16. Key Commands
+
+| Command                     | Purpose                         | Security Application                  |
+| --------------------------- | ------------------------------- | ------------------------------------- |
+| `awk ... /etc/passwd`       | Identify UID 0 accounts         | Privileged-account investigation      |
+| `awk ... /etc/passwd`       | Identify login-capable accounts | Account exposure investigation        |
+| `sudo -l`                   | Display sudo permissions        | Privilege investigation               |
+| `find ... -perm -0002`      | Find world-writable files       | Permission investigation              |
+| `find ... -perm -4000`      | Find SUID files                 | Privilege investigation               |
+| `find ... -perm -2000`      | Find SGID files                 | Group-privilege investigation         |
+| `ss -tulnp`                 | Show listening sockets          | Network exposure investigation        |
+| `sudo ufw status verbose`   | Check UFW                       | Firewall investigation                |
+| `ss -tlnp \| grep ':22'`    | Check SSH listener              | Remote-access investigation           |
+| `crontab -l`                | Show user cron jobs             | Persistence investigation             |
+| `cat /etc/crontab`          | Show system cron                | System-wide persistence investigation |
+| `systemctl list-unit-files` | List enabled services           | Persistence investigation             |
+| `systemctl show`            | Inspect service properties      | Service investigation                 |
+| `journalctl`                | Read system logs                | Timeline investigation                |
+
+---
+
+# What I Learned
+
+After completing Module 10, I can:
+
+* Identify UID 0 accounts.
+* Investigate login-capable accounts.
+* Understand sudo privileges.
+* Apply the principle of least privilege.
+* Identify world-writable files.
+* Understand why SUID is security-sensitive.
+* Understand SGID execution behavior.
+* Investigate listening network services.
+* Understand bind addresses and network exposure.
+* Assess firewall state and policy.
+* Investigate SSH exposure.
+* Analyze cron-based persistence.
+* Analyze systemd-based persistence.
+* Investigate service execution identities.
+* Inspect `ExecStart` and unit-file locations.
+* Correlate authentication events with timelines.
+* Investigate suspicious persistence mechanisms.
+* Connect configuration evidence with process and network activity.
+* Perform a basic Linux security assessment.
+* Distinguish suspicious configuration from confirmed compromise.
+
+---
+
+# Final Takeaway
+
+The biggest lesson from Module 10 was:
+
+> **Linux security is about understanding the relationship between identity, privilege, execution, exposure, and persistence.**
+
+When investigating a Linux system, I should continually ask:
+
+```text
+Who can access it?
+       ↓
+What privileges do they have?
+       ↓
+What can they modify?
+       ↓
+What can execute with elevated privileges?
+       ↓
+What services are exposed?
+       ↓
+What runs automatically?
+       ↓
+Who executes it?
+       ↓
+What does it execute?
+       ↓
+What evidence shows it actually happened?
+       ↓
+Does the timeline support the hypothesis?
+```
+
+This module connected the individual Linux administration concepts from previous modules into a practical **security-hardening and investigation workflow**.
+
+---
+
+## Module Progress
+
+```text
+Module 01 → File & Metadata Investigation       ✅
+Module 02 → Evidence Handling & File Operations  ✅
+Module 03 → Linux Permissions & ACLs             ✅
+Module 04 → Linux User Management                ✅
+Module 05 → Process Management                   ✅
+Module 06 → Services & Persistence               ✅
+Module 07 → Linux Networking & Network Commands  ✅
+Module 08 → Linux Logs & Log Investigation       ✅
+Module 09 → Linux Package Management             ✅
+Module 10 → Linux Security & Hardening           ✅
+```
+
+**Next: Module 11 — Bash Scripting Fundamentals.**
